@@ -4,12 +4,15 @@
     "lib": ["ES2022", "DOM"],
     "module": "ESNext",
     "moduleResolution": "Bundler",
+
     "declaration": true,
     "declarationMap": true,
     "emitDeclarationOnly": false,
     "sourceMap": true,
+
     "outDir": "dist",
     "rootDir": "src",
+
     "strict": true,
     "skipLibCheck": true,
     "esModuleInterop": true,

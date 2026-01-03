@@ -1,8 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import { Button } from "@efa/ui";
 import { useAuth } from "../../lib/auth";
-import { LogOut, User } from "lucide-react";
+import { LogOut, User, Sparkles, Pencil, Cuboid, Flame, Trophy } from "lucide-react";
 
 function Item({ to, label }: { to: string; label: string }) {
   return (
@@ -38,7 +37,14 @@ export function NavBar() {
         <nav className="hidden items-center gap-1 md:flex">
           <Item to="/runes" label="Runes" />
           <Item to="/flashcards" label="Flashcards" />
+          <Item to="/study" label="Study (SM-2)" />
           <Item to="/quiz" label="Quiz" />
+          <Item to="/lore" label="Lore" />
+          <Item to="/ritual" label="Ritual" />
+          <Item to="/stones" label="Stones 3D" />
+          <Item to="/tools/transliterate" label="Transliterate" />
+          <Item to="/tools/draw" label="Draw" />
+          <Item to="/progress" label="Progress" />
         </nav>
 
         <div className="flex items-center gap-2">
@@ -48,19 +54,50 @@ export function NavBar() {
                 <User size={16} />
                 <span className="font-semibold">{handle ?? "Seer"}</span>
               </div>
-              <Button variant="ghost" onClick={logout} className="gap-2">
+              <button onClick={logout} className="inline-flex items-center gap-2 px-3 py-2 rounded-md text-sm hover:bg-white/5">
                 <LogOut size={16} />
                 Logout
-              </Button>
+              </button>
             </>
           ) : (
             <Link to="/signin">
-              <Button className="gap-2">
+              <button className="inline-flex items-center gap-2 px-3 py-2 rounded-md text-sm">
                 <User size={16} />
                 Sign in
-              </Button>
+              </button>
             </Link>
           )}
+        </div>
+      </div>
+
+      {/* Mobile quick actions */}
+      <div className="border-t border-white/10 bg-black/60 md:hidden">
+        <div className="mx-auto flex max-w-6xl gap-2 overflow-x-auto px-4 py-2">
+          <Link to="/ritual" className="shrink-0">
+            <button className="inline-flex items-center gap-2 px-3 py-2 rounded-md text-sm hover:bg-white/5">
+              <Flame size={16} /> Ritual
+            </button>
+          </Link>
+          <Link to="/study" className="shrink-0">
+            <button className="inline-flex items-center gap-2 px-3 py-2 rounded-md text-sm hover:bg-white/5">
+              <Sparkles size={16} /> SM-2
+            </button>
+          </Link>
+          <Link to="/stones" className="shrink-0">
+            <button className="inline-flex items-center gap-2 px-3 py-2 rounded-md text-sm hover:bg-white/5">
+              <Cuboid size={16} /> 3D
+            </button>
+          </Link>
+          <Link to="/tools/draw" className="shrink-0">
+            <button className="inline-flex items-center gap-2 px-3 py-2 rounded-md text-sm hover:bg-white/5">
+              <Pencil size={16} /> Draw
+            </button>
+          </Link>
+          <Link to="/progress" className="shrink-0">
+            <button className="inline-flex items-center gap-2 px-3 py-2 rounded-md text-sm hover:bg-white/5">
+              <Trophy size={16} /> Progress
+            </button>
+          </Link>
         </div>
       </div>
     </header>

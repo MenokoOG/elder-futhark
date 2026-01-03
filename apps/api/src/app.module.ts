@@ -1,9 +1,15 @@
 import { Module } from "@nestjs/common";
 import { ConfigModule } from "@nestjs/config";
 import { MongooseModule } from "@nestjs/mongoose";
-import { EnvSchema } from "./config/env.validation";
 import { AuthModule } from "./auth/auth.module";
+import { EnvSchema } from "./config/env.validation";
+import { LoreModule } from "./lore/lore.module";
+import { ProgressModule } from "./progress/progress.module";
+import { RitualModule } from "./ritual/ritual.module";
 import { RunesModule } from "./runes/runes.module";
+import { StudyModule } from "./study/study.module";
+import { ToolsModule } from "./tools/tools.module";
+import { StatsModule } from "./stats/stats-module.module";
 
 @Module({
   imports: [
@@ -12,7 +18,6 @@ import { RunesModule } from "./runes/runes.module";
       validate: (raw: Record<string, unknown>) => {
         const parsed = EnvSchema.safeParse(raw);
         if (!parsed.success) {
-          // eslint-disable-next-line no-console
           console.error(parsed.error.flatten());
           throw new Error("Invalid environment variables");
         }
@@ -21,7 +26,13 @@ import { RunesModule } from "./runes/runes.module";
     }),
     MongooseModule.forRoot(process.env.MONGODB_URI as string),
     AuthModule,
-    RunesModule
+    RunesModule,
+    ToolsModule,
+    ProgressModule,
+    RitualModule,
+    StudyModule,
+    LoreModule,
+    StatsModule
   ]
 })
-export class AppModule {}
+export class AppModule { }
