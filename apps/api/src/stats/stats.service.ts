@@ -1,6 +1,6 @@
 import { Injectable } from "@nestjs/common";
 import { InjectConnection } from "@nestjs/mongoose";
-import type { Connection, Document, WithId } from "mongoose";
+import type { Connection } from "mongoose";
 import { isoDayUTC, computeStreak, levelFromPoints } from "./stats.util";
 import type { LeaderboardRow, StatsOverview } from "./stats.types";
 

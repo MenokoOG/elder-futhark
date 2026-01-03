@@ -23,7 +23,8 @@ export class RitualService {
   async getRuneOfDay(userId: string, isoDate?: string) {
     const date = isoDate ?? isoToday();
     const p = await this.progressSvc.ensureProgress(userId);
-    const claimedToday = p.lastRitualDate === date;
+    const lastIso = p.lastRitualDate ? p.lastRitualDate.toISOString().slice(0, 10) : null;
+    const claimedToday = lastIso === date;
     return { isoDate: date, runeKey: runeOfDayKey(date), streak: p.streak, claimedToday };
   }
 
@@ -31,7 +32,8 @@ export class RitualService {
     const date = isoDate ?? isoToday();
     const p = await this.progressSvc.ensureProgress(userId);
 
-    if (p.lastRitualDate === date) {
+    const lastIso = p.lastRitualDate ? p.lastRitualDate.toISOString().slice(0, 10) : null;
+    if (lastIso === date) {
       return { isoDate: date, runeKey: runeOfDayKey(date), streak: p.streak, claimedToday: true };
     }
 
@@ -40,14 +42,15 @@ export class RitualService {
     let nextStreak = 1;
 
     if (last) {
-      const lastDate = new Date(last + "T00:00:00Z");
+      const lastIsoInner = last.toISOString().slice(0, 10);
+      const lastDate = new Date(lastIsoInner + "T00:00:00Z");
       const curDate = new Date(date + "T00:00:00Z");
       const diffDays = Math.round((curDate.getTime() - lastDate.getTime()) / (1000 * 60 * 60 * 24));
       if (diffDays === 1) nextStreak = p.streak + 1;
     }
 
     p.streak = nextStreak;
-    p.lastRitualDate = date;
+    p.lastRitualDate = new Date(date + "T00:00:00Z");
     await this.progressModel.updateOne({ userId }, { $set: { streak: p.streak, lastRitualDate: p.lastRitualDate } }).exec();
 
     // Achievements

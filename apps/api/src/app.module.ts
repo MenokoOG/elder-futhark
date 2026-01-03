@@ -1,20 +1,32 @@
 import { Module } from "@nestjs/common";
 import { ConfigModule } from "@nestjs/config";
 import { MongooseModule } from "@nestjs/mongoose";
-import { AuthModule } from "./auth/auth.module";
+import path from "node:path";
+
 import { EnvSchema } from "./config/env.validation";
-import { LoreModule } from "./lore/lore.module";
+
+import { AuthModule } from "./auth/auth.module";
+import { RunesModule } from "./runes/runes.module";
+import { ToolsModule } from "./tools/tools.module";
 import { ProgressModule } from "./progress/progress.module";
 import { RitualModule } from "./ritual/ritual.module";
-import { RunesModule } from "./runes/runes.module";
 import { StudyModule } from "./study/study.module";
-import { ToolsModule } from "./tools/tools.module";
-import { StatsModule } from "./stats/stats-module.module";
+import { LoreModule } from "./lore/lore.module";
+import { StatsModule } from "./stats/stats.module";
+
+function mustGetEnv(name: string): string {
+  const v = process.env[name];
+  if (!v || !String(v).trim()) {
+    throw new Error(`Missing required environment variable: ${name}`);
+  }
+  return String(v);
+}
 
 @Module({
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
+      envFilePath: path.resolve(process.cwd(), ".env"),
       validate: (raw: Record<string, unknown>) => {
         const parsed = EnvSchema.safeParse(raw);
         if (!parsed.success) {
@@ -24,7 +36,12 @@ import { StatsModule } from "./stats/stats-module.module";
         return parsed.data;
       }
     }),
-    MongooseModule.forRoot(process.env.MONGODB_URI as string),
+
+    MongooseModule.forRoot(mustGetEnv("MONGODB_URI"), {
+      serverSelectionTimeoutMS: 10_000,
+      connectTimeoutMS: 10_000
+    }),
+
     AuthModule,
     RunesModule,
     ToolsModule,
@@ -35,4 +52,4 @@ import { StatsModule } from "./stats/stats-module.module";
     StatsModule
   ]
 })
-export class AppModule { }
+export class AppModule {}

@@ -1,15 +1,19 @@
-import { Controller, Get, UseGuards } from "@nestjs/common";
+import { Controller, Get, Req, UseGuards } from "@nestjs/common";
 import { JwtGuard } from "../common/auth/jwt.guard";
-import { GetUser } from "../common/auth/get-user.decorator";
+import { getUserIdFromReq } from "../stats/stats.util";
 import { LoreService } from "./lore.service";
 
 @UseGuards(JwtGuard)
 @Controller("lore")
 export class LoreController {
-  constructor(private lore: LoreService) {}
+  constructor(private readonly loreSvc: LoreService) {}
 
-  @Get()
-  list(@GetUser() user: any) {
-    return this.lore.list(user.userId);
+  @Get("unlocked")
+  async unlocked(@Req() req: any) {
+    const userId = getUserIdFromReq(req);
+    return {
+      userId,
+      unlockedAetts: await this.loreSvc.unlockedAetts(userId)
+    };
   }
 }

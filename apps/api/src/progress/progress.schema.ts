@@ -1,24 +1,49 @@
 import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
-import { HydratedDocument } from "mongoose";
+import { HydratedDocument, Types } from "mongoose";
 
 export type ProgressDocument = HydratedDocument<Progress>;
 
 @Schema({ timestamps: true })
 export class Progress {
-  @Prop({ unique: true, index: true, required: true })
-  userId!: string;
+  @Prop({ type: Types.ObjectId, index: true, required: true })
+  userId!: Types.ObjectId;
 
-  @Prop({ default: 0 })
+  // Points / XP
+  @Prop({ type: Number, default: 0 })
+  points!: number;
+
+  // Daily ritual streak
+  @Prop({ type: Number, default: 0 })
   streak!: number;
 
-  @Prop({ default: null })
-  lastRitualDate!: string | null; // YYYY-MM-DD
+  // Last ritual date (nullable)
+  @Prop({ type: Date, default: null })
+  lastRitualDate!: Date | null;
 
-  @Prop({ default: 0 })
+  // Last rune key used for ritual (nullable)
+  @Prop({ type: String, default: null })
+  lastRuneKey!: string | null;
+
+  // --- Study / SRS metrics ---
+  @Prop({ type: Number, default: 0 })
   totalStudyReviews!: number;
 
-  @Prop({ type: Object, default: {} })
-  bestQuizByAett!: Record<string, number>; // "1"|"2"|"3" => best score
+  // --- Quiz metrics ---
+  // Store best quiz score per Aett as a simple map: { "1": 10, "2": 7, "3": 9 }
+  // Use Map so Mongoose has a concrete runtime type.
+  @Prop({ type: Map, of: Number, default: {} })
+  bestQuizByAett!: Map<string, number>;
+
+  // --- Unlocks ---
+  @Prop({ type: [String], default: [] })
+  unlockedLessonKeys!: string[];
+
+  @Prop({ type: [String], default: [] })
+  unlockedAchievementKeys!: string[];
 }
 
 export const ProgressSchema = SchemaFactory.createForClass(Progress);
+
+// Helpful indexes
+ProgressSchema.index({ userId: 1 }, { unique: true });
+ProgressSchema.index({ points: -1 });

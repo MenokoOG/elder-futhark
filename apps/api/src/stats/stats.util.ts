@@ -1,12 +1,8 @@
-import type { Request } from "express";
+export type MinimalRequest = {
+  user?: any;
+};
 
-/**
- * Extract a user id from common JWT payload conventions:
- * - req.user.sub (Passport JWT standard)
- * - req.user.userId
- * - req.user.id
- */
-export function getUserIdFromReq(req: Request): string {
+export function getUserIdFromReq(req: MinimalRequest): string {
   const u: any = (req as any).user;
 
   const id =
@@ -20,7 +16,6 @@ export function getUserIdFromReq(req: Request): string {
   return String(id);
 }
 
-/** YYYY-MM-DD in UTC (stable for streak math) */
 export function isoDayUTC(d: Date) {
   const y = d.getUTCFullYear();
   const m = String(d.getUTCMonth() + 1).padStart(2, "0");
@@ -28,7 +23,6 @@ export function isoDayUTC(d: Date) {
   return `${y}-${m}-${day}`;
 }
 
-/** parse YYYY-MM-DD safely */
 export function parseIsoDayUTC(s: string): Date | null {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(s)) return null;
   const [y, m, d] = s.split("-").map(Number);
@@ -36,10 +30,6 @@ export function parseIsoDayUTC(s: string): Date | null {
   return Number.isFinite(dt.getTime()) ? dt : null;
 }
 
-/**
- * Consecutive-day streak calculation.
- * Expects an array of YYYY-MM-DD, newest-first.
- */
 export function computeStreak(daysDesc: string[]): number {
   if (daysDesc.length === 0) return 0;
 
@@ -59,19 +49,14 @@ export function computeStreak(daysDesc: string[]): number {
       prev = cur;
       continue;
     }
-    if (diffDays === 0) {
-      // duplicate day, ignore
-      continue;
-    }
+    if (diffDays === 0) continue;
     break;
   }
 
   return streak;
 }
 
-/** Simple level curve; tweak freely */
 export function levelFromPoints(points: number) {
-  // level n requires 150*n*(n-1) points (quadratic growth)
   let level = 1;
   while (true) {
     const next = level + 1;
