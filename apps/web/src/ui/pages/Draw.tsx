@@ -13,7 +13,7 @@ function runeByKey(key: string) {
 export function DrawPage() {
   const { token } = useAuth();
   const canvasRef = React.useRef<HTMLCanvasElement | null>(null);
-  const [drawing, setDrawing] = React.useState<Pt[]>([]);
+  const [strokes, setStrokes] = React.useState<Pt[][]>([]);
   const [matches, setMatches] = React.useState<any[]>([]);
   const [down, setDown] = React.useState(false);
 
@@ -53,15 +53,16 @@ export function DrawPage() {
     }
     ctx.globalAlpha = 1;
 
-    // stroke
-    if (drawing.length > 1) {
-      ctx.lineWidth = 4;
-      ctx.lineCap = "round";
-      ctx.lineJoin = "round";
-      ctx.strokeStyle = "rgba(255,255,255,0.9)";
+    // strokes
+    ctx.lineWidth = 4;
+    ctx.lineCap = "round";
+    ctx.lineJoin = "round";
+    ctx.strokeStyle = "rgba(255,255,255,0.9)";
+    for (const s of strokes) {
+      if (s.length < 2) continue;
       ctx.beginPath();
-      ctx.moveTo(drawing[0]!.x, drawing[0]!.y);
-      for (let i = 1; i < drawing.length; i++) ctx.lineTo(drawing[i]!.x, drawing[i]!.y);
+      ctx.moveTo(s[0]!.x, s[0]!.y);
+      for (let i = 1; i < s.length; i++) ctx.lineTo(s[i]!.x, s[i]!.y);
       ctx.stroke();
     }
   }
@@ -74,7 +75,7 @@ export function DrawPage() {
 
   React.useEffect(() => {
     redraw();
-  }, [drawing]);
+  }, [strokes]);
 
   function toCanvasPoint(e: React.PointerEvent) {
     const c = canvasRef.current!;
@@ -85,13 +86,19 @@ export function DrawPage() {
   function onDown(e: React.PointerEvent) {
     (e.target as HTMLElement).setPointerCapture(e.pointerId);
     setDown(true);
-    setDrawing([toCanvasPoint(e)]);
+    const first = toCanvasPoint(e);
+    setStrokes((prev) => [...prev, [first]]);
   }
 
   function onMove(e: React.PointerEvent) {
     if (!down) return;
     const p = toCanvasPoint(e);
-    setDrawing(prev => [...prev, p]);
+    setStrokes((prev) => {
+      if (prev.length === 0) return [[p]];
+      const next = [...prev];
+      next[next.length - 1] = [...next[next.length - 1], p];
+      return next;
+    });
   }
 
   function onUp() {
@@ -99,7 +106,8 @@ export function DrawPage() {
   }
 
   async function recognize() {
-    const m = recognizeRuneFromStroke(drawing).map(x => ({
+    const flat: Pt[] = strokes.flat();
+    const m = recognizeRuneFromStroke(flat).map(x => ({
       ...x,
       rune: runeByKey(x.key)
     }));
@@ -114,7 +122,7 @@ export function DrawPage() {
   }
 
   function clear() {
-    setDrawing([]);
+    setStrokes([]);
     setMatches([]);
   }
 
@@ -141,7 +149,7 @@ export function DrawPage() {
             />
           </div>
           <div className="mt-3 flex flex-wrap gap-2">
-            <Button onClick={recognize}>Recognize</Button>
+            <Button onClick={recognize} disabled={strokes.flat().length === 0}>Recognize</Button>
             <Button variant="ghost" onClick={clear}>Clear</Button>
           </div>
         </Card>

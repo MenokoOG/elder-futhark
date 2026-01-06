@@ -5,7 +5,6 @@ import { Progress, ProgressDocument } from "../progress/progress.schema";
 
 @Injectable()
 export class LoreService {
-  [x: string]: any;
   constructor(
     @InjectModel(Progress.name) private readonly progressModel: Model<ProgressDocument>
   ) {}

@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
+import { useAuth } from "../lib/auth";
 
 function NavItem(props: { to: string; label: string }) {
   return (
@@ -19,6 +20,8 @@ function NavItem(props: { to: string; label: string }) {
 }
 
 export function AppShell() {
+  const { user, logout } = useAuth();
+
   return (
     <div className="min-h-dvh bg-[#070A10] text-white">
       <header className="sticky top-0 z-20 border-b border-white/10 bg-black/40 backdrop-blur">
@@ -41,8 +44,24 @@ export function AppShell() {
             <NavItem to="/stones" label="3D Stones" />
             <NavItem to="/lore" label="Lore Mode" />
             <NavItem to="/stats" label="Stats" />
-            <NavItem to="/signin" label="Sign In" />
+            {!user && <NavItem to="/signin" label="Sign In" />}
           </nav>
+
+          <div className="flex items-center gap-2 text-sm">
+            {user ? (
+              <>
+                <div className="rounded-lg border border-white/10 bg-white/5 px-3 py-1 font-mono text-xs text-white/80">
+                  {user.email}
+                </div>
+                <button
+                  className="rounded-lg border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold hover:bg-white/10"
+                  onClick={logout}
+                >
+                  Logout
+                </button>
+              </>
+            ) : null}
+          </div>
         </div>
       </header>
 

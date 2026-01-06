@@ -10,6 +10,21 @@ import { JwtGuard } from "../common/auth/jwt.guard";
 export class StatsController {
   constructor(private readonly stats: StatsService) {}
 
+  @Get()
+  async overview(@Req() req: any) {
+    const userId = getUserIdFromReq(req);
+    const o = await this.stats.getOverview(userId);
+
+    return {
+      userId: o.userId,
+      streakDays: o.ritual.currentStreak,
+      totalStudyReviews: o.study.totalCards ?? 0,
+      achievementsUnlocked: o.achievements.unlocked ?? 0,
+      lastRitualDate: o.ritual.lastRitualDay ? `${o.ritual.lastRitualDay}T00:00:00.000Z` : null,
+      bestQuizByAett: { "1": 0, "2": 0, "3": 0 }
+    };
+  }
+
   @Get("me")
   async me(@Req() req: any) {
     const userId = getUserIdFromReq(req);

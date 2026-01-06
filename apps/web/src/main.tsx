@@ -8,11 +8,11 @@ import { AuthProvider } from "./lib/auth";
 import "./styles.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
+  
     <QueryClientProvider client={queryClient}>
       <AuthProvider>
-        <RouterProvider router={router} />
+        <RouterProvider router={router as any} />
       </AuthProvider>
     </QueryClientProvider>
-  </React.StrictMode>
+  
 );
