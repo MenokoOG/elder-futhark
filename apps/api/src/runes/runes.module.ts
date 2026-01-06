@@ -1,11 +1,13 @@
 import { Module } from "@nestjs/common";
 import { MongooseModule } from "@nestjs/mongoose";
-import { Rune, RuneSchema } from "./rune.schema";
 import { RunesController } from "./runes.controller";
 import { RunesService } from "./runes.service";
+import { RuneSchema } from "./rune.schema";
 
 @Module({
-  imports: [MongooseModule.forFeature([{ name: Rune.name, schema: RuneSchema }])],
+  imports: [
+    MongooseModule.forFeature([{ name: "Rune", schema: RuneSchema }])
+  ],
   controllers: [RunesController],
   providers: [RunesService],
   exports: [RunesService]

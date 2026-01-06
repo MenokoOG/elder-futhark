@@ -13,6 +13,7 @@ import { RitualModule } from "./ritual/ritual.module";
 import { StudyModule } from "./study/study.module";
 import { LoreModule } from "./lore/lore.module";
 import { StatsModule } from "./stats/stats.module";
+import { HealthModule } from "./health/health.module";
 
 function mustGetEnv(name: string): string {
   const v = process.env[name];
@@ -42,6 +43,7 @@ function mustGetEnv(name: string): string {
       connectTimeoutMS: 10_000
     }),
 
+    HealthModule,
     AuthModule,
     RunesModule,
     ToolsModule,
@@ -49,7 +51,8 @@ function mustGetEnv(name: string): string {
     RitualModule,
     StudyModule,
     LoreModule,
-    StatsModule
+    StatsModule,
+    
   ]
 })
 export class AppModule {}

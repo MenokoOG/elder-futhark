@@ -1,22 +1,18 @@
-import { Controller, Get, Post, UseGuards, Body } from "@nestjs/common";
-import { JwtGuard } from "../common/auth/jwt.guard";
-import { GetUser } from "../common/auth/get-user.decorator";
-import { StudyService } from "./study.service";
-import { ZodValidationPipe } from "../common/pipes/zod-validation.pipe";
-import { StudyGradeSchema } from "@efa/shared";
+import { Controller, Get, Query } from "@nestjs/common";
+import { ELDER_FUTHARK } from "@efa/shared";
 
-@UseGuards(JwtGuard)
 @Controller("study")
 export class StudyController {
-  constructor(private study: StudyService) {}
-
+  // Minimal endpoint to keep Flashcards/Decks alive
   @Get("next")
-  async next(@GetUser() user: any) {
-    return this.study.next(user.userId);
-  }
+  next(@Query("aett") aettRaw?: string) {
+    const aett = aettRaw ? Number(aettRaw) : undefined;
+    const pool = aett && !Number.isNaN(aett) ? ELDER_FUTHARK.filter(r => r.aett === aett) : ELDER_FUTHARK;
 
-  @Post("grade")
-  grade(@GetUser() user: any, @Body(new ZodValidationPipe(StudyGradeSchema)) body: any) {
-    return this.study.grade(user.userId, body.runeKey, body.grade);
+    const pick = pool[Math.floor(Math.random() * pool.length)];
+    return {
+      card: pick,
+      due: true
+    };
   }
 }

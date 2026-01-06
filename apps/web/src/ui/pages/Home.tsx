@@ -13,7 +13,7 @@ export function Home() {
         className="grid gap-4"
       >
         <h1 className="text-3xl font-extrabold tracking-tight">
-          Learn the Elder Futhark — like a systems engineer 🧠⚡
+          Learn the Elder Futhark — like a Badass !!!🧠⚡
         </h1>
         <p className="max-w-3xl text-white/70">
           This app is built to be fun *and* sharp: shared schemas, clean API boundaries, and a UI that feels like a rune console.

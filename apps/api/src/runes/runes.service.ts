@@ -1,30 +1,41 @@
 import { Injectable } from "@nestjs/common";
 import { InjectModel } from "@nestjs/mongoose";
 import { Model } from "mongoose";
-import { Rune, RuneDocument } from "./rune.schema";
+import type { Rune } from "./rune.schema";
+import { ELDER_FUTHARK } from "@efa/shared";
 
 @Injectable()
 export class RunesService {
-  constructor(@InjectModel(Rune.name) private runeModel: Model<RuneDocument>) {}
+  constructor(@InjectModel("Rune") private runeModel: Model<Rune>) {}
 
-  async list(q?: string, aett?: number) {
+  async list(params: { q?: string; aett?: number }) {
+    const { q, aett } = params;
+
+    // Try DB first (if you seeded)
     const filter: any = {};
     if (aett) filter.aett = aett;
-
-    if (q && q.trim()) {
-      const rx = new RegExp(q.trim(), "i");
-      filter.$or = [{ key: rx }, { name: rx }, { phonetic: rx }, { meaning: rx }];
+    if (q) {
+      const rx = new RegExp(q, "i");
+      filter.$or = [{ key: rx }, { name: rx }, { phonetic: rx }, { notes: rx }];
     }
 
-    return this.runeModel.find(filter).sort({ aett: 1, name: 1 }).lean().exec();
-  }
+    const db = await this.runeModel.find(filter).lean().exec();
+    if (db.length > 0) return db;
 
-  async byKey(key: string) {
-    return this.runeModel.findOne({ key }).lean().exec();
-  }
-
-  async random() {
-    const [one] = await this.runeModel.aggregate([{ $sample: { size: 1 } }]).exec();
-    return one ?? null;
+    // Fallback to shared constant so UI always works
+    let all = ELDER_FUTHARK;
+    if (aett) all = all.filter((r) => r.aett === aett);
+    if (q) {
+      const rx = new RegExp(q, "i");
+      all = all.filter(
+        (r) =>
+          rx.test(r.key) ||
+          rx.test(r.name) ||
+          rx.test(r.phonetic) ||
+          rx.test(r.notes) ||
+          r.meaning.some((m) => rx.test(m))
+      );
+    }
+    return all;
   }
 }

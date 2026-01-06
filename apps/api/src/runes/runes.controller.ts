@@ -1,24 +1,16 @@
-import { Controller, Get, Param, Query } from "@nestjs/common";
-import { ZodValidationPipe } from "../common/pipes/zod-validation.pipe";
-import { RuneListQuerySchema } from "@efa/shared";
+import { Controller, Get, Query } from "@nestjs/common";
 import { RunesService } from "./runes.service";
 
 @Controller("runes")
 export class RunesController {
-  constructor(private runes: RunesService) {}
+  constructor(private readonly runes: RunesService) {}
 
   @Get()
-  list(@Query(new ZodValidationPipe(RuneListQuerySchema)) query: any) {
-    return this.runes.list(query.q, query.aett);
-  }
-
-  @Get("random")
-  random() {
-    return this.runes.random();
-  }
-
-  @Get(":key")
-  byKey(@Param("key") key: string) {
-    return this.runes.byKey(key);
+  async list(
+    @Query("q") q?: string,
+    @Query("aett") aettRaw?: string
+  ) {
+    const aett = aettRaw ? Number(aettRaw) : undefined;
+    return this.runes.list({ q: q || undefined, aett: aett && !Number.isNaN(aett) ? aett : undefined });
   }
 }
