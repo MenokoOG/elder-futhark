@@ -1,12 +1,14 @@
 import axios from "axios";
 
+const env = (import.meta as any).env || {};
 const baseURL =
-  (import.meta as any).env?.VITE_API_URL?.trim() ||
-  "http://localhost:4000/api";
+  (env.VITE_API_URL?.trim() ||
+    env.VITE_API_BASE_URL?.trim() || // backward-compat
+    "http://localhost:4000/api");
 
 export const api = axios.create({
   baseURL,
-  withCredentials: false
+  withCredentials: false,
 });
 
 export function setAuthToken(token: string | null) {
