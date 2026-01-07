@@ -1,9 +1,9 @@
 import React from "react";
-import { Card } from "../../../../../packages/ui/src/components/Card";
-import { Button } from "../../../../../packages/ui/src/components/Button";
+import { Card, Button } from "@efa/ui";
 import { useAuth } from "../../lib/auth";
 import { api } from "../../lib/api";
-import { ELDER_FUTHARK } from "../../../../../packages/shared/src";
+import { ELDER_FUTHARK } from "@efa/shared";import { now } from "three/examples/jsm/libs/tween.module.js";
+
 
 function runeByKey(key: string) {
   return ELDER_FUTHARK.find(r => r.key === key);

@@ -1,9 +1,9 @@
 services:
   - type: web
     name: efa-api
-    env: node
     rootDir: apps/api
     plan: free
+    runtime: node
     buildCommand: pnpm i --frozen-lockfile=false && pnpm build
     startCommand: pnpm start
     envVars:
@@ -20,11 +20,10 @@ services:
 
   - type: web
     name: efa-web
-    env: static
     rootDir: apps/web
     plan: free
+    runtime: node
     buildCommand: pnpm i --frozen-lockfile=false && pnpm build
-    staticPublishPath: dist
     envVars:
       - key: VITE_API_BASE_URL
         sync: false

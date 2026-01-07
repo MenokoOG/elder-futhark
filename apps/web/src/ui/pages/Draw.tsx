@@ -1,10 +1,11 @@
 import React from "react";
-import { Card } from "../../../../../packages/ui/src/components/Card";
-import { Button } from "../../../../../packages/ui/src/components/Button";
-import { recognizeRuneFromStroke, type Pt } from "@efa/shared";
-import { ELDER_FUTHARK } from "../../../../../packages/shared/src";
+import { Card, Button } from "@efa/ui";
+import { recognizeRuneFromStroke } from "@efa/shared";
+import { ELDER_FUTHARK } from "@efa/shared";
 import { api } from "../../lib/api";
 import { useAuth } from "../../lib/auth";
+
+type Pt = { x: number; y: number };
 
 function runeByKey(key: string) {
   return ELDER_FUTHARK.find(r => r.key === key);

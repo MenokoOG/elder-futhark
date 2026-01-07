@@ -1,6 +1,5 @@
 import React from "react";
-import { Card } from "../../../../../packages/ui/src/components/Card";
-import { useAuth } from "../../lib/auth";
+import { Card } from "@efa/ui";import { useAuth } from "../../lib/auth";
 import { api } from "../../lib/api";
 
 export function LorePage() {
