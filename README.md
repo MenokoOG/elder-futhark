@@ -1,18 +1,40 @@
-# Elder Futhark Academy (MERN-ish: Mongo + Express-like Nest + React + Node)
+# Elder Futhark Academy (Pure MERN)
 
-A fun, skill-showcasing monorepo to learn the Elder Futhark runes:
-- Rune Explorer (search/filter)
-- Flashcards
-- Quiz
-- JWT Auth
-- Shared Zod schemas + rune dataset
+This repo is intentionally **not** a monorepo. It has two folders:
 
-## Prereqs
-- Node 20+
-- pnpm 9+
-- MongoDB Atlas connection string
+- `server/` – Node + Express + MongoDB (Mongoose) API
+- `client/` – React + Vite (JSX) web app
 
-## Setup
-1) Copy env
+## Quick start (local)
+
+### 1) Server
 ```bash
+cd server
 cp .env.example .env
+# fill MONGODB_URI + JWT_SECRET
+pnpm i
+pnpm dev
+pnpm seed   # first time only (loads runes)
+```
+
+Server runs on `http://localhost:4000` by default.
+
+### 2) Client
+```bash
+cd client
+cp .env.example .env
+# set VITE_API_BASE_URL=http://localhost:4000/api
+pnpm i
+pnpm dev
+```
+
+Client runs on `http://localhost:5173`.
+
+## Render deployment
+
+Deploy **two** services:
+- Node web service for `server/`
+- Static site for `client/`
+
+Use the included `render.yaml` Blueprint.
+
