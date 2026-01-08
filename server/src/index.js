@@ -29,8 +29,18 @@ async function main() {
   await connectDb();
 
   const app = express();
+
+  // Prevent conditional GETs (ETag/If-None-Match) for API JSON responses
+  app.set("etag", false);
+
+  // Prevent browser caching for API responses (so you always get a 200 + body)
+  app.use("/api", (_req, res, next) => {
+    res.set("Cache-Control", "no-store");
+    next();
+  });
+
   app.use(buildCors());
-  app.use(express.json({ limit: "1mb" }));
+  app.use(express.json({ limit: "4mb" }));
   app.use(morgan("dev"));
 
   app.get("/api/health", (_req, res) => res.json({ ok: true }));

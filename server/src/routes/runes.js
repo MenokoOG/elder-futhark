@@ -1,24 +1,25 @@
 import express from "express";
-import { Rune } from "../models/Rune.js";
+import { ELDER_FUTHARK } from "../data/elderFuthark.js";
 
 export const runesRouter = express.Router();
 
-runesRouter.get("/", async (req, res) => {
+runesRouter.get("/", (req, res) => {
   const q = String(req.query.q || "").trim().toLowerCase();
   const aett = req.query.aett ? Number(req.query.aett) : null;
 
-  const filter = {};
-  if (aett && Number.isFinite(aett)) filter.aett = aett;
+  let items = ELDER_FUTHARK;
 
-  if (q) {
-    filter.$or = [
-      { key: { $regex: q, $options: "i" } },
-      { name: { $regex: q, $options: "i" } },
-      { phonetic: { $regex: q, $options: "i" } },
-      { meaning: { $elemMatch: { $regex: q, $options: "i" } } }
-    ];
+  if (aett && Number.isFinite(aett)) {
+    items = items.filter((r) => Number(r.aett) === aett);
   }
 
-  const runes = await Rune.find(filter).sort({ aett: 1, key: 1 }).lean();
-  return res.json({ items: runes });
+  if (q) {
+    items = items.filter((r) => {
+      const meaningParts = Array.isArray(r.meaning) ? r.meaning : [r.meaning].filter(Boolean);
+      const haystack = (r.name + " " + r.key + " " + r.phonetic + " " + meaningParts.join(" ")).toLowerCase();
+      return haystack.includes(q);
+    });
+  }
+
+  return res.json({ items });
 });

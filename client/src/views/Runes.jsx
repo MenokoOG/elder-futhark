@@ -14,12 +14,29 @@ export function Runes() {
     try {
       const params = {};
       if (q.trim()) params.q = q.trim();
-      if (aett) params.aett = aett;
-      const res = await api.get("/runes", { params });
-      setItems(res.data?.items || []);
-    } catch {
+      if (aett) params.aett = Number(aett);
+
+      const res = api?.get ? await api.get("/runes", { params }) : null;
+      if (!res) throw new Error("API unavailable");
+      const remoteItems = res?.data?.items || [];
+      setItems(
+        remoteItems.map((r) => ({
+          ...r,
+          meaning: Array.isArray(r.meaning) ? r.meaning : [r.meaning].filter(Boolean),
+        }))
+      );
+    } catch (err) {
+      if (err?.response?.status === 304) return; // keep existing items
       // fallback: local
-      const local = ELDER_FUTHARK.filter(r => (!aett || String(r.aett)===String(aett)) && (!q.trim() || (r.name+r.key+r.phonetic+r.meaning.join(" ")).toLowerCase().includes(q.trim().toLowerCase())));
+      const search = q.trim().toLowerCase();
+      const local = ELDER_FUTHARK.filter((r) => {
+        const meaningParts = Array.isArray(r.meaning) ? r.meaning : [r.meaning].filter(Boolean);
+        const haystack = (r.name + r.key + r.phonetic + meaningParts.join(" ")).toLowerCase();
+        return (!aett || Number(r.aett) === Number(aett)) && (!search || haystack.includes(search));
+      }).map((r) => ({
+        ...r,
+        meaning: Array.isArray(r.meaning) ? r.meaning : [r.meaning].filter(Boolean),
+      }));
       setItems(local);
     } finally {
       setLoading(false);
