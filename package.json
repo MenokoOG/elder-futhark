@@ -1,0 +1,16 @@
+{
+  "name": "elder-futhark-academy",
+  "private": true,
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "clean": "pnpm -r clean",
+    "start": "pnpm -C apps/api start",
+    "dev:web": "pnpm -C apps/web dev",
+    "dev:api": "pnpm -C apps/api dev",
+    "build:web": "pnpm -C apps/web build",
+    "build:api": "pnpm -C apps/api build"
+  }
+}
