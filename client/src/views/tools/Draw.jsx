@@ -5,7 +5,11 @@ import { ELDER_FUTHARK } from "../../lib/elderFuthark.js";
 import { choice } from "../../lib/math.js";
 import { recognizeRuneFromStroke } from "../../lib/drawing/recognizeRuneFromStroke.js";
 
-const PASS_THRESHOLD = 0.54;
+const SENSITIVITY = {
+  easy: { threshold: 0.42, nearTopMargin: 0.1, label: "Easy" },
+  normal: { threshold: 0.46, nearTopMargin: 0.07, label: "Normal" },
+  strict: { threshold: 0.54, nearTopMargin: 0.04, label: "Strict" },
+};
 const MIN_POINTS = 18;
 
 function useCanvasDraw() {
@@ -171,6 +175,7 @@ function useCanvasDraw() {
 
 export function Draw() {
   const [target, setTarget] = React.useState(() => choice(ELDER_FUTHARK));
+  const [sensitivity, setSensitivity] = React.useState("normal");
   const [matchResult, setMatchResult] = React.useState(null);
   const {
     ref,
@@ -198,6 +203,8 @@ export function Draw() {
 
   const checkMatch = React.useCallback(() => {
     const points = getPoints();
+    const profile = SENSITIVITY[sensitivity] || SENSITIVITY.normal;
+
     if (points.length < MIN_POINTS) {
       setMatchResult({
         pass: false,
@@ -212,8 +219,12 @@ export function Draw() {
     const top = ranked[0] || null;
     const targetHit = ranked.find((item) => item.key === target.key);
     const targetScore = targetHit?.score ?? 0;
+    const isTopTarget = top?.key === target.key;
+    const isCloseToTop = Boolean(
+      top && targetScore >= top.score - profile.nearTopMargin,
+    );
     const pass = Boolean(
-      top && top.key === target.key && targetScore >= PASS_THRESHOLD,
+      top && targetScore >= profile.threshold && (isTopTarget || isCloseToTop),
     );
 
     setMatchResult({
@@ -223,7 +234,7 @@ export function Draw() {
       top,
       ranked: ranked.slice(0, 3),
     });
-  }, [getPoints, target.key]);
+  }, [getPoints, sensitivity, target.key]);
 
   return (
     <div className="space-y-4">
@@ -264,6 +275,21 @@ export function Draw() {
               onChange={(e) => setInk(e.target.value)}
               className="ml-2 h-8 w-10 align-middle"
             />
+          </label>
+
+          <label className="text-sm text-zinc-300">
+            Sensitivity{" "}
+            <select
+              value={sensitivity}
+              onChange={(e) => setSensitivity(e.target.value)}
+              className="ml-2 rounded-lg border border-zinc-700 bg-zinc-950 px-2 py-1 text-sm"
+            >
+              {Object.entries(SENSITIVITY).map(([key, value]) => (
+                <option key={key} value={key}>
+                  {value.label}
+                </option>
+              ))}
+            </select>
           </label>
 
           <Button onClick={handleClear}>Clear</Button>

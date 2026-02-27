@@ -15,6 +15,7 @@ import { Transliterate } from "./views/tools/Transliterate.jsx";
 import { Ritual } from "./views/Ritual.jsx";
 import { Stones } from "./views/Stones.jsx";
 import { Lore } from "./views/Lore.jsx";
+import { Gods } from "./views/Gods.jsx";
 import { Progress } from "./views/Progress.jsx";
 import { Stats } from "./views/Stats.jsx";
 import { NotFound } from "./views/NotFound.jsx";
@@ -56,6 +57,7 @@ export const router = createBrowserRouter([
       },
       { path: "/stones", element: <Stones /> },
       { path: "/lore", element: <Lore /> },
+      { path: "/gods", element: <Gods /> },
       {
         path: "/progress",
         element: (

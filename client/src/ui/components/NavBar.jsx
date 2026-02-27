@@ -107,6 +107,14 @@ export function NavBar() {
             Lore
           </NavLink>
           <NavLink
+            to="/gods"
+            className={({ isActive }) =>
+              `${linkBase} ${isActive ? linkActive : ""}`
+            }
+          >
+            Gods
+          </NavLink>
+          <NavLink
             to="/progress"
             className={({ isActive }) =>
               `${linkBase} ${isActive ? linkActive : ""}`
