@@ -1,0 +1,336 @@
+[
+  {
+    "key": "intro",
+    "title": "Welcome",
+    "body": "Runes are letters and symbols. We'll learn them by sound, shape, and meaning — then reinforce with short reviews.",
+    "citations": []
+  },
+  {
+    "key": "aetts",
+    "title": "The Aetts",
+    "body": "In rune literature, an aett is a grouping of runes used for teaching and organization. In this MVP we use three aetts as a pacing tool: learn a small batch, then review before moving on.",
+    "citations": []
+  },
+  {
+    "key": "divine_society",
+    "title": "Gods: Aesir & Vanir",
+    "body": "In Norse tradition, the divine community is often described with groups such as the Aesir and the Vanir. Aesir are commonly framed as the gods of sovereignty and war, while Vanir are linked with fertility, prosperity, and well-being. In practice, you’ll see rune correspondences and lore reference both groups.",
+    "citations": [],
+    "tags": ["gods", "cosmology"],
+    "kind": "lesson",
+    "godKeys": ["odinn", "freyr", "freyja"],
+    "runeKeys": ["ansuz", "ingwaz"]
+  },
+  {
+    "key": "tripartite",
+    "title": "Functions: Sovereignty / Strength / Production",
+    "body": "A helpful high-level lens is a three-function model: sovereignty (rulership/sacred authority), strength (war/protection), and production (fertility/wealth). When you learn a rune, try to notice which function its themes lean toward — it improves recall.",
+    "citations": [],
+    "tags": ["theory"],
+    "kind": "lesson"
+  },
+  {
+    "key": "correspondences",
+    "title": "Runic Correspondences",
+    "body": "Some systems attach correspondences (trees, herbs, beings, colors, tarot, astrology). Treat these as optional mnemonics: useful for memory and ritual structure, not strict dogma. This app includes a compact correspondence set so you can explore patterns and build your own notes.",
+    "citations": [],
+    "tags": ["mnemonics"],
+    "kind": "lesson"
+  },
+  {
+    "key": "practice",
+    "title": "Practice",
+    "body": "Short sessions, frequent review. Accuracy first, speed later. Grade honestly; the scheduler works best when you do.",
+    "citations": []
+  },
+  {
+    "key": "yggdrasil",
+    "title": "Yggdrasil",
+    "body": "Many rune traditions use the World Tree as a memory-map: roots, trunk, and branches correspond to layers of experience. Use it as a mental scaffold for placing gods, worlds, and runes into a single picture.",
+    "tags": ["cosmology"],
+    "kind": "lesson",
+    "citations": [
+      {
+        "sourceKey": "gutenberg_anderson_1879_prose_edda",
+        "pages": "Gylfaginning (cosmology, tree, wells)",
+        "note": "Public-domain translation used for cosmology framing."
+      },
+      {
+        "sourceKey": "gutenberg_bellows_1923_poetic_edda",
+        "pages": "Völuspá",
+        "note": "Poetic cosmology context."
+      }
+    ]
+  },
+  {
+    "key": "nine_worlds",
+    "title": "The Nine Worlds",
+    "body": "The worlds framework (Asgard, Midgard, Hel, etc.) is a narrative tool. In the app, treat it like a graph: nodes are worlds, edges are travel/relations, and lore entries link to the nodes.",
+    "tags": ["cosmology"],
+    "kind": "lesson",
+    "citations": [
+      {
+        "sourceKey": "gutenberg_anderson_1879_prose_edda",
+        "pages": "Gylfaginning (world structure)",
+        "note": "World layout context."
+      },
+      {
+        "sourceKey": "gutenberg_bellows_1923_poetic_edda",
+        "pages": "Völuspá",
+        "note": "Poetic cosmology context."
+      }
+    ]
+  },
+  {
+    "key": "rune_origin",
+    "title": "Origin of Runes",
+    "body": "Common stories connect rune-knowledge with sacrifice, ordeal, and disciplined practice. The takeaway for learning: slow, deliberate repetition beats binge-studying.",
+    "tags": ["myth", "odinn"],
+    "kind": "lesson",
+    "citations": [
+      {
+        "sourceKey": "gutenberg_bellows_1923_poetic_edda",
+        "pages": "Hávamál (Odin’s ordeal + runes)",
+        "note": "Origin-myth framing."
+      }
+    ],
+    "godKeys": ["odinn"],
+    "runeKeys": ["ansuz"]
+  },
+  {
+    "key": "seidr",
+    "title": "Seiðr",
+    "body": "Seiðr is often described as a form of Norse magical practice. In this curriculum we treat it as historical/cultural context plus a memory aid for correspondences, not as a promise of outcomes.",
+    "tags": ["practice", "seidr"],
+    "kind": "lesson",
+    "citations": [
+      {
+        "sourceKey": "gutenberg_anderson_1879_prose_edda",
+        "pages": "Gylfaginning (Freyja + seidr context)",
+        "note": "Overview and names."
+      }
+    ],
+    "godKeys": ["freyja", "odinn"]
+  },
+  {
+    "key": "odinn_rune_ordeal",
+    "title": "Odin and the Rune-Ordeal",
+    "kind": "lesson",
+    "tags": ["myth", "odinn", "discipline"],
+    "godKeys": ["odinn"],
+    "runeKeys": ["ansuz"],
+    "body": "A common teaching story ties rune-knowledge to Odin's self-sacrifice and sustained ordeal. Use the myth as a learning rule: train like a craft — deliberate reps, clear notes, and honest review.",
+    "citations": [
+      {
+        "sourceKey": "gutenberg_bellows_1923_poetic_edda",
+        "pages": "Hávamál",
+        "note": "Odin’s ordeal + runes."
+      }
+    ]
+  },
+  {
+    "key": "tyr_oaths_and_tiwaz",
+    "title": "Tyr, Oaths, and Tiwaz",
+    "kind": "lesson",
+    "tags": ["gods", "ethics", "law"],
+    "godKeys": ["tyr"],
+    "runeKeys": ["tiwaz"],
+    "body": "Tyr is often framed around duty, law, and keeping one's word — even when it costs. When studying Tiwaz, practice a simple oath: pick one tiny habit (5 minutes a day) and keep it for 9 days.",
+    "citations": [
+      {
+        "sourceKey": "gutenberg_anderson_1879_prose_edda",
+        "pages": "Gylfaginning (Fenrir binding)",
+        "note": "Tyr and the binding of Fenrir."
+      }
+    ]
+  },
+  {
+    "key": "thor_and_thurisaz",
+    "title": "Thor, Boundaries, and Thurisaz",
+    "kind": "lesson",
+    "tags": ["gods", "protection", "boundaries"],
+    "godKeys": ["thor"],
+    "runeKeys": ["thurisaz"],
+    "body": "Thor stories are often used to model protection and strong boundaries. Thurisaz is frequently taught with the idea of 'threshold force' — power at the gate. In study: ask, 'what am I protecting, and what should I keep out?'",
+    "citations": [
+      {
+        "sourceKey": "gutenberg_bellows_1923_poetic_edda",
+        "pages": "Thrymskvida; Hymiskvida",
+        "note": "Thor vs giants episodes."
+      }
+    ]
+  },
+  {
+    "key": "freyja_and_seidr",
+    "title": "Freyja and Seidr",
+    "kind": "lesson",
+    "tags": ["gods", "practice", "seidr"],
+    "godKeys": ["freyja"],
+    "runeKeys": ["berkanan", "laguz"],
+    "body": "Freyja is commonly associated with seidr in later lore discussions. For this app, treat it as context + mnemonic: combine a water-themed rune (Laguz) with a growth-themed rune (Berkanan) to remember 'flow + cultivation'.",
+    "citations": [
+      {
+        "sourceKey": "gutenberg_anderson_1879_prose_edda",
+        "pages": "Gylfaginning (Freyja, Folkvangr, seidr mention)",
+        "note": "Overview and names."
+      }
+    ]
+  },
+  {
+    "key": "freyr_and_ingwaz",
+    "title": "Freyr, Prosperity, and Ingwaz",
+    "kind": "lesson",
+    "tags": ["gods", "fertility", "prosperity"],
+    "godKeys": ["freyr"],
+    "runeKeys": ["ingwaz", "fehu"],
+    "body": "Freyr themes often include prosperity, peace, and the 'right season' for growth. Ingwaz is commonly taught as contained potential that ripens into release. Pair it with Fehu to remember: resources → stewardship → harvest.",
+    "citations": []
+  },
+  {
+    "key": "rune_poems_overview",
+    "title": "Rune Poems: A Memorization Map",
+    "kind": "lesson",
+    "tags": ["sources", "rune-poems", "memory"],
+    "runeKeys": [],
+    "godKeys": [],
+    "body": "The rune poems are short verses that pair each rune-name with a vivid image or proverb-like line. For study, treat them as a mnemonic layer: name -> image -> meaning -> sound -> shape. We use the poems as a cross-check, not as a single authoritative meaning.",
+    "citations": [
+      {
+        "sourceKey": "wikisource_dickins_1915_runic_poems",
+        "pages": "Introduction; Rune poems collection",
+        "note": "Public-domain translation hosting Anglo-Saxon and Norwegian rune poems."
+      }
+    ]
+  },
+  {
+    "key": "anglo_saxon_rune_poem",
+    "title": "Anglo-Saxon Rune Poem: Kennings and Images",
+    "kind": "lesson",
+    "tags": ["rune-poems", "anglo-saxon"],
+    "runeKeys": [
+      "fehu",
+      "uruz",
+      "thurisaz",
+      "ansuz",
+      "raidho",
+      "kenaz",
+      "gebo",
+      "wunjo"
+    ],
+    "godKeys": [],
+    "body": "The Anglo-Saxon poem is useful even if you focus on Elder Futhark: it preserves a pattern of “name + teaching image.” When you see a rune, ask: what is the concrete thing (cattle, aurochs, thorn), what is the social meaning (wealth, strength, protection), and what is the behavioral advice (share, endure, respect)?",
+    "citations": [
+      {
+        "sourceKey": "wikisource_dickins_1915_runic_poems",
+        "pages": "Anglo-Saxon Rune Poem",
+        "note": "Verse-per-rune mnemonic layer."
+      }
+    ]
+  },
+  {
+    "key": "norwegian_rune_poem",
+    "title": "Norwegian Rune Poem: Compressed Associations",
+    "kind": "lesson",
+    "tags": ["rune-poems", "norwegian"],
+    "runeKeys": [],
+    "godKeys": [],
+    "body": "The Norwegian poem is short and often cryptic. Use it as a “signal,” not a full explanation: if a rune is consistently linked to a specific natural force, tool, or social obligation, that is a strong hint about its core association.",
+    "citations": [
+      {
+        "sourceKey": "wikisource_dickins_1915_runic_poems",
+        "pages": "Norwegian Rune Poem",
+        "note": "Short-form rune associations."
+      }
+    ]
+  },
+  {
+    "key": "voluspa_cosmology",
+    "title": "Völuspá: Mythic Timeline and World Order",
+    "kind": "lesson",
+    "tags": ["poetic-edda", "cosmology"],
+    "runeKeys": [],
+    "godKeys": ["odinn", "thor", "freyja", "loki"],
+    "body": "Völuspá is a “big picture” spine: creation, the ordering of beings, the fate-thread, and the catastrophe/renewal cycle. When adding lore, you can tag entries by where they fit in the arc: creation, ordering, conflict, doom, renewal.",
+    "citations": [
+      {
+        "sourceKey": "gutenberg_bellows_1923_poetic_edda",
+        "pages": "Völuspá",
+        "note": "Public-domain translation used for the mythic arc."
+      }
+    ]
+  },
+  {
+    "key": "ragnarok_cycle",
+    "title": "Ragnarok: Doom and Renewal (Not Just “The End”)",
+    "kind": "lesson",
+    "tags": ["poetic-edda", "ragnarok"],
+    "runeKeys": [],
+    "godKeys": ["odinn", "thor", "loki", "heimdallr"],
+    "body": "Ragnarok is described as catastrophe and renewal. For study, treat it as a cycle: signs, collapse, confrontation, aftermath, and re-emergence. This helps you connect lore entries to a consistent structure rather than isolated facts.",
+    "citations": [
+      {
+        "sourceKey": "gutenberg_bellows_1923_poetic_edda",
+        "pages": "Völuspá (Ragnarok passages)",
+        "note": "Poetic account of the cycle."
+      },
+      {
+        "sourceKey": "gutenberg_anderson_1879_prose_edda",
+        "pages": "Gylfaginning (Ragnarok overview)",
+        "note": "Narrative overview."
+      }
+    ]
+  },
+  {
+    "key": "mead_of_poetry",
+    "title": "Mead of Poetry: Inspiration as a Substance",
+    "kind": "lesson",
+    "tags": ["prose-edda", "inspiration"],
+    "runeKeys": ["ansuz", "kenaz"],
+    "godKeys": ["odinn"],
+    "body": "In the Eddic tradition, “poetry” is not only skill — it is a mythic substance that can be gained, guarded, stolen, and distributed. For the app, you can tag inspiration entries (speech, song, learning, creative fire) and connect them to Ansuz/Kenaz study and Odin as a patron of insight.",
+    "citations": [
+      {
+        "sourceKey": "gutenberg_anderson_1879_prose_edda",
+        "pages": "Skaldskaparmal (Mead of Poetry story)",
+        "note": "Public-domain translation used for motif framing."
+      }
+    ]
+  },
+  {
+    "key": "norns_and_wyrd",
+    "title": "Norns, Fate, and Wyrd: How “Destiny” Works Here",
+    "kind": "lesson",
+    "tags": ["fate", "cosmology"],
+    "runeKeys": ["perthro", "algiz", "raido"],
+    "godKeys": [],
+    "body": "The Norns are often treated as a system: past, present, and future constraints weaving together. For study, treat fate as “constraints + consequences,” not passive inevitability. This makes rune work and journaling prompts more grounded: what constraints exist, what actions fit the path, what are the consequences?",
+    "citations": [
+      {
+        "sourceKey": "gutenberg_anderson_1879_prose_edda",
+        "pages": "Gylfaginning (Norns at the well)",
+        "note": "Narrative overview."
+      }
+    ]
+  },
+  {
+    "key": "valkyries_and_choice",
+    "title": "Valkyries and Choice: Selection, Honor, and Service",
+    "kind": "lesson",
+    "tags": ["poetic-edda", "warrior-code"],
+    "runeKeys": ["tiwaz", "algiz"],
+    "godKeys": ["odinn"],
+    "body": "Valkyries are associated with selection in battle and the afterlife halls. In a modern study context, you can treat them as symbols of “choice under pressure” and “honor in constraint,” useful for reflection prompts and ethical decision-making exercises.",
+    "citations": [
+      {
+        "sourceKey": "gutenberg_bellows_1923_poetic_edda",
+        "pages": "Helgakvida material; scattered Valkyrie references",
+        "note": "Poetic references in the collection."
+      },
+      {
+        "sourceKey": "gutenberg_anderson_1879_prose_edda",
+        "pages": "Gylfaginning (Valhalla context)",
+        "note": "Narrative overview."
+      }
+    ]
+  }
+]

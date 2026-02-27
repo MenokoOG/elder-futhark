@@ -1,0 +1,95 @@
+{
+  "fehu": {
+    "key_words": [
+      "cattle",
+      "wealth",
+      "prosperity",
+      "moveable property",
+      "energy",
+      "success",
+      "luck"
+    ],
+    "magical_workings": [
+      "bring power/wealth",
+      "protect valuables",
+      "promote harmony in relationships",
+      "encourage success"
+    ],
+    "summary": "Fehu deals with moveable wealth and the energy that fuels growth. In practice it is used as a focus for resources, success, and maintaining balance around possessions."
+  },
+  "uruz": {
+    "key_words": [
+      "aurochs",
+      "strength",
+      "health",
+      "hard work",
+      "endurance",
+      "formation"
+    ],
+    "magical_workings": [
+      "increase physical strength",
+      "stabilize and endure difficulties",
+      "support recovery",
+      "channel raw vitality"
+    ],
+    "summary": "Uruz is raw vitality and shaping force. It can represent endurance through hardship and the transformation that comes from sustained effort."
+  },
+  "thurisaz": {
+    "key_words": [
+      "giant",
+      "thorn",
+      "defense",
+      "challenge",
+      "instinct",
+      "catalyst"
+    ],
+    "magical_workings": [
+      "defend against harmful influences",
+      "break stagnation",
+      "apply pressure to force change"
+    ],
+    "summary": "Thurisaz is a protective and disruptive force—useful for boundaries and for pushing through blockages, but best handled with care."
+  },
+  "ansuz": {
+    "key_words": [
+      "ancestral god",
+      "communication",
+      "inspiration",
+      "speech",
+      "learning"
+    ],
+    "magical_workings": [
+      "improve communication",
+      "seek guidance/inspiration",
+      "support learning and memory"
+    ],
+    "summary": "Ansuz centers on inspired speech and the flow of knowledge—messages, teaching, and the spark of understanding."
+  },
+  "raidho": {
+    "key_words": ["ride", "journey", "order", "right action", "movement"],
+    "magical_workings": [
+      "ensure safe travel",
+      "align actions with a plan",
+      "support steady progress"
+    ],
+    "summary": "Raidho is motion with direction: journeys, cycles, and the right ordering of steps over time."
+  },
+  "tiwaz": {
+    "key_words": ["Tyr", "justice", "law", "sacrifice", "victory"],
+    "magical_workings": [
+      "strengthen resolve",
+      "support fair outcomes",
+      "focus on disciplined action"
+    ],
+    "summary": "Tiwaz represents disciplined courage, lawful order, and the will to do what is right even when it costs."
+  },
+  "berkano": {
+    "key_words": ["birch", "growth", "birth", "renewal", "healing"],
+    "magical_workings": [
+      "support new beginnings",
+      "aid recovery",
+      "nurture projects and relationships"
+    ],
+    "summary": "Berkano is nurturing growth and renewal—a rune of beginnings, healing, and protective care."
+  }
+}

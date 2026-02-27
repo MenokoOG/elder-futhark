@@ -10,10 +10,12 @@ import { Flashcards } from "./views/Flashcards.jsx";
 import { Study } from "./views/Study.jsx";
 import { Quiz } from "./views/Quiz.jsx";
 import { Draw } from "./views/tools/Draw.jsx";
+import { OrbLab } from "./views/tools/OrbLab.jsx";
 import { Transliterate } from "./views/tools/Transliterate.jsx";
 import { Ritual } from "./views/Ritual.jsx";
 import { Stones } from "./views/Stones.jsx";
 import { Lore } from "./views/Lore.jsx";
+import { Gods } from "./views/Gods.jsx";
 import { Progress } from "./views/Progress.jsx";
 import { Stats } from "./views/Stats.jsx";
 import { NotFound } from "./views/NotFound.jsx";
@@ -32,16 +34,47 @@ export const router = createBrowserRouter([
       { path: "/signin", element: <SignIn /> },
       { path: "/runes", element: <Runes /> },
       { path: "/flashcards", element: <Flashcards /> },
-      { path: "/study", element: <RequireAuth><Study /></RequireAuth> },
+      {
+        path: "/study",
+        element: (
+          <RequireAuth>
+            <Study />
+          </RequireAuth>
+        ),
+      },
       { path: "/quiz", element: <Quiz /> },
-      { path: "/tools/draw", element: <Draw /> },
+      { path: "/tools/draw", element: <Navigate to="/tools/canvas" replace /> },
+      { path: "/tools/canvas", element: <Draw /> },
+      { path: "/tools/orb", element: <OrbLab /> },
       { path: "/tools/transliterate", element: <Transliterate /> },
-      { path: "/ritual", element: <RequireAuth><Ritual /></RequireAuth> },
+      {
+        path: "/ritual",
+        element: (
+          <RequireAuth>
+            <Ritual />
+          </RequireAuth>
+        ),
+      },
       { path: "/stones", element: <Stones /> },
       { path: "/lore", element: <Lore /> },
-      { path: "/progress", element: <RequireAuth><Progress /></RequireAuth> },
-      { path: "/stats", element: <RequireAuth><Stats /></RequireAuth> },
-      { path: "*", element: <NotFound /> }
-    ]
-  }
+      { path: "/gods", element: <Gods /> },
+      {
+        path: "/progress",
+        element: (
+          <RequireAuth>
+            <Progress />
+          </RequireAuth>
+        ),
+      },
+      {
+        path: "/stats",
+        element: (
+          <RequireAuth>
+            <Stats />
+          </RequireAuth>
+        ),
+      },
+      { path: "*", element: <NotFound /> },
+    ],
+  },
 ]);

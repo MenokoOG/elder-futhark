@@ -1,0 +1,218 @@
+[
+  {
+    "key": "fehu",
+    "tree": ["elder"],
+    "herb": ["nettle"],
+    "beings": ["AEsir"],
+    "color": "light red",
+    "astrology_raw": "cr",
+    "tarot": "Tower"
+  },
+  {
+    "key": "uruz",
+    "tree": ["birch"],
+    "herb": ["sphagnum moss"],
+    "beings": ["Vanir"],
+    "color": "dark green",
+    "astrology_raw": "8",
+    "tarot": "High Priestess"
+  },
+  {
+    "key": "thurisaz",
+    "tree": ["oak"],
+    "herb": ["houseleek"],
+    "beings": ["Thor"],
+    "color": "bright red",
+    "astrology_raw": "a",
+    "tarot": "Emperor"
+  },
+  {
+    "key": "ansuz",
+    "tree": ["ash"],
+    "herb": ["fly agaric"],
+    "beings": ["Odhinn"],
+    "color": "dark blue",
+    "astrology_raw": "=",
+    "tarot": "Death"
+  },
+  {
+    "key": "raidho",
+    "tree": ["oak"],
+    "herb": ["mugwort"],
+    "beings": ["Forseti"],
+    "color": "bright red",
+    "astrology_raw": ":t",
+    "tarot": "Hierophant"
+  },
+  {
+    "key": "kenaz",
+    "tree": ["pine"],
+    "herb": ["cowslip"],
+    "beings": ["Freyja", "dwarves"],
+    "color": "light red",
+    "astrology_raw": "~",
+    "tarot": "Chariot"
+  },
+  {
+    "key": "gebo",
+    "tree": ["ash", "elm"],
+    "herb": ["heartsease"],
+    "beings": ["Odhinn", "Freyja"],
+    "color": "deep blue",
+    "astrology_raw": "7(",
+    "tarot": "Lovers"
+  },
+  {
+    "key": "wunjo",
+    "tree": ["ash"],
+    "herb": ["flax"],
+    "beings": ["Freyr", "elves"],
+    "color": "yellow",
+    "astrology_raw": "n",
+    "tarot": "Strength"
+  },
+  {
+    "key": "hagalaz",
+    "tree": ["yew"],
+    "herb": ["lily of the valley"],
+    "beings": ["Ymir"],
+    "color": "light blue",
+    "astrology_raw": "A",
+    "tarot": "World"
+  },
+  {
+    "key": "nauthiz",
+    "tree": ["beech"],
+    "herb": ["bistort"],
+    "beings": ["Nornir", "etins"],
+    "color": "black",
+    "astrology_raw": "iX",
+    "tarot": "Devil"
+  },
+  {
+    "key": "isa",
+    "tree": ["alder"],
+    "herb": ["henbane"],
+    "beings": ["rime-thurses"],
+    "color": "black",
+    "astrology_raw": "b",
+    "tarot": "Hermit"
+  },
+  {
+    "key": "jera",
+    "tree": ["oak"],
+    "herb": ["rosemary"],
+    "beings": ["Freyr"],
+    "color": "light blue",
+    "astrology_raw": ":?",
+    "tarot": "Fool"
+  },
+  {
+    "key": "eihwaz",
+    "tree": ["yew"],
+    "herb": ["mandrake"],
+    "beings": ["Odhinn", "Ullr"],
+    "color": "dark blue",
+    "astrology_raw": "Â",
+    "tarot": "Hanged Man"
+  },
+  {
+    "key": "perthro",
+    "tree": ["beech"],
+    "herb": ["aconite"],
+    "beings": ["Nornir"],
+    "color": "black",
+    "astrology_raw": "u",
+    "tarot": "Wheel of Fortune"
+  },
+  {
+    "key": "algiz",
+    "tree": ["yew"],
+    "herb": ["angelica"],
+    "beings": ["valkyrjur"],
+    "color": "gold",
+    "astrology_raw": "o",
+    "tarot": "Moon"
+  },
+  {
+    "key": "sowilo",
+    "tree": ["juniper"],
+    "herb": ["mistletoe"],
+    "beings": ["Sol"],
+    "color": "white/silver",
+    "astrology_raw": "g",
+    "tarot": "Sun"
+  },
+  {
+    "key": "tiwaz",
+    "tree": ["oak"],
+    "herb": ["sage"],
+    "beings": ["Tyr", "Mani"],
+    "color": "bright red",
+    "astrology_raw": "d",
+    "tarot": "Justice"
+  },
+  {
+    "key": "berkano",
+    "tree": ["birch"],
+    "herb": ["lady's mantle"],
+    "beings": ["Frigg", "Nethus", "Hel"],
+    "color": "dark green",
+    "astrology_raw": "v",
+    "tarot": "Empress"
+  },
+  {
+    "key": "ehwaz",
+    "tree": ["oak", "ash"],
+    "herb": ["ragwort"],
+    "beings": ["Freyja", "Freyr", "Alcis"],
+    "color": "white",
+    "astrology_raw": "æ",
+    "tarot": "Lovers"
+  },
+  {
+    "key": "mannaz",
+    "tree": ["holly"],
+    "herb": ["madder"],
+    "beings": ["Heimdallr", "Odhinn"],
+    "color": "deep red",
+    "astrology_raw": "L",
+    "tarot": "Magician"
+  },
+  {
+    "key": "laguz",
+    "tree": ["willow"],
+    "herb": ["leek"],
+    "beings": ["Njordhr", "Baldr"],
+    "color": "deep green",
+    "astrology_raw": "N",
+    "tarot": "Star"
+  },
+  {
+    "key": "ingwaz",
+    "tree": ["apple"],
+    "herb": ["self-heal"],
+    "beings": ["Ing", "Freyr"],
+    "color": "yellow",
+    "astrology_raw": "t",
+    "tarot": "Judgment"
+  },
+  {
+    "key": "dagaz",
+    "tree": ["spruce"],
+    "herb": ["clary"],
+    "beings": ["Odhinn", "Ostara"],
+    "color": "light blue",
+    "astrology_raw": "þ",
+    "tarot": "Temperance"
+  },
+  {
+    "key": "othala",
+    "tree": ["hawthorn"],
+    "herb": ["gold-thread"],
+    "beings": ["Odhinn", "Thorr"],
+    "color": "deep yellow",
+    "astrology_raw": "ð",
+    "tarot": "Moon"
+  }
+]

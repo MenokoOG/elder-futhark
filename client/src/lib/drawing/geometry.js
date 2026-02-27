@@ -14,7 +14,10 @@ export function pathLength(points) {
 
 export function normalize(points) {
   if (!points.length) return [];
-  let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+  let minX = Infinity,
+    minY = Infinity,
+    maxX = -Infinity,
+    maxY = -Infinity;
   for (const p of points) {
     minX = Math.min(minX, p.x);
     minY = Math.min(minY, p.y);
@@ -33,38 +36,44 @@ export function normalize(points) {
 
 export function resample(points, n) {
   if (points.length === 0) return [];
-  if (points.length === 1) return Array.from({ length: n }, () => ({ ...points[0] }));
+  if (points.length === 1)
+    return Array.from({ length: n }, () => ({ ...points[0] }));
 
-  const total = pathLength(points);
+  const work = points.map((p) => ({ x: p.x, y: p.y }));
+  const total = pathLength(work);
+  if (total === 0) return Array.from({ length: n }, () => ({ ...work[0] }));
   const step = total / (n - 1);
 
-  const out = [{ ...points[0] }];
+  const out = [{ ...work[0] }];
   let D = 0;
 
-  for (let i = 1; i < points.length; i++) {
-    const prev = points[i - 1];
-    const cur = points[i];
+  for (let i = 1; i < work.length; i++) {
+    const prev = work[i - 1];
+    const cur = work[i];
     const d = dist(prev, cur);
 
     if (d === 0) continue;
 
-    while (D + d >= step) {
-      const t = (step - D) / d;
-      const nx = prev.x + t * (cur.x - prev.x);
-      const ny = prev.y + t * (cur.y - prev.y);
+    let remaining = d;
+    let sx = prev.x;
+    let sy = prev.y;
+
+    while (D + remaining >= step) {
+      const t = (step - D) / remaining;
+      const nx = sx + t * (cur.x - sx);
+      const ny = sy + t * (cur.y - sy);
       const np = { x: nx, y: ny };
       out.push(np);
-
-      // move "prev" forward
       D = 0;
-      prev.x = nx; // local mutation ok (only for loop), but keep stable by shadow copy
-      prev.y = ny;
+      sx = nx;
+      sy = ny;
+      remaining = dist({ x: sx, y: sy }, cur);
     }
 
-    D += d;
+    D += remaining;
   }
 
-  while (out.length < n) out.push({ ...points[points.length - 1] });
+  while (out.length < n) out.push({ ...work[work.length - 1] });
   return out.slice(0, n);
 }
 
