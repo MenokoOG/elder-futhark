@@ -19,3 +19,11 @@ Raw snapshot metadata preserves provenance fields from stage 1:
 Extract stage outputs per source id:
 
 - `data/extracted/<source-id>.records.json`
+
+Transform stage outputs:
+
+- `data/normalized/runes.json`
+- `data/normalized/deities.json`
+- `data/normalized/worlds.json`
+- `data/normalized/practices.records.json`
+- `data/normalized/adjacent-systems.records.json`

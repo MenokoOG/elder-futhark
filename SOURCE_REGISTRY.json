@@ -16,6 +16,166 @@
       "classification": "reference_like"
     },
     {
+      "id": "norse-runes-origins",
+      "url": "https://norse-mythology.org/runes/the-origins-of-the-runes/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-runes-philosophy-magic",
+      "url": "https://norse-mythology.org/runes/runic-philosophy-and-magic/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-runes-books",
+      "url": "https://norse-mythology.org/runes/the-best-books-on-the-runes/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-world-midgard",
+      "url": "https://norse-mythology.org/cosmology/the-nine-worlds/midgard/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-world-asgard",
+      "url": "https://norse-mythology.org/cosmology/the-nine-worlds/asgard/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-world-vanaheim",
+      "url": "https://norse-mythology.org/cosmology/the-nine-worlds/vanaheim/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-world-jotunheim",
+      "url": "https://norse-mythology.org/cosmology/the-nine-worlds/jotunheim/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-world-niflheim",
+      "url": "https://norse-mythology.org/cosmology/the-nine-worlds/niflheim/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-world-muspelheim",
+      "url": "https://norse-mythology.org/cosmology/the-nine-worlds/muspelheim/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-world-alfheim",
+      "url": "https://norse-mythology.org/cosmology/the-nine-worlds/alfheim/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-world-svartalfheim",
+      "url": "https://norse-mythology.org/cosmology/the-nine-worlds/svartalfheim/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-world-helheim",
+      "url": "https://norse-mythology.org/cosmology/the-nine-worlds/helheim/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-god-odin",
+      "url": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/odin/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-god-thor",
+      "url": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/thor/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-god-loki",
+      "url": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/loki/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-god-frigg",
+      "url": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/frigg/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-god-baldur",
+      "url": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/baldur/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-god-heimdall",
+      "url": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/heimdall/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-god-tyr",
+      "url": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/tyr/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-god-idun",
+      "url": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/idun/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-god-bragi",
+      "url": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/bragi/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-god-freya",
+      "url": "https://norse-mythology.org/gods-and-creatures/the-vanir-gods-and-goddesses/freya/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-god-freyr",
+      "url": "https://norse-mythology.org/gods-and-creatures/the-vanir-gods-and-goddesses/freyr/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-god-njord",
+      "url": "https://norse-mythology.org/gods-and-creatures/the-vanir-gods-and-goddesses/njord/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-god-nerthus",
+      "url": "https://norse-mythology.org/gods-and-creatures/the-vanir-gods-and-goddesses/nerthus/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-giant-fenrir",
+      "url": "https://norse-mythology.org/gods-and-creatures/giants/fenrir/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-giant-skadi",
+      "url": "https://norse-mythology.org/gods-and-creatures/giants/skadi/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-giant-ymir",
+      "url": "https://norse-mythology.org/gods-and-creatures/giants/ymir/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-giant-hel",
+      "url": "https://norse-mythology.org/gods-and-creatures/giants/hel/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-giant-jormungand",
+      "url": "https://norse-mythology.org/gods-and-creatures/giants/jormungand/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-giant-surt",
+      "url": "https://norse-mythology.org/gods-and-creatures/giants/surt/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-giant-nidhogg",
+      "url": "https://norse-mythology.org/gods-and-creatures/giants/nidhogg/",
+      "classification": "reference_like"
+    },
+    {
       "id": "shelley-rune-casting",
       "url": "https://andreashelley.com/blog/rune-casting-guide-how-to-read-the-runes/",
       "classification": "practical_guide"

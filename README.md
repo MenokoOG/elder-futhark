@@ -52,6 +52,7 @@ pnpm cli extract --source all
 pnpm cli transform
 pnpm cli validate
 pnpm cli build-dataset
+pnpm cli preview --port 4173
 ```
 
 ## Notes
@@ -59,3 +60,4 @@ pnpm cli build-dataset
 - Start without Playwright.
 - Use static fetch + Cheerio first.
 - Add SQLite staging only if raw JSON artifacts become too unwieldy.
+- Use `pnpm cli preview` for a local read-only browser view of generated `data/*` artifacts.

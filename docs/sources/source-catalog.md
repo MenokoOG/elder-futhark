@@ -22,3 +22,9 @@ Validation rules enforced at load time:
 - duplicate source ids are rejected
 
 `SOURCE_REGISTRY.example.json` remains the template reference and should mirror the approved source set.
+
+Subpage coverage requirement:
+
+- For `norse-gods`, `norse-worlds`, and `norse-runes`, extraction expects pertinent topic subpages to be registered explicitly.
+- `pnpm cli extract --source all` fails loudly if key same-topic subpages are discovered in the raw source pages but missing from the registry.
+- When this happens, add the missing URLs to `SOURCE_REGISTRY.json`, mirror them in `SOURCE_REGISTRY.example.json`, and update this source catalog.

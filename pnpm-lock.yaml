@@ -41,9 +41,15 @@ importers:
       '@efa/fetcher':
         specifier: workspace:*
         version: link:../../packages/fetcher
+      '@efa/schemas':
+        specifier: workspace:*
+        version: link:../../packages/schemas
       '@efa/storage':
         specifier: workspace:*
         version: link:../../packages/storage
+      '@efa/transformers':
+        specifier: workspace:*
+        version: link:../../packages/transformers
       commander:
         specifier: ^14.0.0
         version: 14.0.3
@@ -94,6 +100,9 @@ importers:
 
   packages/transformers:
     dependencies:
+      '@efa/schemas':
+        specifier: workspace:*
+        version: link:../schemas
       zod:
         specifier: ^3.24.3
         version: 3.25.76

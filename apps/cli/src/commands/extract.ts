@@ -27,6 +27,95 @@ function selectSources(sourceArg: string, sources: SourceConfig[]): SourceConfig
     return [selected];
 }
 
+function normalizeUrl(rawUrl: string): string {
+    const url = new URL(rawUrl);
+    url.hash = '';
+    url.search = '';
+    url.protocol = 'https:';
+    return url.toString();
+}
+
+function discoverPertinentSubpages(source: SourceConfig, html: string): string[] {
+    if (!['norse-gods', 'norse-worlds', 'norse-runes'].includes(source.id)) {
+        return [];
+    }
+
+    const discovered = new Set<string>();
+    const matches = [...html.matchAll(/href=["']([^"'#?]+)["']/gi)].map((match) => match[1]);
+
+    for (const candidate of matches) {
+        if (!candidate || !candidate.startsWith('http')) {
+            continue;
+        }
+
+        let url: URL;
+        try {
+            url = new URL(candidate);
+        } catch {
+            continue;
+        }
+
+        if (url.hostname !== 'norse-mythology.org') {
+            continue;
+        }
+
+        const path = url.pathname.replace(/\/+$/, '/');
+
+        if (source.id === 'norse-runes') {
+            if (path.startsWith('/runes/') && path !== '/runes/the-meanings-of-the-runes/') {
+                discovered.add(normalizeUrl(url.toString()));
+            }
+            continue;
+        }
+
+        if (source.id === 'norse-worlds') {
+            if (path.startsWith('/cosmology/the-nine-worlds/') && path !== '/cosmology/the-nine-worlds/') {
+                discovered.add(normalizeUrl(url.toString()));
+            }
+            continue;
+        }
+
+        if (source.id === 'norse-gods') {
+            if (path.startsWith('/gods-and-creatures/') && path.split('/').filter(Boolean).length >= 4) {
+                discovered.add(normalizeUrl(url.toString()));
+            }
+        }
+    }
+
+    return [...discovered].sort();
+}
+
+async function assertTopicSubpageCoverage(selectedSources: SourceConfig[], outputDir: string, registrySources: SourceConfig[]): Promise<void> {
+    const registryUrls = new Set(registrySources.map((source) => normalizeUrl(source.url)));
+    const missing = new Map<string, string[]>();
+
+    for (const source of selectedSources) {
+        if (!['norse-gods', 'norse-worlds', 'norse-runes'].includes(source.id)) {
+            continue;
+        }
+
+        const snapshot = await readSnapshotPair(outputDir, source.id);
+        const discovered = discoverPertinentSubpages(source, snapshot.html);
+        const absent = discovered.filter((url) => !registryUrls.has(url));
+
+        if (absent.length > 0) {
+            missing.set(source.id, absent);
+        }
+    }
+
+    if (missing.size === 0) {
+        return;
+    }
+
+    const details = [...missing.entries()]
+        .map(([sourceId, urls]) => `${sourceId}:\n- ${urls.join('\n- ')}`)
+        .join('\n\n');
+
+    throw new Error(
+        `Registry is missing pertinent topic subpages required for extraction coverage. Add these URLs to SOURCE_REGISTRY.json and docs/sources/source-catalog.md before running extract:\n\n${details}`
+    );
+}
+
 async function readSnapshotPair(outputDir: string, sourceId: string): Promise<{ html: string; metadata: RawSnapshotMetadata }> {
     const rawDir = resolve(outputDir, 'raw');
     const htmlPath = resolve(rawDir, `${sourceId}.html`);
@@ -72,6 +161,10 @@ export async function extractCommand(options: ExtractCommandOptions): Promise<{ 
 
     const selectedSources = selectSources(options.source, registry.sources);
     const extractedDir = resolve(outputDir, 'extracted');
+
+    if (options.source === 'all') {
+        await assertTopicSubpageCoverage(selectedSources, outputDir, registry.sources);
+    }
 
     const paths: string[] = [];
     for (const source of selectedSources) {

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "norse-mythology-for-smart-people",
+    "name": "Norse Mythology for Smart People",
+    "aliases": [],
+    "domains": [
+      "reference_like"
+    ],
+    "description": "The gods and other spiritual beings of Norse mythology are among the most wondrous and unique of any mythology. The Norse gods had very human-like personalities and frequently intervened in human affairs, but were larger-than-life and awe-inspiring in ways that decisively set them apart from mere humans. Their characters were often richly complex and multifaceted; one-dimensional epithets like “god of war” or “goddess of fertility” typically fail to describe anything more than one of their several aspects.",
+    "sources": [
+      {
+        "sourceSite": "norse-mythology.org",
+        "sourceUrl": "https://norse-mythology.org/gods-and-creatures/",
+        "sourceTitle": "Norse Mythology for Smart People",
+        "extractedAt": "2026-04-11T23:03:45.580Z",
+        "extractorVersion": "0.1.0",
+        "contentHash": "7dd0b7848007289b1af09684b028f9707f43ff72dc8d5a5a14b3249aadde2d91",
+        "classification": "reference_like"
+      }
+    ],
+    "confidence": 0.75
+  }
+]

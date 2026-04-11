@@ -1,6 +1,9 @@
 import { Command } from 'commander';
 import { extractCommand } from './commands/extract.js';
 import { fetchCommand } from './commands/fetch.js';
+import { previewCommand } from './commands/preview.js';
+import { transformCommand } from './commands/transform.js';
+import { validateCommand } from './commands/validate.js';
 import { printBanner, printStage } from './ui/console.js';
 
 const program = new Command();
@@ -26,7 +29,30 @@ program
             printStage('extract', `wrote ${path}`);
         }
     });
-program.command('transform').action(() => printStage('transform', 'Transform stage placeholder'));
-program.command('validate').action(() => printStage('validate', 'Validate stage placeholder'));
+program.command('transform').action(async () => {
+    const result = await transformCommand();
+    printStage('transform', `Transformed ${result.sourceCount} source(s), ${result.recordCount} extracted record(s)`);
+    for (const path of result.paths) {
+        printStage('transform', `wrote ${path}`);
+    }
+});
+program.command('validate').action(async () => {
+    const result = await validateCommand();
+    printStage(
+        'validate',
+        `Validated runes=${result.runes}, deities=${result.deities}, worlds=${result.worlds}, practices=${result.practices}, adjacent=${result.adjacentSystems}`
+    );
+    for (const path of result.paths) {
+        printStage('validate', `checked ${path}`);
+    }
+});
 program.command('build-dataset').action(() => printStage('build-dataset', 'Dataset build stage placeholder'));
+program
+    .command('preview')
+    .option('--port <port>', 'preview server port', '4173')
+    .action(async (opts: { port: string }) => {
+        const result = await previewCommand({ port: opts.port });
+        printStage('preview', `Serving ETL preview at ${result.url}`);
+        printStage('preview', 'Press Ctrl+C to stop');
+    });
 await program.parseAsync(process.argv);

@@ -30,32 +30,7 @@ export function extractSourceRecords(input: ExtractStageInput): SourceRecord[] {
         contentHash: input.snapshot.contentHash
     };
 
-    let records: SourceRecord[];
-    switch (input.source.id) {
-        case 'norse-gods':
-            records = godsExtractor(input.snapshot.html, context);
-            break;
-        case 'norse-worlds':
-            records = worldsExtractor(input.snapshot.html, context);
-            break;
-        case 'norse-runes':
-            records = runesExtractor(input.snapshot.html, context);
-            break;
-        case 'shelley-rune-casting':
-            records = runeCastingExtractor(input.snapshot.html, context);
-            break;
-        case 'shelley-futhark':
-            records = futharkRunesExtractor(input.snapshot.html, context);
-            break;
-        case 'shelley-bindrunes':
-            records = bindrunesExtractor(input.snapshot.html, context);
-            break;
-        case 'shelley-staves':
-            records = icelandicStavesExtractor(input.snapshot.html, context);
-            break;
-        default:
-            throw new Error(`No extractor configured for source id: ${input.source.id}`);
-    }
+    const records = selectExtractor(input.source.id, input.source.url)(input.snapshot.html, context);
 
     const parsed = SourceRecordSchema.array().safeParse(records);
     if (!parsed.success) {
@@ -63,4 +38,48 @@ export function extractSourceRecords(input: ExtractStageInput): SourceRecord[] {
     }
 
     return parsed.data;
+}
+
+function selectExtractor(sourceId: string, sourceUrl: string) {
+    if (sourceId === 'shelley-rune-casting') {
+        return runeCastingExtractor;
+    }
+
+    if (sourceId === 'shelley-futhark') {
+        return futharkRunesExtractor;
+    }
+
+    if (sourceId === 'shelley-bindrunes') {
+        return bindrunesExtractor;
+    }
+
+    if (sourceId === 'shelley-staves') {
+        return icelandicStavesExtractor;
+    }
+
+    if (sourceId.startsWith('norse-runes')) {
+        return runesExtractor;
+    }
+
+    if (sourceId.startsWith('norse-world')) {
+        return worldsExtractor;
+    }
+
+    if (sourceId.startsWith('norse-god') || sourceId.startsWith('norse-giant') || sourceId === 'norse-gods') {
+        return godsExtractor;
+    }
+
+    if (sourceUrl.includes('/runes/')) {
+        return runesExtractor;
+    }
+
+    if (sourceUrl.includes('/cosmology/the-nine-worlds/')) {
+        return worldsExtractor;
+    }
+
+    if (sourceUrl.includes('/gods-and-creatures/')) {
+        return godsExtractor;
+    }
+
+    throw new Error(`No extractor configured for source id: ${sourceId}`);
 }

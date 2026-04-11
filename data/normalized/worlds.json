@@ -1,0 +1,22 @@
+[
+  {
+    "id": "norse-mythology-for-smart-people",
+    "name": "Norse Mythology for Smart People",
+    "summary": "The Nine Worlds (Old Norse Níu Heimar) are the homelands of the various types of beings found in the pre-Christian worldview of the Norse and other Germanic peoples. They’re held in the branches and roots of the world-tree Yggdrasil, although none of the sources for our present knowledge of Norse mythology and religion describe exactly where in and around Yggdrasil they’re located. (Any and all modern images of the worlds arranged around Yggdrasil are by definition speculative and unverifiable.)",
+    "associations": [
+      "reference_like"
+    ],
+    "sources": [
+      {
+        "sourceSite": "norse-mythology.org",
+        "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/",
+        "sourceTitle": "Norse Mythology for Smart People",
+        "extractedAt": "2026-04-11T23:03:47.266Z",
+        "extractorVersion": "0.1.0",
+        "contentHash": "c798d32e1fdeadbc9e075cd9d00604a4baca766b396b072deb66b982ba1da144",
+        "classification": "reference_like"
+      }
+    ],
+    "confidence": 0.75
+  }
+]
