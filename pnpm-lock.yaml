@@ -35,6 +35,9 @@ importers:
       '@efa/config':
         specifier: workspace:*
         version: link:../../packages/config
+      '@efa/extractors':
+        specifier: workspace:*
+        version: link:../../packages/extractors
       '@efa/fetcher':
         specifier: workspace:*
         version: link:../../packages/fetcher
@@ -59,6 +62,9 @@ importers:
 
   packages/extractors:
     dependencies:
+      '@efa/config':
+        specifier: workspace:*
+        version: link:../config
       '@efa/schemas':
         specifier: workspace:*
         version: link:../schemas

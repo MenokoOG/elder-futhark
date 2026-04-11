@@ -1,2 +1,6 @@
 import type { SourceRecord } from '@efa/schemas';
-export function worldsExtractor(_html: string): SourceRecord[] { return []; }
+import { buildGenericPageRecord, type ExtractorContext } from '../common/page-extractor.js';
+
+export function worldsExtractor(html: string, context: ExtractorContext): SourceRecord[] {
+    return buildGenericPageRecord(html, context, 'world_source');
+}

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "norse-gods:page",
+    "kind": "deity_source",
+    "title": "Norse Mythology for Smart People",
+    "summary": "The gods and other spiritual beings of Norse mythology are among the most wondrous and unique of any mythology. The Norse gods had very human-like personalities and frequently intervened in human affairs, but were larger-than-life and awe-inspiring in ways that decisively set them apart from mere humans. Their characters were often richly complex and multifaceted; one-dimensional epithets like “god of war” or “goddess of fertility” typically fail to describe anything more than one of their several aspects.",
+    "sections": [
+      {
+        "text": "The gods and other spiritual beings of Norse mythology are among the most wondrous and unique of any mythology. The Norse gods had very human-like personalities and frequently intervened in human affairs, but were larger-than-life and awe-inspiring in ways that decisively set them apart from mere humans. Their characters were often richly complex and multifaceted; one-dimensional epithets like “god of war” or “goddess of fertility” typically fail to describe anything more than one of their several aspects."
+      },
+      {
+        "text": "The gods and goddesses weren’t the only spiritual entities the Vikings perceived and interacted with. The whole world teemed with other unseen creatures. Most of these were less powerful than the gods, but they nevertheless played an important role in making the Norse universe what it was. Some of these beings were largely benevolent. Some were fearsome, chaotic, and destructive. And some could be either or both, depending on the context."
+      },
+      {
+        "text": "The gods and other numinous creatures of the Norse world include:"
+      },
+      {
+        "text": "Finally, if you want to learn more about the Vikings’ conception of divinity in general – to go beyond who the gods were and take a look at what they were – then check out the article on Norse Theology."
+      },
+      {
+        "text": "Looking for more great information on Norse mythology and religion? While this site provides the ultimate online introduction to the topic, my book The Viking Spirit provides the ultimate introduction to Norse mythology and religion period. I’ve also written a popular list of The 10 Best Norse Mythology Books, which you’ll probably find helpful in your pursuit."
+      }
+    ],
+    "references": [
+      {
+        "sourceSite": "norse-mythology.org",
+        "sourceUrl": "https://norse-mythology.org/gods-and-creatures/",
+        "sourceTitle": "Norse Mythology for Smart People",
+        "extractedAt": "2026-04-11T23:03:45.580Z",
+        "extractorVersion": "0.1.0",
+        "contentHash": "7dd0b7848007289b1af09684b028f9707f43ff72dc8d5a5a14b3249aadde2d91",
+        "classification": "reference_like"
+      }
+    ],
+    "tags": [
+      "reference_like"
+    ]
+  }
+]

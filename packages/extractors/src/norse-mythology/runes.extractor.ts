@@ -1,2 +1,6 @@
 import type { SourceRecord } from '@efa/schemas';
-export function runesExtractor(_html: string): SourceRecord[] { return []; }
+import { buildGenericPageRecord, type ExtractorContext } from '../common/page-extractor.js';
+
+export function runesExtractor(html: string, context: ExtractorContext): SourceRecord[] {
+    return buildGenericPageRecord(html, context, 'rune_source');
+}

@@ -1,4 +1,5 @@
 import { Command } from 'commander';
+import { extractCommand } from './commands/extract.js';
 import { fetchCommand } from './commands/fetch.js';
 import { printBanner, printStage } from './ui/console.js';
 
@@ -15,7 +16,16 @@ program
             printStage('fetch', `wrote ${path}`);
         }
     });
-program.command('extract').option('--source <source>', 'source registry key or all', 'all').action((opts) => printStage('extract', `Extract stage placeholder for source=${opts.source}`));
+program
+    .command('extract')
+    .option('--source <source>', 'source registry key or all', 'all')
+    .action(async (opts: { source: string }) => {
+        const result = await extractCommand({ source: opts.source });
+        printStage('extract', `Extracted ${result.count} source(s)`);
+        for (const path of result.paths) {
+            printStage('extract', `wrote ${path}`);
+        }
+    });
 program.command('transform').action(() => printStage('transform', 'Transform stage placeholder'));
 program.command('validate').action(() => printStage('validate', 'Validate stage placeholder'));
 program.command('build-dataset').action(() => printStage('build-dataset', 'Dataset build stage placeholder'));

@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@efa/config": "workspace:*",
+    "@efa/extractors": "workspace:*",
     "@efa/fetcher": "workspace:*",
     "@efa/storage": "workspace:*",
     "commander": "^14.0.0",

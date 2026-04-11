@@ -1,0 +1,57 @@
+[
+  {
+    "id": "norse-worlds:page",
+    "kind": "world_source",
+    "title": "Norse Mythology for Smart People",
+    "summary": "The Nine Worlds (Old Norse Níu Heimar) are the homelands of the various types of beings found in the pre-Christian worldview of the Norse and other Germanic peoples. They’re held in the branches and roots of the world-tree Yggdrasil, although none of the sources for our present knowledge of Norse mythology and religion describe exactly where in and around Yggdrasil they’re located. (Any and all modern images of the worlds arranged around Yggdrasil are by definition speculative and unverifiable.)",
+    "sections": [
+      {
+        "text": "The Nine Worlds (Old Norse Níu Heimar) are the homelands of the various types of beings found in the pre-Christian worldview of the Norse and other Germanic peoples. They’re held in the branches and roots of the world-tree Yggdrasil, although none of the sources for our present knowledge of Norse mythology and religion describe exactly where in and around Yggdrasil they’re located. (Any and all modern images of the worlds arranged around Yggdrasil are by definition speculative and unverifiable.)"
+      },
+      {
+        "text": "The existence of “nine worlds” is mentioned in passing in one poem in the Poetic Edda.[1] However, no source gives a list of exactly which worlds comprise the nine. Based on the kinds of beings found in Norse mythology and the reference to their homelands in various literary sources, however, we can compile the following tentative reconstruction:"
+      },
+      {
+        "text": "Midgard, the world of humanity Asgard, the world of the Aesir tribe of gods and goddesses Vanaheim, the world of the Vanir tribe of gods and goddesses Jotunheim, the world of the giants Niflheim, the primordial world of ice Muspelheim, the primordial world of fire Alfheim, the world of the elves Nidavellir/Svartalfheim, the world of the dwarves Hel, the world of the eponymous goddess Hel and the dead"
+      },
+      {
+        "text": "With the exception of Midgard, these are all primarily invisible worlds, although they can at times become manifested in particular aspects of the visible world. For example, Jotunheim overlaps with the physical wilderness, Hel with the grave (the literal “underworld” beneath the ground), and Asgard with the sky."
+      },
+      {
+        "text": "While we don’t know what exactly the spiritual or magical significance of the number 9 was, it’s clear that this number had such a significance for the pre-Christian Germanic peoples. Philologist Rudolf Simek offers the following summary:"
+      },
+      {
+        "text": "…[N]ine is the mythical number of the Germanic tribes. Documentation for the significance of the number nine is found in both myth and cult. In Odin’s self-sacrifice he hung for nine nights on the windy tree (Hávamál), there are nine worlds to Niflhel (Vafþrúðnismál 43), Heimdallr was born to nine mothers (Hyndluljóð 35), Freyr had to wait for nine nights for his marriage to Gerd (Skírnismál 41), and eight nights (= nine days?) was the time of betrothal given also in the Þrymskviða. Literary embellishments in the Eddas similarly use the number nine: Skaði and Njörðr lived alternately for nine days in Nóatún and in Þrymheimr; every ninth night eight equally heavy rings drip from the ring Draupnir; Menglöð has nine maidens to serve her (Fjólsvinnsmál 35ff.), and Ægir had as many daughters. Thor can take nine steps at the Ragnarök after his battle with the Midgard serpent before he falls down dead. Sacrificial feasts lasting nine days are mentioned for both Uppsala and Lejre and at these supposedly nine victims were sacrificed each day."
+      },
+      {
+        "text": "He speculates that this number’s importance could be derived from the lunar calendar’s 27 days being a multiple of nine.[2]"
+      },
+      {
+        "text": "Looking for more great information on Norse mythology and religion? While this site provides the ultimate online introduction to the topic, my book The Viking Spirit provides the ultimate introduction to Norse mythology and religion period. I’ve also written a popular list of The 10 Best Norse Mythology Books, which you’ll probably find helpful in your pursuit."
+      },
+      {
+        "text": "References:"
+      },
+      {
+        "text": "[1] The Poetic Edda. Völuspá, stanza 2."
+      },
+      {
+        "text": "[2] Simek, Rudolf. 1993. Dictionary of Northern Mythology. Translated by Angela Hall. p. 232-233."
+      }
+    ],
+    "references": [
+      {
+        "sourceSite": "norse-mythology.org",
+        "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/",
+        "sourceTitle": "Norse Mythology for Smart People",
+        "extractedAt": "2026-04-11T23:03:47.266Z",
+        "extractorVersion": "0.1.0",
+        "contentHash": "c798d32e1fdeadbc9e075cd9d00604a4baca766b396b072deb66b982ba1da144",
+        "classification": "reference_like"
+      }
+    ],
+    "tags": [
+      "reference_like"
+    ]
+  }
+]

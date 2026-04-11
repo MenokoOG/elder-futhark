@@ -15,3 +15,7 @@ Raw snapshot metadata preserves provenance fields from stage 1:
 - `fetchedAt`
 - `contentHash`
 - `statusCode`
+
+Extract stage outputs per source id:
+
+- `data/extracted/<source-id>.records.json`

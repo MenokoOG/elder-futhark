@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "lint": "echo extractors lint placeholder",
@@ -10,6 +13,7 @@
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
+    "@efa/config": "workspace:*",
     "@efa/schemas": "workspace:*",
     "cheerio": "^1.0.0"
   }
