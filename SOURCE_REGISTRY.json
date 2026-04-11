@@ -1,0 +1,39 @@
+{
+  "sources": [
+    {
+      "id": "norse-gods",
+      "url": "https://norse-mythology.org/gods-and-creatures/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-worlds",
+      "url": "https://norse-mythology.org/cosmology/the-nine-worlds/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "norse-runes",
+      "url": "https://norse-mythology.org/runes/the-meanings-of-the-runes/",
+      "classification": "reference_like"
+    },
+    {
+      "id": "shelley-rune-casting",
+      "url": "https://andreashelley.com/blog/rune-casting-guide-how-to-read-the-runes/",
+      "classification": "practical_guide"
+    },
+    {
+      "id": "shelley-futhark",
+      "url": "https://andreashelley.com/blog/futhark-runes-symbols-and-meanings/",
+      "classification": "modern_interpretation"
+    },
+    {
+      "id": "shelley-bindrunes",
+      "url": "https://andreashelley.com/blog/what-are-bindrunes-and-how-to-make-your-own/",
+      "classification": "adjacent_symbolic_system"
+    },
+    {
+      "id": "shelley-staves",
+      "url": "https://andreashelley.com/blog/icelandic-magic-staves/",
+      "classification": "adjacent_symbolic_system"
+    }
+  ]
+}
