@@ -1,0 +1,66 @@
+[
+  {
+    "id": "norse-giant-hel:page",
+    "kind": "deity_source",
+    "title": "Norse Mythology for Smart People",
+    "summary": "Hel (Old Norse Hel, “Hidden”[1]) is a giantess and/or goddess who rules over the identically-named Hel, the underworld where many of the dead dwell. Her name’s meaning of “Hidden” surely has to do with the underworld and the dead being “hidden” or buried beneath the ground.",
+    "sections": [
+      {
+        "text": "Hel (Old Norse Hel, “Hidden”[1]) is a giantess and/or goddess who rules over the identically-named Hel, the underworld where many of the dead dwell. Her name’s meaning of “Hidden” surely has to do with the underworld and the dead being “hidden” or buried beneath the ground."
+      },
+      {
+        "text": "According to the thirteenth-century Icelandic scholar Snorri Sturluson, Hel is the daughter of Loki and the giantess Angrboda (Old Norse Angrboða, “Anguish-boding”), and therefore the sister of the wolf Fenrir and the world serpent, Jormungand.[2] This makes her part of a highly dangerous and disreputable family."
+      },
+      {
+        "text": "Hel is generally presented as being rather greedy, harsh, and cruel, or at least indifferent to the concerns of both the living and the dead. However, her personality is little-developed in what survives of Old Norse literature. She’s mostly mentioned only in passing. Snorri describes her appearance as being half-black, half-white, and with a perpetually grim and fierce expression on her face.[3]"
+      },
+      {
+        "text": "The only surviving myth in which she features prominently is that of The Death of Baldur. The beloved god Baldur was slain by none other than Hel’s father, Loki, and the gods sent an emissary named Hermod to Hel in hopes of retrieving Baldur. Hermod pleaded with Hel, telling her how every living thing was in sorrow over the loss of Baldur. But Hel wouldn’t give up her prize so easily. She told Hermod – in a taunting way, we can imagine – that she would only consent to release Baldur if every last thing in the universe wept for him. Hermod and the other gods went around and got almost everything in the cosmos to weep for Baldur. Only one giantess, who was probably Loki in disguise, refused. But because of that one refusal, the terms of Hel’s offer weren’t met, and Hel kept Baldur in her cold clutches."
+      },
+      {
+        "text": "Because of how sparsely-defined her character is, many scholars view Hel as more of a late literary personification of the grave than a goddess who was actually worshiped or appeased in her own right.[4] Due to the lack of conclusive evidence either way, this must remain an open question."
+      },
+      {
+        "text": "Looking for more great information on Norse mythology and religion? While this site provides the ultimate online introduction to the topic, my book The Viking Spirit provides the ultimate introduction to Norse mythology and religion period. I’ve also written a popular list of The 10 Best Norse Mythology Books, which you’ll probably find helpful in your pursuit."
+      },
+      {
+        "text": "References:"
+      },
+      {
+        "text": "[1] Orel, Vladimir. 2003. A Handbook of Germanic Etymology. p. 156, 168."
+      },
+      {
+        "text": "[2] Snorri Sturluson. The Prose Edda. Gylfaginning, chapter 34."
+      },
+      {
+        "text": "[3] Ibid."
+      },
+      {
+        "text": "[4] See, for example:"
+      },
+      {
+        "text": "Ellis, Hilda Roderick. 1968. The Road to Hel: A Study of the Conception of the Dead in Old Norse Literature. p. 84."
+      },
+      {
+        "text": "And:"
+      },
+      {
+        "text": "Simek, Rudolf. 1993. Dictionary of Northern Mythology. Translated by Angela Hall. p. 138."
+      }
+    ],
+    "references": [
+      {
+        "sourceSite": "norse-mythology.org",
+        "sourceUrl": "https://norse-mythology.org/gods-and-creatures/giants/hel/",
+        "sourceTitle": "Norse Mythology for Smart People",
+        "extractedAt": "2026-04-11T23:27:01.558Z",
+        "extractorVersion": "0.1.0",
+        "contentHash": "f61fc076e949ffb3a43a286c46883e3a7f2e4c4233baf622b555f64892eb9c97",
+        "classification": "reference_like"
+      }
+    ],
+    "tags": [
+      "reference_like"
+    ]
+  }
+]

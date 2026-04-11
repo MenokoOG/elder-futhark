@@ -1,0 +1,51 @@
+[
+  {
+    "id": "norse-world-muspelheim:page",
+    "kind": "world_source",
+    "title": "Norse Mythology for Smart People",
+    "summary": "Muspelheim (pronounced “MOO-spell-hame;” Old Norse Múspellsheimr, “The World of Múspell“) is one of the Nine Worlds and the home of the fire giants.",
+    "sections": [
+      {
+        "text": "Muspelheim (pronounced “MOO-spell-hame;” Old Norse Múspellsheimr, “The World of Múspell“) is one of the Nine Worlds and the home of the fire giants."
+      },
+      {
+        "text": "The word “Muspelheim” is recorded only in the Prose Edda of Snorri Sturluson, a late work that can’t be taken at face value as representing authentic pre-Christian Norse mythology. However, the basic cosmological principle it represents can be tracked far into the Germanic past. Cognates of Múspell can be found in Old High German and Old Saxon texts, meaning that the word and the concept it denotes likely go back to the Proto-Germanic period. Its oldest meaning, when one compares these various sources, seems to have been “end of the world through fire.”[1] In earlier Old Norse poetry, the word seems to refer to a giant who leads his “people” or “sons” into battle against the gods during Ragnarok.[2] Even if the idea of Muspelheim as a place rather than an event or a person is an invention of Snorri’s, it’s a relatively minor accretion, and one which is broadly consistent with the earlier uses of Múspell."
+      },
+      {
+        "text": "Muspelheim features in both the creation of the world and its downfall. In the creation narrative given by Snorri, fire from Muspelheim and ice from Niflheim meet in the middle of Ginnungagap and forge the giant Ymir, the first being from whose corpse the world was eventually shaped. During Ragnarok, the fire giant Surt, who should probably be identified with the Múspell of Old Norse poetry, arrives from the south (surely meant to be understood as the realm of heat and fire) with a flaming sword to slay the gods and burn the world.[3][4] For the Vikings, then, the cosmos both begins and ends in fire (along with ice)."
+      },
+      {
+        "text": "Looking for more great information on Norse mythology and religion? While this site provides the ultimate online introduction to the topic, my book The Viking Spirit provides the ultimate introduction to Norse mythology and religion period. I’ve also written a popular list of The 10 Best Norse Mythology Books, which you’ll probably find helpful in your pursuit."
+      },
+      {
+        "text": "References:"
+      },
+      {
+        "text": "[1] Simek, Rudolf. 1993. Dictionary of Northern Mythology. Translated by Angela Hall. p. 222-224. (And to be totally fair, the assessment that the word is of Proto-Germanic origin is my own, not Simek’s.)"
+      },
+      {
+        "text": "[2] Ibid. p. 222-223."
+      },
+      {
+        "text": "[3] The Poetic Edda. Vafþrúðnismál, stanzas 50-51."
+      },
+      {
+        "text": "[4] The Poetic Edda. Völuspá, stanza 52."
+      }
+    ],
+    "references": [
+      {
+        "sourceSite": "norse-mythology.org",
+        "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/muspelheim/",
+        "sourceTitle": "Norse Mythology for Smart People",
+        "extractedAt": "2026-04-11T23:26:27.177Z",
+        "extractorVersion": "0.1.0",
+        "contentHash": "75f867cb54dd0090f84d37cfaf904b2a32eb5fedcf4d212ba6c5b8c415552cf1",
+        "classification": "reference_like"
+      }
+    ],
+    "tags": [
+      "reference_like"
+    ]
+  }
+]

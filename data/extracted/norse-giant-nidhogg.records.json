@@ -1,0 +1,48 @@
+[
+  {
+    "id": "norse-giant-nidhogg:page",
+    "kind": "deity_source",
+    "title": "Norse Mythology for Smart People",
+    "summary": "Nidhogg (Old Norse Níðhöggr, literally “Curse-striker” or “He Who Strikes with Malice”) is the foremost of several serpents or dragons who dwell beneath the world-tree Yggdrasil and eat its roots. This is highly injurious to the tree, which holds the Nine Worlds of the cosmos.[1] Nidhogg’s actions have the intention of pulling the cosmos back to chaos, and he, along with his reptilian cohort, can therefore surely be classified among the giants (or, as they were called in pre-Christian times, “devourers”).",
+    "sections": [
+      {
+        "text": "Nidhogg (Old Norse Níðhöggr, literally “Curse-striker” or “He Who Strikes with Malice”) is the foremost of several serpents or dragons who dwell beneath the world-tree Yggdrasil and eat its roots. This is highly injurious to the tree, which holds the Nine Worlds of the cosmos.[1] Nidhogg’s actions have the intention of pulling the cosmos back to chaos, and he, along with his reptilian cohort, can therefore surely be classified among the giants (or, as they were called in pre-Christian times, “devourers”)."
+      },
+      {
+        "text": "From this it would make sense for Nidhogg to have a prominent role in Ragnarok, the downfall of the cosmos. This does indeed seem to be the case. In one especially important Old Norse poem (the Völuspá or “Insight of the Seeress”), Nidhogg is described as flying out from beneath Yggdrasil during Ragnarok, presumably to aid the giants’ cause.[2]"
+      },
+      {
+        "text": "Later in the same poem, Nidhogg is also said to preside over a part of the underworld called Náströnd (“The Shore of Corpses”) where perjurers, murderers, and adulterers are punished.[3] However, this conception of the afterlife as marked by moral retribution is totally foreign to the indigenous worldview of the Norse and other Germanic peoples, and must be an instance (one of many) of Christian influence upon the poem."
+      },
+      {
+        "text": "Looking for more great information on Norse mythology and religion? While this site provides the ultimate online introduction to the topic, my book The Viking Spirit provides the ultimate introduction to Norse mythology and religion period. I’ve also written a popular list of The 10 Best Norse Mythology Books, which you’ll probably find helpful in your pursuit."
+      },
+      {
+        "text": "References:"
+      },
+      {
+        "text": "[1] The Poetic Edda. Grímnismál, stanzas 32-35."
+      },
+      {
+        "text": "[2] The Poetic Edda. Völuspá, stanza 66."
+      },
+      {
+        "text": "[3] Ibid. Stanzas 38-39."
+      }
+    ],
+    "references": [
+      {
+        "sourceSite": "norse-mythology.org",
+        "sourceUrl": "https://norse-mythology.org/gods-and-creatures/giants/nidhogg/",
+        "sourceTitle": "Norse Mythology for Smart People",
+        "extractedAt": "2026-04-11T23:27:06.614Z",
+        "extractorVersion": "0.1.0",
+        "contentHash": "c70302afa9d708b57b1f0b731d503dcb1edd41b84750a5aa133d678b2de41063",
+        "classification": "reference_like"
+      }
+    ],
+    "tags": [
+      "reference_like"
+    ]
+  }
+]

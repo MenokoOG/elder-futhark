@@ -1,0 +1,69 @@
+[
+  {
+    "id": "norse-giant-fenrir:page",
+    "kind": "deity_source",
+    "title": "Norse Mythology for Smart People",
+    "summary": "Fenrir (pronounced “FEN-rir;” Old Norse Fenrir, “He Who Dwells in the Marshes”[1]) is the most infamous of the many wolves in Norse mythology. His importance for the pre-Christian Scandinavians is demonstrated by his being depicted on numerous surviving runestones, not to mention his ubiquity in Old Norse literary sources.",
+    "sections": [
+      {
+        "text": "Fenrir (pronounced “FEN-rir;” Old Norse Fenrir, “He Who Dwells in the Marshes”[1]) is the most infamous of the many wolves in Norse mythology. His importance for the pre-Christian Scandinavians is demonstrated by his being depicted on numerous surviving runestones, not to mention his ubiquity in Old Norse literary sources."
+      },
+      {
+        "text": "He’s the son of the god Loki and the giantess Angrboda, which makes him the brother of the serpent Jormungand and the underworld goddess Hel."
+      },
+      {
+        "text": "As is recounted more fully in the tale The Binding of Fenrir, the Aesir gods raised Fenrir themselves in order to keep him under their control and prevent him from wreaking havoc throughout the Nine Worlds. He grew at an astonishingly fast pace, however, and eventually the troubled gods decided to chain him up. Their first two attempts were unsuccessful; while the cunning gods convinced Fenrir that it was only a game, a test of his strength, he broke through the fetters easily. For their third attempt, the gods had the dwarves forge the strongest chain ever built, which nevertheless gave the appearance of being very light and even soft to the touch. When the gods presented Fenrir with this third fetter, he became suspicious, and he refused to be bound with it unless one of the gods would stick his or her hand in his mouth as a pledge of good faith. Only Tyr was brave enough to do this, knowing that it would mean the loss of his hand. And, sure enough, when Fenrir found himself unable to break free of his bonds, he ripped Tyr’s hand from its arm. The chain was then tied to a boulder and a sword was placed in Fenrir’s jaws to hold them open. As he howled wildly and ceaselessly, a foamy river called “Expectation” (Old Norse Ván) flowed from his drooling mouth.[2]"
+      },
+      {
+        "text": "As the river’s ominous name implies, this was not the end of Fenrir. At Ragnarok, he will break free and run throughout the world with his lower jaw against the ground and his upper jaw in the sky, devouring everything in his path.[3] He will even kill the god Odin before finally being put to death by one of Odin’s avenging sons."
+      },
+      {
+        "text": "Fenrir and Other Wolves in Norse Mythology"
+      },
+      {
+        "text": "There’s good reason to think that many of the other wolves mentioned in Old Norse literature are actually Fenrir going under different names. One Old Norse poem states that he will swallow the sun during Ragnarok,[4] a feat which is elsewhere reserved for another wolf named Skoll (“Mockery”). Another Old Norse poem repeatedly mentions a wolf named Garm who will break free from chains at Ragnarok; this is quite possibly Fenrir going under a different name.[5] In another source, we find the wolf who will consume the moon called by the name of “Moon-garm” (Mánagarmr).[6] Thus, the moon-eating wolf, who is elsewhere called Hati (“Hatred”) could be another extension of Fenrir – or at least of Garm, if Garm is not himself an extension of Fenrir."
+      },
+      {
+        "text": "Perhaps the Vikings thought that it is ultimately Fenrir who, in addition to killing Odin and destroying much of the world, will eat the sun and the moon during Ragnarok. But these wolves are never precisely delineated in the primary sources, so we’re left to guess as to what exactly the relationship between them is."
+      },
+      {
+        "text": "Looking for more great information on Norse mythology and religion? While this site provides the ultimate online introduction to the topic, my book The Viking Spirit provides the ultimate introduction to Norse mythology and religion period. I’ve also written a popular list of The 10 Best Norse Mythology Books, which you’ll probably find helpful in your pursuit."
+      },
+      {
+        "text": "References:"
+      },
+      {
+        "text": "[1] Simek, Rudolf. 1993. Dictionary of Northern Mythology. Translated by Angela Hall. p. 81."
+      },
+      {
+        "text": "[2] Snorri Sturluson. The Prose Edda. Gylfaginning 34."
+      },
+      {
+        "text": "[3] Ibid. Chapter 51."
+      },
+      {
+        "text": "[4] The Poetic Edda. Vafþrúðnismál 46."
+      },
+      {
+        "text": "[5] The Poetic Edda. Völuspá."
+      },
+      {
+        "text": "[6] Snorri Sturluson. The Prose Edda. Gylfaginning 12."
+      }
+    ],
+    "references": [
+      {
+        "sourceSite": "norse-mythology.org",
+        "sourceUrl": "https://norse-mythology.org/gods-and-creatures/giants/fenrir/",
+        "sourceTitle": "Norse Mythology for Smart People",
+        "extractedAt": "2026-04-11T23:26:56.484Z",
+        "extractorVersion": "0.1.0",
+        "contentHash": "51c91fe90ec1fa650485ff3af1293bde54687473b00ae1af72498d37483d0eb4",
+        "classification": "reference_like"
+      }
+    ],
+    "tags": [
+      "reference_like"
+    ]
+  }
+]

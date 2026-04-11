@@ -1,0 +1,42 @@
+[
+  {
+    "id": "norse-world-asgard:page",
+    "kind": "world_source",
+    "title": "Norse Mythology for Smart People",
+    "summary": "Asgard (Old Norse Ásgarðr, “Enclosure of the Aesir) is one of the Nine Worlds of Norse mythology and the home and fortress of the Aesir, one of the two tribes of gods (the other being the Vanir, who have their home in Vanaheim). Asgard is located in the sky[1] (albeit spiritually rather than physically, of course) and is connected to Midgard, the world of humanity, by the rainbow bridge Bifrost.",
+    "sections": [
+      {
+        "text": "Asgard (Old Norse Ásgarðr, “Enclosure of the Aesir) is one of the Nine Worlds of Norse mythology and the home and fortress of the Aesir, one of the two tribes of gods (the other being the Vanir, who have their home in Vanaheim). Asgard is located in the sky[1] (albeit spiritually rather than physically, of course) and is connected to Midgard, the world of humanity, by the rainbow bridge Bifrost."
+      },
+      {
+        "text": "The -gard element in Asgard’s name is a reference to the ancient Germanic concept of the distinction between the innangard and utangard. That which is innangard (“inside the fence”) is orderly, law-abiding, and civilized, while that which is utangard (“beyond the fence”) is chaotic, anarchic, and wild. This applies both to the geographical plane and the human psyche; thoughts and actions can be innangard or utangard just as readily as spatial locations. Asgard is the ultimate model of the innangard, while Jotunheim, the “Homeland of the Giants,” is the epitome of the utangard."
+      },
+      {
+        "text": "Midgard (“Middle Enclosure”), the world of human civilization, is, as the name implies, somewhere in the middle – not quite as innangard as Asgard and not quite as utangard as Jotunheim. But Midgard is a space enclosed, on the geographical plane, by fences, and on the psychological plane by norms and laws. This makes it much closer – at least in theory – to Asgard than to Jotunheim. In other words, Asgard is the divine model upon which the pre-Christian Norse people patterned their world."
+      },
+      {
+        "text": "Looking for more great information on Norse mythology and religion? While this site provides the ultimate online introduction to the topic, my book The Viking Spirit provides the ultimate introduction to Norse mythology and religion period. I’ve also written a popular list of The 10 Best Norse Mythology Books, which you’ll probably find helpful in your pursuit."
+      },
+      {
+        "text": "References:"
+      },
+      {
+        "text": "[1] The Poetic Edda. Grímnismál, stanza 13."
+      }
+    ],
+    "references": [
+      {
+        "sourceSite": "norse-mythology.org",
+        "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/asgard/",
+        "sourceTitle": "Norse Mythology for Smart People",
+        "extractedAt": "2026-04-11T23:26:20.413Z",
+        "extractorVersion": "0.1.0",
+        "contentHash": "fde6ff6ca9496d903e78169b3b3274479b9f9570ab4b79e732c5f8f608111373",
+        "classification": "reference_like"
+      }
+    ],
+    "tags": [
+      "reference_like"
+    ]
+  }
+]

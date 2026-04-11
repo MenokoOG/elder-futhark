@@ -62,7 +62,7 @@ function discoverPertinentSubpages(source: SourceConfig, html: string): string[]
         const path = url.pathname.replace(/\/+$/, '/');
 
         if (source.id === 'norse-runes') {
-            if (path.startsWith('/runes/') && path !== '/runes/the-meanings-of-the-runes/') {
+            if (path.startsWith('/runes/') && path !== '/runes/' && path !== '/runes/the-meanings-of-the-runes/') {
                 discovered.add(normalizeUrl(url.toString()));
             }
             continue;

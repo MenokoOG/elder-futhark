@@ -1,0 +1,48 @@
+[
+  {
+    "id": "norse-world-alfheim:page",
+    "kind": "world_source",
+    "title": "Norse Mythology for Smart People",
+    "summary": "Alfheim (pronounced “ALF-hame;” Old Norse Álfheimr, “The Homeland of the Elves”) is, as the name suggests, the world inhabited by the elves, a class of demigod-like beings in the pre-Christian mythology and religion of the Norse and other Germanic peoples.",
+    "sections": [
+      {
+        "text": "Alfheim (pronounced “ALF-hame;” Old Norse Álfheimr, “The Homeland of the Elves”) is, as the name suggests, the world inhabited by the elves, a class of demigod-like beings in the pre-Christian mythology and religion of the Norse and other Germanic peoples."
+      },
+      {
+        "text": "Alfheim is never described in the sources that form the basis of our current knowledge of heathen Germanic religion, but is rather merely mentioned in passing in a few places. However, the elves are described as being luminous and “more beautiful than the sun,”[1] so we may suppose that their homeland was a gracious realm of light and beauty. Although the realms that comprise the Nine Worlds of the Norse cosmology are never listed, it seems highly probable that, given the prominence of the elves in Germanic religion, Alfheim was one of them."
+      },
+      {
+        "text": "The Vanir god Freyr is said to be the ruler of Alfheim.[2] Scholars have long puzzled over what to make of this, and no wholly satisfactory conclusions have been put forth. The relationship between the elves and the Vanir is highly ambiguous and involves considerable overlap between the two groups.[3] Freyr’s position as lord of Alfheim, therefore, while hard to interpret with much precision, shouldn’t be entirely surprising."
+      },
+      {
+        "text": "Looking for more great information on Norse mythology and religion? While this site provides the ultimate online introduction to the topic, my book The Viking Spirit provides the ultimate introduction to Norse mythology and religion period. I’ve also written a popular list of The 10 Best Norse Mythology Books, which you’ll probably find helpful in your pursuit."
+      },
+      {
+        "text": "References:"
+      },
+      {
+        "text": "[1] Snorri Sturluson. The Prose Edda. Gylfaginning 17."
+      },
+      {
+        "text": "[2] The Poetic Edda. Grímnismál, stanza 5."
+      },
+      {
+        "text": "[3] Hall, Alaric. 2007. Elves in Anglo-Saxon England: Matters of Belief, Health, Gender and Identity. p. 36."
+      }
+    ],
+    "references": [
+      {
+        "sourceSite": "norse-mythology.org",
+        "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/alfheim/",
+        "sourceTitle": "Norse Mythology for Smart People",
+        "extractedAt": "2026-04-11T23:26:28.862Z",
+        "extractorVersion": "0.1.0",
+        "contentHash": "5310694412e50c5953cce746b630084bfe171b64c9ca980ebab9a3f1f2ea578d",
+        "classification": "reference_like"
+      }
+    ],
+    "tags": [
+      "reference_like"
+    ]
+  }
+]

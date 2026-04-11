@@ -1,0 +1,69 @@
+[
+  {
+    "id": "norse-world-svartalfheim:page",
+    "kind": "world_source",
+    "title": "Norse Mythology for Smart People",
+    "summary": "In Old Norse literature, the home of the dwarves is called either Nidavellir (pronounced “NID-uh-vell-ir;” Old Norse Niðavellir, “Low Fields” or “Dark Fields”) or Svartalfheim (pronounced “SVART-alf-hame;” Old Norse Svartálfaheimr, “Homeland of the Black Elves”).",
+    "sections": [
+      {
+        "text": "In Old Norse literature, the home of the dwarves is called either Nidavellir (pronounced “NID-uh-vell-ir;” Old Norse Niðavellir, “Low Fields” or “Dark Fields”) or Svartalfheim (pronounced “SVART-alf-hame;” Old Norse Svartálfaheimr, “Homeland of the Black Elves”)."
+      },
+      {
+        "text": "The dwarves are master smiths and craftsmen who live beneath the ground. Accordingly, Nidavellir or Svartalfheim was probably thought of as a labyrinthine, subterranean complex of mines and forges."
+      },
+      {
+        "text": "If either of these names is the “original” one – the name that the Vikings used to refer to the dwarves’ homeland – it’s probably Nidavellir. While both names occur only in relatively late and problematic sources, the first source to use the term “Nidavellir” (the poem Völuspá, “The Prophecy of the Seeress”) is older than the first (and only) source to use the term “Svartalfheim” (Snorri Sturluson’s Prose Edda)."
+      },
+      {
+        "text": "The Völuspá has this (and only this) to say about Nidavellir:"
+      },
+      {
+        "text": "There stood in the north In Nidavellir The golden hall Of Sindri’s family.[1]"
+      },
+      {
+        "text": "The directions “north” and “downward” were commonly associated with each other in Old Norse literature, and master craftsmen renowned for their work with precious metals would naturally build exquisite halls for themselves, so this description is probably based on authentic material from the Viking Age. (Sindri is a dwarf mentioned elsewhere in Old Norse literature.)"
+      },
+      {
+        "text": "Snorri’s descriptions of Svartalfheim, however, are much more confused. For one thing, he – and only he – calls the dwarves “black elves” (svartálfar or døkkálfar).[2] While the boundaries between the different kinds of demigod-like beings were quite blurry in the Viking Age, Snorri’s terminology just introduces an additional and unnecessary layer of complication. The name “Svartalfheim” is an extension of his invented terminology."
+      },
+      {
+        "text": "Apparently based on a misunderstanding of the stanza in Völuspá, Snorri says that “Sindri” is the name of the dwarves’ hall. Snorri also includes Sindri and Nidavellir in his Christian-influenced descriptions of the Norse afterlife and the apocalypse, adding yet another layer of unnecessary confusion.[3] This serves as a reminder that Snorri and his Prose Edda can’t be taken at face value as providing reliable information about Viking Age beliefs and practices."
+      },
+      {
+        "text": "Unfortunately, then, we know only the vaguest outlines of what the Vikings thought the homeland of the dwarves was like."
+      },
+      {
+        "text": "Looking for more great information on Norse mythology and religion? While this site provides the ultimate online introduction to the topic, my book The Viking Spirit provides the ultimate introduction to Norse mythology and religion period. I’ve also written a popular list of The 10 Best Norse Mythology Books, which you’ll probably find helpful in your pursuit."
+      },
+      {
+        "text": "References:"
+      },
+      {
+        "text": "[1] The Poetic Edda. Völuspá, stanza 37. My translation. The original Old Norse lines read:"
+      },
+      {
+        "text": "Stóð fyr norðan á Niðavöllum salr ór gulli Sindra ættar."
+      },
+      {
+        "text": "[2] Snorri Sturluson. The Prose Edda. Gylfaginning 33, Skáldskaparmál 37."
+      },
+      {
+        "text": "[3] Simek, Rudolf. 1993. Dictionary of Northern Mythology. Translated by Angela Hall. p. 231."
+      }
+    ],
+    "references": [
+      {
+        "sourceSite": "norse-mythology.org",
+        "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/svartalfheim/",
+        "sourceTitle": "Norse Mythology for Smart People",
+        "extractedAt": "2026-04-11T23:26:30.567Z",
+        "extractorVersion": "0.1.0",
+        "contentHash": "8478c62aea38db72b7c531db2b4480d22d887fe75851cc88988adc3bd5e000b3",
+        "classification": "reference_like"
+      }
+    ],
+    "tags": [
+      "reference_like"
+    ]
+  }
+]

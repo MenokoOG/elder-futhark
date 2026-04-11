@@ -1,0 +1,42 @@
+[
+  {
+    "id": "norse-world-niflheim:page",
+    "kind": "world_source",
+    "title": "Norse Mythology for Smart People",
+    "summary": "Niflheim (pronounced “NIF-el-hame;” from Old Norse Niflheimr, “World of Fog”) is one of the Nine Worlds of Norse mythology and the homeland of primordial darkness, cold, mist, and ice. As such, it’s the opposite cosmological principle of Muspelheim, the world of fire and heat.",
+    "sections": [
+      {
+        "text": "Niflheim (pronounced “NIF-el-hame;” from Old Norse Niflheimr, “World of Fog”) is one of the Nine Worlds of Norse mythology and the homeland of primordial darkness, cold, mist, and ice. As such, it’s the opposite cosmological principle of Muspelheim, the world of fire and heat."
+      },
+      {
+        "text": "In the Norse creation narrative as related by the medieval Christian Icelandic historian Snorri Sturluson, the first being, the giant Ymir, was born when ice from Niflheim and fire from Muspelheim met in the middle of Ginnungagap, the abyss that had formerly separated them."
+      },
+      {
+        "text": "The word “Niflheim” is only found in the works of Snorri and is often used interchangeably with “Niflhel,” a poetic embellishment of “Hel,” the world of the dead. “Niflhel” is found in Old Norse poems that are much older than Snorri’s works. It’s entirely possible that the word “Niflheim” is an invention of Snorri’s.[1] It’s impossible to know whether the attendant concept is of similarly late and spurious origins, because our only source for anything that even pretends to be a full account of the heathen Norse creation narrative comes from – you guessed it – the works of Snorri."
+      },
+      {
+        "text": "Looking for more great information on Norse mythology and religion? While this site provides the ultimate online introduction to the topic, my book The Viking Spirit provides the ultimate introduction to Norse mythology and religion period. I’ve also written a popular list of The 10 Best Norse Mythology Books, which you’ll probably find helpful in your pursuit."
+      },
+      {
+        "text": "References:"
+      },
+      {
+        "text": "[1] Simek, Rudolf. 1993. Dictionary of Northern Mythology. Translated by Angela Hall. p. 232."
+      }
+    ],
+    "references": [
+      {
+        "sourceSite": "norse-mythology.org",
+        "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/niflheim/",
+        "sourceTitle": "Norse Mythology for Smart People",
+        "extractedAt": "2026-04-11T23:26:25.493Z",
+        "extractorVersion": "0.1.0",
+        "contentHash": "03e9d3c7cab17c62b111d9e9314fc4eb9d787089c636f2996f9d9d620450c3d2",
+        "classification": "reference_like"
+      }
+    ],
+    "tags": [
+      "reference_like"
+    ]
+  }
+]

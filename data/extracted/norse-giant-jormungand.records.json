@@ -1,0 +1,42 @@
+[
+  {
+    "id": "norse-giant-jormungand:page",
+    "kind": "deity_source",
+    "title": "Norse Mythology for Smart People",
+    "summary": "Jormungand (pronounced “YOUR-mun-gand;” Old Norse Jörmungandr, “Great Beast”), also called the “Midgard Serpent,” is a snake or dragon who lives in the ocean that surrounds Midgard, the visible world. So enormous is he that his body forms a circle around the entirety of Midgard. He’s one of the three children of Loki and the giantess Angrboda, along with Hel and Fenrir.",
+    "sections": [
+      {
+        "text": "Jormungand (pronounced “YOUR-mun-gand;” Old Norse Jörmungandr, “Great Beast”), also called the “Midgard Serpent,” is a snake or dragon who lives in the ocean that surrounds Midgard, the visible world. So enormous is he that his body forms a circle around the entirety of Midgard. He’s one of the three children of Loki and the giantess Angrboda, along with Hel and Fenrir."
+      },
+      {
+        "text": "The god Thor is his particular enemy. Two battles between them are recounted in the Eddas. In one, Thor fishes for Jormungand, and fails to pull him up only when the giant Hymir, terrified that this will bring about Ragnarok, severs the line, sending the snake back down to the depths. When Ragnarok does arrive, however, Thor and the Midgard Serpent are fated to slay each other."
+      },
+      {
+        "text": "Jormungand likely already featured in the religion of the original Germanic tribes, as evidenced by his existence in the later pre-Christian religions of different branches of the Germanic peoples. For example, continental Germans attributed earthquakes to his movements well into the Middle Ages.[1]"
+      },
+      {
+        "text": "Looking for more great information on Norse mythology and religion? While this site provides the ultimate online introduction to the topic, my book The Viking Spirit provides the ultimate introduction to Norse mythology and religion period. I’ve also written a popular list of The 10 Best Norse Mythology Books, which you’ll probably find helpful in your pursuit."
+      },
+      {
+        "text": "References:"
+      },
+      {
+        "text": "[1] Simek, Rudolf. 1993. Dictionary of Northern Mythology. Translated by Angela Hall. p. 215."
+      }
+    ],
+    "references": [
+      {
+        "sourceSite": "norse-mythology.org",
+        "sourceUrl": "https://norse-mythology.org/gods-and-creatures/giants/jormungand/",
+        "sourceTitle": "Norse Mythology for Smart People",
+        "extractedAt": "2026-04-11T23:27:03.243Z",
+        "extractorVersion": "0.1.0",
+        "contentHash": "ba98007ef1bcbcf60c402177b2f5d371bf3ee878a597c5a9b78ecf5d23e6b94c",
+        "classification": "reference_like"
+      }
+    ],
+    "tags": [
+      "reference_like"
+    ]
+  }
+]
