@@ -23,6 +23,13 @@ function record(kind: SourceRecord['kind'], id: string, title: string): SourceRe
     };
 }
 
+function recordWithUrl(kind: SourceRecord['kind'], id: string, title: string, sourceUrl: string): SourceRecord {
+    return {
+        ...record(kind, id, title),
+        references: [{ ...reference, sourceUrl }]
+    };
+}
+
 describe('transformExtractedRecords', () => {
     it('maps canonical entities and keeps adjacent/practice records separated', () => {
         const output = transformExtractedRecords([
@@ -44,5 +51,24 @@ describe('transformExtractedRecords', () => {
         expect(output.worlds[0]?.name).toBe('Asgard');
         expect(output.practices[0]?.kind).toBe('practice_source');
         expect(output.adjacentSystems[0]?.kind).toBe('adjacent_source');
+    });
+
+    it('derives stable IDs from source URLs when page titles are generic', () => {
+        const output = transformExtractedRecords([
+            recordWithUrl('deity_source', 'd1', 'Norse Mythology for Smart People', 'https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/odin/'),
+            recordWithUrl('deity_source', 'd2', 'Norse Mythology for Smart People', 'https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/thor/'),
+            recordWithUrl('world_source', 'w1', 'Norse Mythology for Smart People', 'https://norse-mythology.org/cosmology/the-nine-worlds/asgard/'),
+            recordWithUrl('world_source', 'w2', 'Norse Mythology for Smart People', 'https://norse-mythology.org/cosmology/the-nine-worlds/midgard/'),
+            recordWithUrl('rune_source', 'r1', 'Norse Mythology for Smart People', 'https://norse-mythology.org/runes/the-meanings-of-the-runes/'),
+            recordWithUrl('rune_source', 'r2', 'Norse Mythology for Smart People', 'https://norse-mythology.org/runes/the-origins-of-the-runes/')
+        ]);
+
+        const deityIds = output.deities.map((item) => item.id).sort();
+        const worldIds = output.worlds.map((item) => item.id).sort();
+        const runeIds = output.runes.map((item) => item.id).sort();
+
+        expect(deityIds).toEqual(['odin', 'thor']);
+        expect(worldIds).toEqual(['asgard', 'midgard']);
+        expect(runeIds).toEqual(['the-meanings-of-the-runes', 'the-origins-of-the-runes']);
     });
 });

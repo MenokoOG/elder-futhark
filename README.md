@@ -51,7 +51,10 @@ pnpm cli fetch --source all
 pnpm cli extract --source all
 pnpm cli transform
 pnpm cli validate
+pnpm cli review
 pnpm cli build-dataset
+pnpm cli diff
+pnpm cli run --source all
 pnpm cli preview --port 4173
 ```
 
@@ -61,3 +64,5 @@ pnpm cli preview --port 4173
 - Use static fetch + Cheerio first.
 - Add SQLite staging only if raw JSON artifacts become too unwieldy.
 - Use `pnpm cli preview` for a local read-only browser view of generated `data/*` artifacts.
+- Use `pnpm cli review` to run provenance and classification boundary checks on normalized artifacts.
+- Use `pnpm cli diff` to compare `data/normalized` and `data/published` canonical records before shipping.

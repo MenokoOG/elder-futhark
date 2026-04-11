@@ -27,3 +27,11 @@ Transform stage outputs:
 - `data/normalized/worlds.json`
 - `data/normalized/practices.records.json`
 - `data/normalized/adjacent-systems.records.json`
+
+Build-dataset stage outputs:
+
+- `data/published/dataset.json`
+- `data/published/runes.json`
+- `data/published/deities.json`
+- `data/published/worlds.json`
+- `data/published/metadata.json`

@@ -1,18 +1,21 @@
 import { RuneSchema, type Rune, type SourceRecord } from '@efa/schemas';
-import { resolveAlias } from '../merge/alias-resolution.js';
+import { aliasFromSourceUrl, displayNameFromSourceUrl, resolveAlias } from '../merge/alias-resolution.js';
 import { baselineConfidence } from '../quality/score.js';
 
 export function runes(records: SourceRecord[]): Rune[] {
     const sourceRecords = records.filter((record) => record.kind === 'rune_source');
 
     const mapped = sourceRecords.map((record) => {
+        const primarySourceUrl = record.references[0]?.sourceUrl ?? '';
+        const displayName = displayNameFromSourceUrl(record.title, primarySourceUrl);
+        const canonicalId = primarySourceUrl ? aliasFromSourceUrl(primarySourceUrl, displayName) : resolveAlias(displayName);
         const classification = record.references[0]?.classification;
         const notes = record.sections.map((section) => section.text).filter((text) => text.length > 0);
 
         const rune: Rune = {
-            id: resolveAlias(record.title),
-            glyph: record.title.slice(0, 1) || '?',
-            name: record.title,
+            id: canonicalId,
+            glyph: displayName.slice(0, 1) || '?',
+            name: displayName,
             phonetic: [],
             coreMeanings: notes.slice(0, 8),
             historicalNotes: classification === 'reference_like' ? notes : [],

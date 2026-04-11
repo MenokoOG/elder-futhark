@@ -1,11 +1,901 @@
 {
   "manifest": {
     "version": "0.1.0",
-    "builtAt": null,
-    "sourceCount": 0,
-    "recordCount": 0
+    "builtAt": "2026-04-11T23:50:33.651Z",
+    "sourceCount": 39,
+    "recordCount": 35
   },
-  "runes": [],
-  "deities": [],
-  "worlds": []
+  "runes": [
+    {
+      "id": "the-meanings-of-the-runes",
+      "glyph": "T",
+      "name": "The Meanings Of The Runes",
+      "phonetic": [],
+      "coreMeanings": [
+        "This page is the fourth part of a five-part article on the runes. The other four parts are:",
+        "Part I: Introduction Part II: The Origins of the Runes Part III: Runic Philosophy and Magic Part V: The 10 Best Books on the Runes",
+        "This section provides the sign, name, phoneme (sound), and short description of the meaning of each of the twenty-four runes that comprise the Elder Futhark. The given meanings are based on the medieval Rune Poems (which are conveniently available online here) exclusively. Where our present knowledge isn’t extensive enough to give an explanation of which one can be reasonably certain, this is noted and the meaning is left unexplained or only partially explained. This article is hardly the place for esoteric speculations, which have been avoided. (If you’re interested in going beyond the evidence and using less academically acceptable means of discerning other meanings of the runes, you have to do that yourself. The books on my list of The 10 Best Books on the Runes might help.)",
+        "Name: Fehu, “cattle.” Phoneme: F. Meaning: wealth.",
+        "Name: Uruz, “aurochs.” Phoneme: U (long and/or short). Meaning: strength of will.",
+        "Name: Thurisaz, “Giant.” Phoneme: Th (both soft and hard). Meaning: danger, suffering.",
+        "Name: Ansuz, “an Aesir god.” Phoneme: A (long and/or short). Meaning: prosperity, vitality.",
+        "Name: Raidho, “journey on horseback.” Phoneme: R. Meaning: movement, work, growth."
+      ],
+      "historicalNotes": [
+        "This page is the fourth part of a five-part article on the runes. The other four parts are:",
+        "Part I: Introduction Part II: The Origins of the Runes Part III: Runic Philosophy and Magic Part V: The 10 Best Books on the Runes",
+        "This section provides the sign, name, phoneme (sound), and short description of the meaning of each of the twenty-four runes that comprise the Elder Futhark. The given meanings are based on the medieval Rune Poems (which are conveniently available online here) exclusively. Where our present knowledge isn’t extensive enough to give an explanation of which one can be reasonably certain, this is noted and the meaning is left unexplained or only partially explained. This article is hardly the place for esoteric speculations, which have been avoided. (If you’re interested in going beyond the evidence and using less academically acceptable means of discerning other meanings of the runes, you have to do that yourself. The books on my list of The 10 Best Books on the Runes might help.)",
+        "Name: Fehu, “cattle.” Phoneme: F. Meaning: wealth.",
+        "Name: Uruz, “aurochs.” Phoneme: U (long and/or short). Meaning: strength of will.",
+        "Name: Thurisaz, “Giant.” Phoneme: Th (both soft and hard). Meaning: danger, suffering.",
+        "Name: Ansuz, “an Aesir god.” Phoneme: A (long and/or short). Meaning: prosperity, vitality.",
+        "Name: Raidho, “journey on horseback.” Phoneme: R. Meaning: movement, work, growth.",
+        "Name: Kaunan, “ulcer.” Phoneme: K. Meaning: mortality, pain.",
+        "Name: Gebo, “gift.” Phoneme: G. Meaning: generosity.",
+        "Name: Wunjo, “joy.” Phoneme: W. Meaning: joy, ecstasy.",
+        "Name:Hagalaz, “hail.” Phoneme: H. Meaning: destruction, chaos.",
+        "Name: Naudhiz, “need.” Phoneme: N. Meaning: need, unfulfilled desire.",
+        "Name: Isaz, “ice.” Phoneme: I (long and/or short). Meaning: unknown (the rune poems are ambiguous and contradictory).",
+        "Name: Jera, “year.” Phoneme: Germanic J, modern English Y. Meaning: harvest, reward.",
+        "Name: Eihwaz, “yew.” Phoneme: I pronounced like “Eye.” Meaning: strength, stability.",
+        "Name: unknown. Phoneme: P. Meaning: unknown. (Note: the theory that this rune’s name was “Pertho” is just speculation. No one really knows, because the Viking Age and medieval sources are too vague.)",
+        "Name: unknown (the rune poems are contradictory). Phoneme: Z. Meaning: protection from enemies, defense of that which one loves.",
+        "Name: Sowilo, “sun.” Phoneme: S. Meaning: success, solace.",
+        "Name: Tiwaz, “the god Tiwaz.” Phoneme: T. Meaning: victory, honor.",
+        "Name: Berkanan, “birch.” Phoneme: B. Meaning: fertility, growth, sustenance.",
+        "Name: Ehwaz, “horse.” Phoneme: E (long and/or short). Meaning: trust, faith, companionship.",
+        "Name: Mannaz, “man.” Phoneme: M. Meaning: augmentation, support.",
+        "Name: Laguz. Phoneme: L. Meaning: formlessness, chaos, potentiality, the unknown.",
+        "Name: Ingwaz, “the god Ingwaz.” Phoneme: Ng. Meaning: fertilization, the beginning of something, the actualization of potential.",
+        "Name: Othalan, “inheritance.” Phoneme: O (long and/or short). Meaning: inheritance, heritage, tradition, nobility.",
+        "Name: Dagaz, “day.” Phoneme: D. Meaning: hope, happiness.",
+        "Continue on to Part V, The 10 Best Books on the Runes."
+      ],
+      "interpretiveNotes": [],
+      "keywords": [
+        "reference_like"
+      ],
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/runes/the-meanings-of-the-runes/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:49:27.562Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "d22519e0ec26ca236ceda9c1d570f4ad1fb4e267189ded2e96fb1ad0ec49d30d",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.85
+    },
+    {
+      "id": "the-origins-of-the-runes",
+      "glyph": "T",
+      "name": "The Origins Of The Runes",
+      "phonetic": [],
+      "coreMeanings": [
+        "This page is the second part of a five-part article on the runes. The other four parts are:",
+        "Part I: Introduction Part III: Runic Philosophy and Magic Part IV: The Meanings of the Runes Part V: The 10 Best Books on the Runes",
+        "While runologists argue over many of the details of the historical origins of runic writing, there is widespread agreement on a general outline. The runes are presumed to have been derived from one of the many Old Italic alphabets in use among the Mediterranean peoples of the first century CE, who lived to the south of the Germanic tribes.[7][8] Earlier Germanic sacred symbols, such as those preserved in northern European rock carvings, were also likely influential in the development of the script.[9][10]",
+        "The earliest possibly runic inscription that we know of is found on the Meldorf brooch, which was manufactured in the north of modern-day Germany around 50 CE. The inscription is highly ambiguous, however, and scholars are divided over whether its letters are runic or Roman. The earliest unambiguous runic inscriptions are found on the Vimose comb from Vimose, Denmark and the Øvre Stabu spearhead from southern Norway, both of which date to approximately 160 CE.[11] The earliest known carving of the entire futhark (alphabet), in order, is that on the Kylver stone from Gotland, Sweden, which dates to roughly 400 CE.[12]",
+        "The transmission of writing from southern Europe to northern Europe likely took place via Germanic warbands, the dominant northern European military institution of the period, who would have encountered Italic writing firsthand during campaigns amongst their southerly neighbors.[13] This hypothesis is supported by the association that runes have always had with the god Odin, who, in the Proto-Germanic period, under his original name *Woðanaz, was the divine model of the human warband leader and the invisible patron of the warband’s activities. The Roman historian Tacitus tells us that Odin (“Mercury” in the interpretatio romana) was already established as the dominant god in the pantheons of many of the Germanic tribes by the first century.[14] Whether the runes and the cult of Odin arose together, or whether the latter predated the former, is of little consequence for our purposes here. As esteemed Indo-European scholar Georges Dumézil notes:",
+        "If Odin was first and always the highest magician, we realize that the runes, however recent they may be, would have fallen under his sway. New and particularly effective implements for magic works, they would become by definition and without contest a part of his domain. … Odin could have been the patron, the possessor par excellence of this redoubtable power of secrecy and secret knowledge, before the name of that knowledge became the technical name of signs both phonetic and magic which came from the Alps or elsewhere, but did not lose its former, larger sense.[15]",
+        "From the perspective of the ancient Germanic peoples themselves, however, the runes came from no source as mundane as an Old Italic alphabet. The runes were never “invented,” but are instead eternal, pre-existent forces that Odin himself discovered by undergoing a tremendous ordeal. This tale has come down to us in the Old Norse poem Hávamál (“The Sayings of the High One”):",
+        "I know that I hung On the wind-blasted tree All of nights nine, Pierced by my spear And given to Odin, Myself sacrificed to myself On that pole Of which none know Where its roots run."
+      ],
+      "historicalNotes": [
+        "This page is the second part of a five-part article on the runes. The other four parts are:",
+        "Part I: Introduction Part III: Runic Philosophy and Magic Part IV: The Meanings of the Runes Part V: The 10 Best Books on the Runes",
+        "While runologists argue over many of the details of the historical origins of runic writing, there is widespread agreement on a general outline. The runes are presumed to have been derived from one of the many Old Italic alphabets in use among the Mediterranean peoples of the first century CE, who lived to the south of the Germanic tribes.[7][8] Earlier Germanic sacred symbols, such as those preserved in northern European rock carvings, were also likely influential in the development of the script.[9][10]",
+        "The earliest possibly runic inscription that we know of is found on the Meldorf brooch, which was manufactured in the north of modern-day Germany around 50 CE. The inscription is highly ambiguous, however, and scholars are divided over whether its letters are runic or Roman. The earliest unambiguous runic inscriptions are found on the Vimose comb from Vimose, Denmark and the Øvre Stabu spearhead from southern Norway, both of which date to approximately 160 CE.[11] The earliest known carving of the entire futhark (alphabet), in order, is that on the Kylver stone from Gotland, Sweden, which dates to roughly 400 CE.[12]",
+        "The transmission of writing from southern Europe to northern Europe likely took place via Germanic warbands, the dominant northern European military institution of the period, who would have encountered Italic writing firsthand during campaigns amongst their southerly neighbors.[13] This hypothesis is supported by the association that runes have always had with the god Odin, who, in the Proto-Germanic period, under his original name *Woðanaz, was the divine model of the human warband leader and the invisible patron of the warband’s activities. The Roman historian Tacitus tells us that Odin (“Mercury” in the interpretatio romana) was already established as the dominant god in the pantheons of many of the Germanic tribes by the first century.[14] Whether the runes and the cult of Odin arose together, or whether the latter predated the former, is of little consequence for our purposes here. As esteemed Indo-European scholar Georges Dumézil notes:",
+        "If Odin was first and always the highest magician, we realize that the runes, however recent they may be, would have fallen under his sway. New and particularly effective implements for magic works, they would become by definition and without contest a part of his domain. … Odin could have been the patron, the possessor par excellence of this redoubtable power of secrecy and secret knowledge, before the name of that knowledge became the technical name of signs both phonetic and magic which came from the Alps or elsewhere, but did not lose its former, larger sense.[15]",
+        "From the perspective of the ancient Germanic peoples themselves, however, the runes came from no source as mundane as an Old Italic alphabet. The runes were never “invented,” but are instead eternal, pre-existent forces that Odin himself discovered by undergoing a tremendous ordeal. This tale has come down to us in the Old Norse poem Hávamál (“The Sayings of the High One”):",
+        "I know that I hung On the wind-blasted tree All of nights nine, Pierced by my spear And given to Odin, Myself sacrificed to myself On that pole Of which none know Where its roots run.",
+        "No aid I received, Not even a sip from the horn. Peering down, I took up the runes – Screaming I grasped them – Then I fell back from there.[16]",
+        "The tree from which Odin hangs himself is surely none other than Yggdrasil, the world-tree at the center of the Germanic cosmos whose branches and roots hold the Nine Worlds. Directly below the world-tree is the Well of Urd, a source of incredible wisdom. The runes themselves seem to have their native dwelling-place in its waters. This is also suggested by another Old Norse poem, the Völuspá (“Insight of the Seeress”):",
+        "There stands an ash called Yggdrasil, A mighty tree showered in white hail. From there come the dews that fall in the valleys. It stands evergreen above Urd’s Well.",
+        "From there come maidens, very wise, Three from the lake that stands beneath the pole. One is called Urd, another Verdandi, Skuld the third; they carve into the tree The lives and fates of children.[17]",
+        "These “three maidens” are the Norns, and their carvings surely consist of runes. We therefore have a clear association between the Well of Urd, the runes, and magic – in this case, the ability of the Norns to carve the fates of all beings.",
+        "Presumably, then, after Odin discovered the runes by ritually sacrificing himself to himself and fasting for nine days while staring into the waters of the Well of Urd, it was he who imparted the runes to the first human runemasters. His paradigmatic sacrifice was likely symbolically imitated in initiation ceremonies during which the candidate learned the lore of the runes,[18][19] but, unfortunately, no concrete evidence of such a practice has survived into our times.",
+        "Continue on to Part III, Runic Philosophy and Magic.",
+        "References:",
+        "[7] Looijenga, Tineke. 2003. Texts & Contexts of the Oldest Runic Inscriptions. p. 87.",
+        "[8] Flowers, Stephen E. 1986. Runes and Magic: Magical Formulaic Elements in the Older Runic Tradition. p. 71-73.",
+        "[9] Ibid. p. 70.",
+        "[10] Simek, Rudolf. 1993. Dictionary of Northern Mythology. Translated by Angela Hall. p. 268.",
+        "[11] Looijenga, Tineke. 2003. Texts & Contexts of the Oldest Runic Inscriptions. p. 78.",
+        "[12] Elliott, Ralph W. V. 1959. Runes: An Introduction. p. 14.",
+        "[13] Flowers, Stephen E. 1986. Runes and Magic: Magical Formulaic Elements in the Older Runic Tradition. p. 85-105.",
+        "[14] Tacitus, Cornelius. Germania 9.",
+        "[15] Dumézil, Georges. 1973. Gods of the Ancient Northmen. Edited by Einar Haugen. p. 34.",
+        "[16] The Poetic Edda. Hávamál, stanzas 138-139. My translation. The original Old Norse verses read:",
+        "138. Veit ek, at ek hekk vindga meiði á nætr allar níu, geiri undaðr ok gefinn Óðni, sjalfr sjalfum mér, á þeim meiði, er manngi veit hvers af rótum renn.",
+        "139. Við hleifi mik sældu né við hornigi; nýsta ek niðr, nam ek upp rúnar, æpandi nam, fell ek aftr þaðan.",
+        "[17] The Poetic Edda. Völuspá, stanzas 19-20. My own translation. The original Old Norse verses are:",
+        "19. Ask veit ek standa, heitir Yggdrasils, hár baðmr, ausinn hvíta auri; þaðan koma döggvar, þærs í dala falla, stendr æ yfir grænn Urðarbrunni."
+      ],
+      "interpretiveNotes": [],
+      "keywords": [
+        "reference_like"
+      ],
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/runes/the-origins-of-the-runes/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:49:29.260Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "7cda167f6fe8ee7d08cef0837e570f2f9b20a453e93650684f76c93914d8250b",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.85
+    },
+    {
+      "id": "runic-philosophy-and-magic",
+      "glyph": "R",
+      "name": "Runic Philosophy And Magic",
+      "phonetic": [],
+      "coreMeanings": [
+        "This page is the third part of a five-part article on the runes. The other four parts are:",
+        "Part I: Introduction Part II: The Origins of the Runes Part IV: The Meanings of the Runes Part V: The 10 Best Books on the Runes",
+        "In the pre-Christian Germanic worldview, the spoken word possesses frightfully strong creative powers. As Scandinavian scholar Catharina Raudvere notes, “The pronouncement of words was recognized to have a tremendous influence over the concerns of life. The impact of a sentence uttered aloud could not be questioned and could never be taken back – as if it had become somehow physical. … Words create reality, not the other way around.”[20] This is, in an important sense, an anticipation of the philosophy of language advanced by the twentieth-century German philosopher Martin Heidegger in his seminal essay Language. For Heidegger, language is an inescapable structuring element of perception. Words don’t merely reflect our perception of the world; rather, we perceive and experience the world in the particular ways that our language demands of us. Thinking outside of language is literally unthinkable, because all thought takes place within language – hence the inherent, godlike creative powers of words.[21] In traditional Germanic society, to vocalize a thought is to make that thought part of the fabric of reality, altering reality accordingly – perhaps not absolutely, but in some important measure.[22]",
+        "Each of the runes represents a phoneme – the smallest unit of sound in a language, such as “t,” “s,” “r,” etc. – and as such is a transposition of a phoneme into a visual form.",
+        "Most modern linguists take it for granted that the relationship between the signified (the concrete reality referred to by a word) and the signifier (the sounds used to vocalize that word) is arbitrary.[23][24][25] However, a minority of linguists embrace an opposing theory known as “phonosemantics:” the idea that there is, in fact, a meaningful connection between the sounds that make up a word and the word’s meaning. To put this another way, the phoneme itself carries an inherent meaning. The meaning of the word “thorn,” for example, derives in large part from the combined meaning of the phonemes “th,” “o,” “r,” and “n.”",
+        "The phonosemantic view of language is in agreement with the traditional northern European view, where “words create reality, not the other way around.” The runes, as transpositions of phonemes, bring the inherent creative powers of speech into a visual medium. We’ve already noted that the word “rune” means “letter” only secondarily, and that its primary meaning is “secret” or “mystery” – the mysterious power carried by the phoneme itself. We must also remember the ordeal Odin undertook in order to discover the runes – no one would hang from a tree without food or water for nine days and nights, ritually wounded by his own spear, in order to obtain a set of arbitrary signifiers.",
+        "With the runes, the phonosemantic perspective takes on an additional layer of significance. Not only is the relationship between the definition of a word and the phonemes that comprise it inherently meaningful – the relationship between a phoneme and its graphic representation is inherently meaningful as well.",
+        "Thus, the runes were not only a means of fostering communication between two or more humans. Being intrinsically meaningful symbols that could be read and understood by at least some nonhuman beings, they could facilitate communication between humankind and the invisible powers who animate the visible world, providing the basis for a plethora of magical acts."
+      ],
+      "historicalNotes": [
+        "This page is the third part of a five-part article on the runes. The other four parts are:",
+        "Part I: Introduction Part II: The Origins of the Runes Part IV: The Meanings of the Runes Part V: The 10 Best Books on the Runes",
+        "In the pre-Christian Germanic worldview, the spoken word possesses frightfully strong creative powers. As Scandinavian scholar Catharina Raudvere notes, “The pronouncement of words was recognized to have a tremendous influence over the concerns of life. The impact of a sentence uttered aloud could not be questioned and could never be taken back – as if it had become somehow physical. … Words create reality, not the other way around.”[20] This is, in an important sense, an anticipation of the philosophy of language advanced by the twentieth-century German philosopher Martin Heidegger in his seminal essay Language. For Heidegger, language is an inescapable structuring element of perception. Words don’t merely reflect our perception of the world; rather, we perceive and experience the world in the particular ways that our language demands of us. Thinking outside of language is literally unthinkable, because all thought takes place within language – hence the inherent, godlike creative powers of words.[21] In traditional Germanic society, to vocalize a thought is to make that thought part of the fabric of reality, altering reality accordingly – perhaps not absolutely, but in some important measure.[22]",
+        "Each of the runes represents a phoneme – the smallest unit of sound in a language, such as “t,” “s,” “r,” etc. – and as such is a transposition of a phoneme into a visual form.",
+        "Most modern linguists take it for granted that the relationship between the signified (the concrete reality referred to by a word) and the signifier (the sounds used to vocalize that word) is arbitrary.[23][24][25] However, a minority of linguists embrace an opposing theory known as “phonosemantics:” the idea that there is, in fact, a meaningful connection between the sounds that make up a word and the word’s meaning. To put this another way, the phoneme itself carries an inherent meaning. The meaning of the word “thorn,” for example, derives in large part from the combined meaning of the phonemes “th,” “o,” “r,” and “n.”",
+        "The phonosemantic view of language is in agreement with the traditional northern European view, where “words create reality, not the other way around.” The runes, as transpositions of phonemes, bring the inherent creative powers of speech into a visual medium. We’ve already noted that the word “rune” means “letter” only secondarily, and that its primary meaning is “secret” or “mystery” – the mysterious power carried by the phoneme itself. We must also remember the ordeal Odin undertook in order to discover the runes – no one would hang from a tree without food or water for nine days and nights, ritually wounded by his own spear, in order to obtain a set of arbitrary signifiers.",
+        "With the runes, the phonosemantic perspective takes on an additional layer of significance. Not only is the relationship between the definition of a word and the phonemes that comprise it inherently meaningful – the relationship between a phoneme and its graphic representation is inherently meaningful as well.",
+        "Thus, the runes were not only a means of fostering communication between two or more humans. Being intrinsically meaningful symbols that could be read and understood by at least some nonhuman beings, they could facilitate communication between humankind and the invisible powers who animate the visible world, providing the basis for a plethora of magical acts.",
+        "In the verses from the Völuspá quoted above, we see that the carving of runes is one of the primary means by which the Norns establish the fate of all beings (the other most often-noted method being weaving). Given that the ability to alter the course of fate is one of the central concerns of traditional Germanic magic, it should come as no surprise that the runes, as an extremely potent means of redirecting fate, and as inherently meaningful symbols, were thereby inherently magical by their very nature. This is a controversial statement to make nowadays, since some scholars insist that, while the runes may have sometimes been used for magical purposes, they were not, in and of themselves, magical.",
+        "But consider the following episode from Egil’s Saga. While traveling, Egil eats a meal with a farmer whose house is on the Viking’s route. The farmer’s daughter is dangerously ill, and he asks Egil for help. When Egil examines the girl’s bed, he finds a whalebone with runes carved on it. The farmer explains to Egil that these runes were carved by the son of a local farmer – presumably an ignorant, illiterate person whose knowledge of the runes could have only been flimsy at best. Egil, being a master of runic lore, readily discerns that this inscription is the cause of the girl’s woes. After destroying the inscription by scraping the runes off into the fire and burning the whalebone itself (!), Egil carves a different message in different runes so as to counteract the malignancy of the earlier writing. After this has been accomplished, the girl recovers.[26]",
+        "We can see from this incident that the heathen northern Europeans made a sharp distinction between the powers of the runes themselves, and the uses to which they were put. While the body of surviving runic inscriptions and literary descriptions of their use definitely suggest that the runes were sometimes put to profane, silly, and/or ignorant purposes,[27] the Eddas and sagas make it abundantly clear that the signs themselves do possess immanent magical attributes that work in particular ways regardless of the intended uses to which they’re put by humans.",
+        "Continue on to Part IV, The Meanings of the Runes.",
+        "References:",
+        "[20] Raudvere, Catharina. 2002. Trolldómr in Early Medieval Scandinavia. In Witchcraft and Magic in Europe, Volume 3: The Middle Ages. Edited by Bengt Ankarloo and Stuart Clark. p. 91.",
+        "[21] Heidegger, Martin. 1971. Language. In Poetry, Language, Thought. Translated by Albert Hofstadter.",
+        "[22] For a cogent discussion of the role of the spoken word in the Norse creation narrative itself, see:",
+        "Kure, Henning. 2003. In the Beginning Was the Scream: Conceptual Thought in the Old Norse Myth of Creation. In Scandinavia and Christian Europe in the Middle Ages: Papers of the 12th International Saga Conference. Edited by Rudolf Simek and Judith Meurer. p. 311-319.",
+        "[23] de Saussure, Ferdinand. 2002. Writings in General Linguistics. Translated by Simon Bouquet. p. 68.",
+        "[24] Sapir, Edward. 1921. Language. p. 8.",
+        "[25] Trager, George. 1949. The Field of Linguistics. p. 5.",
+        "[26] Egils saga Skalla-Grímssonar 75.",
+        "[27] MacLeod, Mindy, and Bernard Mees. 2006. Runic Amulets and Magic Objects."
+      ],
+      "interpretiveNotes": [],
+      "keywords": [
+        "reference_like"
+      ],
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/runes/runic-philosophy-and-magic/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:49:30.957Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "09216098498830ff02292089f81c4a9ad1ca8913de3bc2fa855a0b61f27bf4cf",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.85
+    },
+    {
+      "id": "the-best-books-on-the-runes",
+      "glyph": "T",
+      "name": "The Best Books On The Runes",
+      "phonetic": [],
+      "coreMeanings": [
+        "Those who want to begin to study the runes are immediately confronted with the deluge of books that have been written on these fascinating and mysterious symbols from the ancient Norse/Germanic world.",
+        "Since the runes are a vital part of the pre-Christian northern European mythology, worldview, and spiritual practice, I thought it would be fitting and helpful to provide some recommendations in this field. This list assumes no prior knowledge of the runes, just a willingness to understand them on their own terms.",
+        "Books on the runes, especially those of the “how-to” guidebook variety, vary greatly in quality and in the approach they take to studying and working with the runes. As with anything else in life, different approaches are appropriate for different people. This list reflects that necessary diversity, and includes works from several different perspectives that all have something to contribute to the modern study of the runes and practice of runic magic (last updated November 2018).",
+        "The works that comprise this list should be considered starting points in one’s journey of discovering and working with the runes rather than being representative of that path in its totality. While there’s a core body of traditional lore to be mastered, the runes speak to everyone at least a little bit differently. What you learn from the runes directly, through experience and intuitive insight, is always more important than anything you read in a book. The books are really just there to help you get to the point at which you’re able to learn from and interact with the runes directly, without the mediation of any second-hand sources.",
+        "The books on this list are numbered according to their newbie-friendliness. #1 is the most accessible, while #10 is the least accessible, but #1 is not necessarily “better” than #10.",
+        "If you find this list to be helpful enough that you decide to buy one or more of the books listed here, the best way you can say “thank you” is to buy whatever you decide to buy through the Amazon links provided at the end of each book’s description. When you do, I automatically get a small commission on your purchase with no extra cost or hassle for you whatsoever.",
+        "1. Nordic Runes: Understanding, Casting, and Interpreting the Ancient Viking Oracle by Paul Rhys Mountfort",
+        "If you’re looking for a single, comprehensive book that gives you descriptions of the meanings of each rune, its role in Norse mythology, the cosmology that provided the context for ancient runic magic, advice to guide the reader through the contemporary practice of runic magic, and much more, Mountfort’s Nordic Runes delivers all of these things outstandingly well. It’s also refreshingly non-ideological, and encourages the reader to develop his or her own runic practice. If it has a weakness, it’s that the practical advice tends to focus on divination at the expense of many of the other uses to which runic magic can be put. That qualm aside, I think that, overall, this is the best single-volume introduction to the runes and runic magic out there currently. Click here to view or buy Nordic Runes at Amazon."
+      ],
+      "historicalNotes": [
+        "Those who want to begin to study the runes are immediately confronted with the deluge of books that have been written on these fascinating and mysterious symbols from the ancient Norse/Germanic world.",
+        "Since the runes are a vital part of the pre-Christian northern European mythology, worldview, and spiritual practice, I thought it would be fitting and helpful to provide some recommendations in this field. This list assumes no prior knowledge of the runes, just a willingness to understand them on their own terms.",
+        "Books on the runes, especially those of the “how-to” guidebook variety, vary greatly in quality and in the approach they take to studying and working with the runes. As with anything else in life, different approaches are appropriate for different people. This list reflects that necessary diversity, and includes works from several different perspectives that all have something to contribute to the modern study of the runes and practice of runic magic (last updated November 2018).",
+        "The works that comprise this list should be considered starting points in one’s journey of discovering and working with the runes rather than being representative of that path in its totality. While there’s a core body of traditional lore to be mastered, the runes speak to everyone at least a little bit differently. What you learn from the runes directly, through experience and intuitive insight, is always more important than anything you read in a book. The books are really just there to help you get to the point at which you’re able to learn from and interact with the runes directly, without the mediation of any second-hand sources.",
+        "The books on this list are numbered according to their newbie-friendliness. #1 is the most accessible, while #10 is the least accessible, but #1 is not necessarily “better” than #10.",
+        "If you find this list to be helpful enough that you decide to buy one or more of the books listed here, the best way you can say “thank you” is to buy whatever you decide to buy through the Amazon links provided at the end of each book’s description. When you do, I automatically get a small commission on your purchase with no extra cost or hassle for you whatsoever.",
+        "1. Nordic Runes: Understanding, Casting, and Interpreting the Ancient Viking Oracle by Paul Rhys Mountfort",
+        "If you’re looking for a single, comprehensive book that gives you descriptions of the meanings of each rune, its role in Norse mythology, the cosmology that provided the context for ancient runic magic, advice to guide the reader through the contemporary practice of runic magic, and much more, Mountfort’s Nordic Runes delivers all of these things outstandingly well. It’s also refreshingly non-ideological, and encourages the reader to develop his or her own runic practice. If it has a weakness, it’s that the practical advice tends to focus on divination at the expense of many of the other uses to which runic magic can be put. That qualm aside, I think that, overall, this is the best single-volume introduction to the runes and runic magic out there currently. Click here to view or buy Nordic Runes at Amazon.",
+        "2. Futhark: A Handbook of Rune Magic by Edred Thorsson",
+        "“Edred Thorsson” is the pen name of Stephen Flowers, a runic scholar with a Ph.D. in Germanic studies from the University of Texas in Austin (for his dissertation, Runes and Magic, see #9 below). As you’d expect from someone with that background and those credentials, “Futhark” is, of all of the guidebooks on runic magic, almost certainly the one most thoroughly informed by the historical practice of runic magic, both in the ancient Germanic world and in its earliest revival in the nineteenth-century German Romantic movement and the works of pioneers such as Guido von List. As with all books on runic magic, however, the book is also heavily colored by Flowers’s own insights gained from several years’ experience in practicing runic magic firsthand. That’s far from a bad thing, of course; especially given how fragmentary the surviving primary sources on historical Germanic religion are, it’s absolutely necessary to use one’s intuition to fill in the gaps, and Thorsson’s intuition is exceptionally lucid.",
+        "Futhark is extremely thorough and well-informed, and I recommend it very highly. It will especially appeal to indigenists and traditionalists who seek to eschew “New Age fluff” and to base their own practice on historical runic magic as completely as possible. Click here to view or buy Futhark at Amazon.",
+        "3. Runelore: The Magic, History, and Hidden Codes of the Runes by Edred Thorsson",
+        "Edred Thorsson’s Runelore: The Magic, History, and Hidden Codes of the Runes is something of a sequel to his earlier Futhark: A Handbook of Rune Magic (#2 above). Earlier editions were published with the (in my opinion better) subtitle A Handbook of Esoteric Runology.",
+        "Runelore is divided into two parts, both of which occupy roughly half of the book: “Historical Lore” and “Hidden Lore.” The section on “Historical Lore” gives a history of the origins, development, and use of the runes from before the Viking Age up through the modern runic revival. This section relies heavily on the author’s excellent Runes and Magic, his Ph.D. thesis in runology published under his real name, Stephen Flowers (see #9 below). A particularly delightful chapter in this section is “Rune Poems,” where Thorsson provides translations and discussions of the Rune Poems, one of the foremost primary sources for our knowledge of the runes today.",
+        "The section on “Hidden Lore” is more philosophical and psychological. The contents of this section are all firmly rooted in traditional Germanic lore, but go well beyond it. And that’s inevitable in any good book on the runes; due to the paucity of information on the runes in the primary sources, which are themselves of a rather fragmentary nature, one has to round out the available facts with supplemental intuition and explorations of other fields (while still staying true to the sources, of course) in order to (re)construct anything like a coherent, workable system of runic philosophy and/or magic. While I don’t agree with everything in this section, it’s one of the best attempts that have been made so far in this regard.",
+        "Any student of the runes will get a lot out of Runelore, whether as a standalone book or in conjunction with Futhark. Click here to view or buy Runelore at Amazon.",
+        "4. Runecaster’s Handbook by Edred Thorsson",
+        "Edred Thorsson’s Runecaster’s Handbook is the third and final installment in his trilogy on runic magic for the lay reader. (The first two installments are Futhark, #2 above, and Runelore, #3 above.)",
+        "Whereas Runelore is the most philosophical, theoretical, and scholarly of the trilogy, Runecaster’s Handbook is the most directly practical. To make sure you’re not aimlessly spinning your wheels or inadvertently doing counterproductive or even dangerous things in your rune workings, however, Runecaster’s Handbook still provides at least some basic theory.",
+        "Nevertheless, the primary focus of Runecaster’s Handbook is on the practice of runic magic itself. The book includes numerous different methods and pre-established rituals for rune readings, runic divination, etc. It really takes you step by step through the whole process, from creating and charging the necessary tools to what to expect from the outcomes. Click here to view or buy Runecaster’s Handbook at Amazon.",
+        "5. Helrunar: A Manual of Rune Magick by Jan Fries",
+        "First, a disclaimer on what Jan Fries’s Helrunar: A Manual of Rune Magick is not:",
+        "Helrunar is not as academically scrupulous as, say, Stephen Flowers/Edred Thorsson. There are several claims in here that no scholar in this or any related field would take seriously. Nor does it particularly strive to be “Germanically correct” in the way that many traditionalists and purists demand. Nor, at the other end of the spectrum of the expectations people usually bring to the runes, does it offer prepackaged rituals, spells, etc.",
+        "In the book’s words, “I do not believe in any tradition except ‘Find out for yourself!’… Instead of asking you to believe in my interpretations, I ask you to examine them critically. I do not want you to adhere to my dogma… but to explore with an open mind in the joy of self discovery.”",
+        "Fries’s book is a thoughtful, perhaps even “existential” guide to the runes in the context of, in the book’s words, “pagan nature religion.” Nods to the likes of Aleister Crowley abound. Its primary strengths are its psychological depth and its applicability to true self-transformation.",
+        "While Helrunar may not be the most historically accurate book on the runes out there, it’s one of the most experientially valid and useful, and that alone makes it worthy of a high recommendation. Click here to view or buy Helrunar at Amazon.",
+        "6. The Rune Primer: A Down-to-Earth Guide to the Runes by Sweyn Plowright",
+        "Sweyn Plowright probably has little but contempt for some of the books on this list. If you’ve found yourself having the same reaction, and scornfully muttering, “Just the facts, please,” then The Rune Primer: A Down-to-Earth Guide to the Runes may be for you.",
+        "The Rune Primer is probably the only book on rune magic out there where the author goes out of his or her way to separate factual information from the sources on the one hand and intuitive insights on the other, and to eschew the latter in favor of the former as much as possible. It devotes a significant amount of space to critiquing some common “sacred cows” in the field of rune magic.",
+        "Personally, I find some of the general thrust of this book to be quite simplistic and lacking in philosophical nuance. This kind of “stick to the facts” approach is, in and of itself, just a sacred cow of modern positivism, and doesn’t stand up to the trial by fire of the world as we actually perceive and experience it. People who take concepts like “objectivity,” “subjectivity,” and “bias” at face value often live in a world that’s no less fantastical than those of the “New Agers” they (often rightly) love to criticize."
+      ],
+      "interpretiveNotes": [],
+      "keywords": [
+        "reference_like"
+      ],
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/runes/the-best-books-on-the-runes/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:49:32.589Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "cc1714a7170ef885025c504451cca35fc7ae054d7ef19b63e793a30c9f7370ce",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.85
+    }
+  ],
+  "deities": [
+    {
+      "id": "gods-and-creatures",
+      "name": "Gods And Creatures",
+      "aliases": [],
+      "domains": [
+        "reference_like"
+      ],
+      "description": "The gods and other spiritual beings of Norse mythology are among the most wondrous and unique of any mythology. The Norse gods had very human-like personalities and frequently intervened in human affairs, but were larger-than-life and awe-inspiring in ways that decisively set them apart from mere humans. Their characters were often richly complex and multifaceted; one-dimensional epithets like “god of war” or “goddess of fertility” typically fail to describe anything more than one of their several aspects.",
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/gods-and-creatures/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:49:24.223Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "7dd0b7848007289b1af09684b028f9707f43ff72dc8d5a5a14b3249aadde2d91",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "odin",
+      "name": "Odin",
+      "aliases": [],
+      "domains": [
+        "reference_like"
+      ],
+      "description": "Odin (pronounced “OH-din”; Old Norse Óðinn, Old English and Old Saxon Woden, Old High German Wuotan, Wotan, or Wodan, Proto-Germanic *Woðanaz, “Master of Ecstasy”) is one of the most complex and enigmatic characters in Norse mythology, and perhaps in all of world literature. He’s the ruler of the Aesir tribe of deities, yet he often ventures far from their kingdom, Asgard, on long, solitary wanderings throughout the cosmos on purely self-interested quests. He’s a relentless seeker after and giver of wisdom, but he has little regard for communal values such as justice, fairness, or respect for law and convention. He’s the divine patron of rulers, and also of outlaws. He’s a war-god, but also a poetry-god, and he has prominent “effeminate” qualities that would have brought unspeakable shame to any historical Viking warrior. He’s worshiped by those in search of prestige, honor, and nobility, yet he’s often cursed for being a fickle trickster. What kind of literary figure – let alone a god whose historical worship spanned much of a continent and several centuries – could possibly embody all of these qualities at once, with their apparently glaring contradictions?",
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/odin/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:49:49.897Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "67fd43e4dc19f5939f8807e5d5710caca115ce19b94f043f26f2d10b6b61971e",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "thor",
+      "name": "Thor",
+      "aliases": [],
+      "domains": [
+        "reference_like"
+      ],
+      "description": "Thor (Old Norse Þórr, Old English Đunor, Old High German Donar, Proto-Germanic *Þunraz, “Thunder”[1]) is one of the most prominent figures in Norse mythology. He was a major god of all branches of the Germanic peoples before their conversion to Christianity, although he reached the height of his popularity among the Scandinavians of the late Viking Age.",
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/thor/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:49:51.633Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "36fd02a787660c8b494c05b0583758ea23666bbd498a717098bcc813662ff2ec",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "loki",
+      "name": "Loki",
+      "aliases": [],
+      "domains": [
+        "reference_like"
+      ],
+      "description": "Loki (pronounced “LOAK-ee;” Old Norse Loki, the meaning of which will be discussed below) is the wily trickster god of Norse mythology.",
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/loki/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:49:53.344Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "66f2e73a9c7bf39501c809cafa985b0ee7ba4d26c9877f642ff1e36215e0e25c",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "frigg",
+      "name": "Frigg",
+      "aliases": [],
+      "domains": [
+        "reference_like"
+      ],
+      "description": "Frigg (pronounced “FRIG;” Old Norse Frigg, “Beloved”[1]), sometimes Anglicized as “Frigga,” is the highest-ranking of the Aesir goddesses. She’s the wife of Odin, the leader of the gods, and the mother of Baldur.",
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/frigg/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:49:55.047Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "9ce4dfb07f920fe4ae010e1af2eafc05d07fccc5b66198f9779857a0ddd18025",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "baldur",
+      "name": "Baldur",
+      "aliases": [],
+      "domains": [
+        "reference_like"
+      ],
+      "description": "Baldur (pronounced “BALD-er;” Old Norse Baldr, Old English and Old High German Balder) is one of the Aesir gods. He’s the son of Odin and Frigg, the husband of the obscure goddess Nanna, and the father of the god Forseti.",
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/baldur/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:49:56.747Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "bb5d1b0c1d6ccfa7b240b5fa65e91ec4518bf90d6347db25c9e959994b0ad000",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "heimdall",
+      "name": "Heimdall",
+      "aliases": [],
+      "domains": [
+        "reference_like"
+      ],
+      "description": "Heimdall (pronounced “HAME-doll;” Old Norse Heimdallr, whose meaning/etymology is unknown[1]) is one of the Aesir gods and the ever-vigilant guardian of the gods’ stronghold, Asgard.",
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/heimdall/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:49:58.434Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "d9a48b9bd986ee811ee9f115e0651f5d4af7b4ec17f40609059533b733d8048c",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "tyr",
+      "name": "Tyr",
+      "aliases": [],
+      "domains": [
+        "reference_like"
+      ],
+      "description": "Tyr (pronounced like the English word “tier”; Old Norse Týr, Old English Tiw, Old High German *Ziu, Gothic Tyz, Proto-Germanic *Tiwaz, “god”[1][2]) is a Norse war god, but also the god who, more than any other, presides over matters of law and justice. His role in the surviving Viking Age myths is relatively slight, and his status in the later part of the Viking Age may have been correspondingly minor. But this wasn’t always the case. Other kinds of evidence show us that Tyr was once one of the most important gods to the Norse and other Germanic peoples.",
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/tyr/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:50:00.146Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "15e7b89192178da05ff390ff8a57b45b57ba214faacdd579c071a3468f2dc91c",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "idun",
+      "name": "Idun",
+      "aliases": [],
+      "domains": [
+        "reference_like"
+      ],
+      "description": "Idun (pronounced “IH-dune;” from Old Norse Iðunn, “The Rejuvenating One”[1]) is a goddess who belongs to the Aesir tribe of deities. Her role in the pre-Christian mythology and religion of the Norse and other Germanic peoples is unfortunately obscure, but she features prominently in one of the best-known mythological tales, The Kidnapping of Idun. In this tale, which comes to us from the skaldic poem Haustlöng and the Prose Edda, Idun is depicted as the owner and dispenser of a fruit that imparts immortality.",
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/idun/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:50:01.836Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "4dc60feb985f92a107d2b52164d5a2ca5dfeff484deed0d9a16a90ecb3eb87c7",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "bragi",
+      "name": "Bragi",
+      "aliases": [],
+      "domains": [
+        "reference_like"
+      ],
+      "description": "Bragi (pronounced “BRAG-ee;” Old Norse Bragi, “Poet”) is the wise and learned bard (Old Norse þulr, pronounced “THOOL-ur”) of Valhalla, the magnificent hall of the god Odin. Old Norse poetry from the Viking Age frequently features him regaling the einherjar, the dead who dwell in Valhalla, and welcoming recently deceased heroes into their midst.[1] One Eddic poem depicts him as having runes carved on his tongue.[2]",
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/bragi/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:50:03.522Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "33a2600e7165737b1a00f849495aae7f93ce04e012862260388f6f21f86741b9",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "freya",
+      "name": "Freya",
+      "aliases": [],
+      "domains": [
+        "reference_like"
+      ],
+      "description": "Freya (Old Norse Freyja, “Lady”) is one of the preeminent goddesses in Norse mythology. She’s a member of the Vanir tribe of deities, but became an honorary member of the Aesir gods after the Aesir-Vanir War. Her father is Njord. Her mother is unknown, but could be Nerthus. Freyr is her brother. Her husband, named Odr in late Old Norse literature, is certainly none other than Odin, and, accordingly, Freya is ultimately identical with Odin’s wife Frigg (see below for a discussion of this).",
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-vanir-gods-and-goddesses/freya/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:50:05.226Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "ae035ad2c9aebb9f131e2ba90a8a4392e49fe8fc69fa8583bb93472abe75fd8d",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "freyr",
+      "name": "Freyr",
+      "aliases": [],
+      "domains": [
+        "reference_like"
+      ],
+      "description": "Freyr (pronounced “FREY-ur;” Old Norse Freyr, “Lord;” sometimes anglicized as “Frey”) is a god who belongs to the Vanir tribe of deities. He’s also an honorary member of the other tribe of Norse gods, the Aesir, having arrived in their fortress, Asgard, as a hostage at the closing of the Aesir-Vanir War.",
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-vanir-gods-and-goddesses/freyr/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:50:06.922Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "0ec9d1d111fb2f23a8ac9ba7382e4ac4b3c0cbfe41f2679988422cb3096f38af",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "njord",
+      "name": "Njord",
+      "aliases": [],
+      "domains": [
+        "reference_like"
+      ],
+      "description": "Njord (pronounced “NYORD;” Old Norse Njörðr, whose meaning/etymology is unknown) is one of the principal gods of the Vanir tribe of deities. He’s also an honorary member of the Aesir gods, having been sent to them during the Aesir-Vanir War along with his son, Freyr, and his daughter, Freya. Freyr and Freya’s mother is Njord’s unnamed sister, who, based on linguistic evidence, is probably Nerthus or an equivalent goddess.",
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-vanir-gods-and-goddesses/njord/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:50:08.608Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "416056f4605560ff7897f46360b9108b879f45ef83ab504a7efffc7faed19f9f",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "nerthus",
+      "name": "Nerthus",
+      "aliases": [],
+      "domains": [
+        "reference_like"
+      ],
+      "description": "Nerthus (Proto-Germanic *Nerþus) is a pre-Christian goddess venerated by some of the continental Germanic tribes described by the Roman historian Tacitus in his Germania (authored about 100 CE). Tacitus provides us with the following haunting description of her veneration:",
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-vanir-gods-and-goddesses/nerthus/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:50:10.302Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "70f34dbed187f1f33f44ec2b741fd824cbccee557457163e515e9f2986b3a088",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "fenrir",
+      "name": "Fenrir",
+      "aliases": [],
+      "domains": [
+        "reference_like"
+      ],
+      "description": "Fenrir (pronounced “FEN-rir;” Old Norse Fenrir, “He Who Dwells in the Marshes”[1]) is the most infamous of the many wolves in Norse mythology. His importance for the pre-Christian Scandinavians is demonstrated by his being depicted on numerous surviving runestones, not to mention his ubiquity in Old Norse literary sources.",
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/gods-and-creatures/giants/fenrir/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:50:11.995Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "51c91fe90ec1fa650485ff3af1293bde54687473b00ae1af72498d37483d0eb4",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "skadi",
+      "name": "Skadi",
+      "aliases": [],
+      "domains": [
+        "reference_like"
+      ],
+      "description": "Skadi (pronounced “SKAHD-ee;” Old Norse Skaði) is a giantess and goddess in Norse mythology. Her name is either identical with the Old Norse common noun skaði, “harm,” or comes from another Germanic root preserved in the Gothic word skadus and the Old English sceadu, both of which mean “shadow.”[1] Her name is likely related to the name “Scandinavia,” but whether Skadi lent her name to the land-mass or vice versa is uncertain.[2]",
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/gods-and-creatures/giants/skadi/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:50:13.679Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "7d4d4622fc31112f4446524e4864898b672aa3d0b0445854ef2aac973f9138b6",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "ymir",
+      "name": "Ymir",
+      "aliases": [],
+      "domains": [
+        "reference_like"
+      ],
+      "description": "Ymir (pronounced roughly “EE-mir;” Old Norse Ymir, “Screamer”[1]) is a hermaphroditic giant and the first creature to come into being in the Norse creation myth. As the first giant, he’s the ancestor of all of the other giants – and, since almost all of the gods are partially descended from giants, he’s their ancestor as well. Another name for Ymir in some Old Norse poems is Aurgelmir (“Sand/Gravel Screamer”).[2]",
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/gods-and-creatures/giants/ymir/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:50:15.379Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "02edd79cfe987e72305a696d79eedb6d829f0afc9ce58701951286f88212f6b9",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "hel",
+      "name": "Hel",
+      "aliases": [],
+      "domains": [
+        "reference_like"
+      ],
+      "description": "Hel (Old Norse Hel, “Hidden”[1]) is a giantess and/or goddess who rules over the identically-named Hel, the underworld where many of the dead dwell. Her name’s meaning of “Hidden” surely has to do with the underworld and the dead being “hidden” or buried beneath the ground.",
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/gods-and-creatures/giants/hel/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:50:17.068Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "f61fc076e949ffb3a43a286c46883e3a7f2e4c4233baf622b555f64892eb9c97",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "jormungand",
+      "name": "Jormungand",
+      "aliases": [],
+      "domains": [
+        "reference_like"
+      ],
+      "description": "Jormungand (pronounced “YOUR-mun-gand;” Old Norse Jörmungandr, “Great Beast”), also called the “Midgard Serpent,” is a snake or dragon who lives in the ocean that surrounds Midgard, the visible world. So enormous is he that his body forms a circle around the entirety of Midgard. He’s one of the three children of Loki and the giantess Angrboda, along with Hel and Fenrir.",
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/gods-and-creatures/giants/jormungand/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:50:18.756Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "ba98007ef1bcbcf60c402177b2f5d371bf3ee878a597c5a9b78ecf5d23e6b94c",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "surt",
+      "name": "Surt",
+      "aliases": [],
+      "domains": [
+        "reference_like"
+      ],
+      "description": "Surt (Old Norse Surtr, “Black,”[1] presumably a reference to his charred appearance) is a fire giant who leads his kin into battle against the Aesir and Vanir gods during Ragnarok, the destruction of the cosmos. His particular fate is to kill the god Freyr and to be slain by him in turn. He arrives from Muspelheim, the extreme southern region of heat and fire, bearing his weapon of choice of a burning sword, with which the world is razed before it sinks into the sea.[2][3][4]",
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/gods-and-creatures/giants/surt/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:50:20.449Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "3f43275dd3008ed5b753127c2ed1c9d574a51cf46bef0ab82a3e5d28f2af8f7c",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "nidhogg",
+      "name": "Nidhogg",
+      "aliases": [],
+      "domains": [
+        "reference_like"
+      ],
+      "description": "Nidhogg (Old Norse Níðhöggr, literally “Curse-striker” or “He Who Strikes with Malice”) is the foremost of several serpents or dragons who dwell beneath the world-tree Yggdrasil and eat its roots. This is highly injurious to the tree, which holds the Nine Worlds of the cosmos.[1] Nidhogg’s actions have the intention of pulling the cosmos back to chaos, and he, along with his reptilian cohort, can therefore surely be classified among the giants (or, as they were called in pre-Christian times, “devourers”).",
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/gods-and-creatures/giants/nidhogg/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:50:22.137Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "c70302afa9d708b57b1f0b731d503dcb1edd41b84750a5aa133d678b2de41063",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.75
+    }
+  ],
+  "worlds": [
+    {
+      "id": "the-nine-worlds",
+      "name": "The Nine Worlds",
+      "summary": "The Nine Worlds (Old Norse Níu Heimar) are the homelands of the various types of beings found in the pre-Christian worldview of the Norse and other Germanic peoples. They’re held in the branches and roots of the world-tree Yggdrasil, although none of the sources for our present knowledge of Norse mythology and religion describe exactly where in and around Yggdrasil they’re located. (Any and all modern images of the worlds arranged around Yggdrasil are by definition speculative and unverifiable.)",
+      "associations": [
+        "reference_like"
+      ],
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:49:25.919Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "c798d32e1fdeadbc9e075cd9d00604a4baca766b396b072deb66b982ba1da144",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "midgard",
+      "name": "Midgard",
+      "summary": "Midgard (Old Norse Miðgarðr, Gothic midjungards, Old English middangeard, Old Saxon middilgard, Old High German mittilgart or mittangard, Proto-Germanic *meðjanagarðaz,[1][2] “Middle Enclosure”) is one of the Nine Worlds of Norse mythology and an important concept in the pre-Christian worldview of all of the Germanic peoples. It’s the inhabited world, and roughly corresponds to the modern English word and concept of “civilization.” It’s the only one of the Nine Worlds that’s primarily located in the visible world; the others, while they may intersect with the visible world at various points, are first and foremost invisible locations.",
+      "associations": [
+        "reference_like"
+      ],
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/midgard/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:49:34.279Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "964803e1316e46af6a7e1ac5dd287ea6d4f5f347e4453f8592301758af7764c7",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "asgard",
+      "name": "Asgard",
+      "summary": "Asgard (Old Norse Ásgarðr, “Enclosure of the Aesir) is one of the Nine Worlds of Norse mythology and the home and fortress of the Aesir, one of the two tribes of gods (the other being the Vanir, who have their home in Vanaheim). Asgard is located in the sky[1] (albeit spiritually rather than physically, of course) and is connected to Midgard, the world of humanity, by the rainbow bridge Bifrost.",
+      "associations": [
+        "reference_like"
+      ],
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/asgard/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:49:35.971Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "fde6ff6ca9496d903e78169b3b3274479b9f9570ab4b79e732c5f8f608111373",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "vanaheim",
+      "name": "Vanaheim",
+      "summary": "Vanaheim (Old Norse Vanaheimr, “Homeland of the Vanir“) is one of the Nine Worlds that are situated around the world-tree Yggdrasil. As the name implies, it’s the home of the Vanir tribe of deities, who tend to be somewhat more associated with fertility and what we today would call “nature” than the other tribe of Norse deities, the Aesir, who have their home in Asgard.",
+      "associations": [
+        "reference_like"
+      ],
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/vanaheim/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:49:37.667Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "b1e280f927a1321dbca26d60cf85c16f95b68ee81e7f5a0e810c3cb8a4250322",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "jotunheim",
+      "name": "Jotunheim",
+      "summary": "Jotunheim (pronounced “YO-tun-hame;” Old Norse Jötunheimr, “World of the Giants”) is one of the Nine Worlds, and, as the name implies, the homeland of the giants (Old Norse jötnar).",
+      "associations": [
+        "reference_like"
+      ],
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/jotunheim/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:49:39.358Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "0b053f24eaf38b8f6f4f9210889bdc4cc23d543e85eb3f38aa481ad7f924f1da",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "niflheim",
+      "name": "Niflheim",
+      "summary": "Niflheim (pronounced “NIF-el-hame;” from Old Norse Niflheimr, “World of Fog”) is one of the Nine Worlds of Norse mythology and the homeland of primordial darkness, cold, mist, and ice. As such, it’s the opposite cosmological principle of Muspelheim, the world of fire and heat.",
+      "associations": [
+        "reference_like"
+      ],
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/niflheim/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:49:41.056Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "03e9d3c7cab17c62b111d9e9314fc4eb9d787089c636f2996f9d9d620450c3d2",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "muspelheim",
+      "name": "Muspelheim",
+      "summary": "Muspelheim (pronounced “MOO-spell-hame;” Old Norse Múspellsheimr, “The World of Múspell“) is one of the Nine Worlds and the home of the fire giants.",
+      "associations": [
+        "reference_like"
+      ],
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/muspelheim/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:49:42.762Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "75f867cb54dd0090f84d37cfaf904b2a32eb5fedcf4d212ba6c5b8c415552cf1",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "alfheim",
+      "name": "Alfheim",
+      "summary": "Alfheim (pronounced “ALF-hame;” Old Norse Álfheimr, “The Homeland of the Elves”) is, as the name suggests, the world inhabited by the elves, a class of demigod-like beings in the pre-Christian mythology and religion of the Norse and other Germanic peoples.",
+      "associations": [
+        "reference_like"
+      ],
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/alfheim/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:49:44.608Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "5310694412e50c5953cce746b630084bfe171b64c9ca980ebab9a3f1f2ea578d",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "svartalfheim",
+      "name": "Svartalfheim",
+      "summary": "In Old Norse literature, the home of the dwarves is called either Nidavellir (pronounced “NID-uh-vell-ir;” Old Norse Niðavellir, “Low Fields” or “Dark Fields”) or Svartalfheim (pronounced “SVART-alf-hame;” Old Norse Svartálfaheimr, “Homeland of the Black Elves”).",
+      "associations": [
+        "reference_like"
+      ],
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/svartalfheim/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:49:46.355Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "8478c62aea38db72b7c531db2b4480d22d887fe75851cc88988adc3bd5e000b3",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.75
+    },
+    {
+      "id": "helheim",
+      "name": "Helheim",
+      "summary": "Hel (Old Norse Hel, “Hidden;”[1] pronounced like the English word “Hell”) is the most general name for the underworld where many of the dead dwell. It’s presided over by a fearsome goddess whose name is also Hel. Occasionally, it’s also referred to as “Helheim,” “The Realm of Hel,” although this is much more common in the secondary literature than in the Old Norse primary sources.",
+      "associations": [
+        "reference_like"
+      ],
+      "sources": [
+        {
+          "sourceSite": "norse-mythology.org",
+          "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/helheim/",
+          "sourceTitle": "Norse Mythology for Smart People",
+          "extractedAt": "2026-04-11T23:49:48.168Z",
+          "extractorVersion": "0.1.0",
+          "contentHash": "2a2991ee5efd2c9695b80a40812ee61cd0af9dc9d91015ae361d832e5e31d6bb",
+          "classification": "reference_like"
+        }
+      ],
+      "confidence": 0.75
+    }
+  ]
 }
