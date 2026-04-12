@@ -15,7 +15,7 @@ describe('buildPreviewHtml', () => {
                 adjacentSystems: 2
             },
             files: {
-                raw: ['norse-runes.html', 'norse-runes.metadata.json'],
+                raw: ['norse-runes.raw.txt', 'norse-runes.metadata.json'],
                 extracted: ['norse-runes.records.json'],
                 normalized: ['runes.json', 'deities.json', 'worlds.json']
             }

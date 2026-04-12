@@ -118,15 +118,20 @@ async function assertTopicSubpageCoverage(selectedSources: SourceConfig[], outpu
 
 async function readSnapshotPair(outputDir: string, sourceId: string): Promise<{ html: string; metadata: RawSnapshotMetadata }> {
     const rawDir = resolve(outputDir, 'raw');
-    const htmlPath = resolve(rawDir, `${sourceId}.html`);
+    const txtPath = resolve(rawDir, `${sourceId}.raw.txt`);
+    const legacyHtmlPath = resolve(rawDir, `${sourceId}.html`);
     const metadataPath = resolve(rawDir, `${sourceId}.metadata.json`);
 
     let html: string;
     try {
-        html = await readFile(htmlPath, 'utf8');
+        html = await readFile(txtPath, 'utf8');
     } catch (error) {
-        const message = error instanceof Error ? error.message : String(error);
-        throw new Error(`Missing raw snapshot HTML for ${sourceId} at ${htmlPath}: ${message}`);
+        try {
+            html = await readFile(legacyHtmlPath, 'utf8');
+        } catch {
+            const message = error instanceof Error ? error.message : String(error);
+            throw new Error(`Missing raw snapshot HTML for ${sourceId} at ${txtPath}: ${message}`);
+        }
     }
 
     let metadataRaw: string;

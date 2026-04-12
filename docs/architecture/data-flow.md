@@ -4,7 +4,7 @@ Known source URLs in `SOURCE_REGISTRY.json` -> static HTTP fetch (allowlisted on
 
 Fetch stage outputs for each source id:
 
-- `data/raw/<source-id>.html`
+- `data/raw/<source-id>.raw.txt`
 - `data/raw/<source-id>.metadata.json`
 
 Raw snapshot metadata preserves provenance fields from stage 1:

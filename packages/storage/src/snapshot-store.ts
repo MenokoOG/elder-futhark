@@ -36,7 +36,7 @@ export async function writeRawSnapshot(outputDir: string, snapshot: RawSnapshot)
     assertSafeSourceId(snapshot.sourceId);
 
     const rawDir = resolve(outputDir, 'raw');
-    const htmlPath = resolve(rawDir, `${snapshot.sourceId}.html`);
+    const htmlPath = resolve(rawDir, `${snapshot.sourceId}.raw.txt`);
     const metadataPath = resolve(rawDir, `${snapshot.sourceId}.metadata.json`);
 
     await writeTextFile(htmlPath, snapshot.html);

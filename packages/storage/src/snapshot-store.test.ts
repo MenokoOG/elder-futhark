@@ -29,7 +29,7 @@ describe('writeRawSnapshot', () => {
         const html = await readFile(result.htmlPath, 'utf8');
         const metadata = JSON.parse(await readFile(result.metadataPath, 'utf8')) as Record<string, unknown>;
 
-        expect(result.htmlPath.endsWith('raw/norse-runes.html')).toBe(true);
+        expect(result.htmlPath.endsWith('raw/norse-runes.raw.txt')).toBe(true);
         expect(result.metadataPath.endsWith('raw/norse-runes.metadata.json')).toBe(true);
         expect(html).toContain('<body>ok</body>');
 
