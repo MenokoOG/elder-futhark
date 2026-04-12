@@ -1,196 +1,274 @@
-import { createServer, type IncomingMessage, type ServerResponse } from 'node:http';
+import { createServer, type IncomingMessage, type Server, type ServerResponse } from 'node:http';
 import { readdir, readFile } from 'node:fs/promises';
 import { extname, join, resolve } from 'node:path';
+import { runCommand, type PipelineStageResult } from '../commands/run.js';
 
 export interface PreviewSummary {
-    generatedAt: string;
-    rawCount: number;
-    extractedCount: number;
-    normalizedCounts: {
-        runes: number;
-        deities: number;
-        worlds: number;
-        practices: number;
-        adjacentSystems: number;
-    };
-    files: {
-        raw: string[];
-        extracted: string[];
-        normalized: string[];
-    };
+  generatedAt: string;
+  rawCount: number;
+  extractedCount: number;
+  normalizedCounts: {
+    runes: number;
+    deities: number;
+    worlds: number;
+    practices: number;
+    adjacentSystems: number;
+  };
+  files: {
+    raw: string[];
+    extracted: string[];
+    normalized: string[];
+  };
 }
 
 type CategoryId = 'runes' | 'deities' | 'worlds' | 'practices' | 'adjacentSystems';
 
 interface DashboardCategory {
-    id: CategoryId;
-    label: string;
-    count: number;
+  id: CategoryId;
+  label: string;
+  count: number;
 }
 
 interface DashboardItemSummary {
-    id: string;
-    label: string;
+  id: string;
+  label: string;
 }
 
 interface DashboardCatalog {
-    categories: DashboardCategory[];
+  categories: DashboardCategory[];
+}
+
+export interface PipelineStatus {
+  status: 'idle' | 'running' | 'succeeded' | 'failed';
+  source: string;
+  startedAt?: string;
+  finishedAt?: string;
+  results: PipelineStageResult[];
+  error?: string;
+}
+
+interface PreviewServerOptions {
+  runPipeline?: (source: string) => Promise<PipelineStageResult[]>;
+}
+
+interface PipelineController {
+  status: PipelineStatus;
+  startRun: (source: string) => Promise<boolean>;
 }
 
 const CATEGORY_CONFIG: Record<CategoryId, { label: string; file: string }> = {
-    runes: { label: 'Runes', file: 'runes.json' },
-    deities: { label: 'Deities', file: 'deities.json' },
-    worlds: { label: 'Worlds', file: 'worlds.json' },
-    practices: { label: 'Practices', file: 'practices.records.json' },
-    adjacentSystems: { label: 'Adjacent Systems', file: 'adjacent-systems.records.json' }
+  runes: { label: 'Runes', file: 'runes.json' },
+  deities: { label: 'Deities', file: 'deities.json' },
+  worlds: { label: 'Worlds', file: 'worlds.json' },
+  practices: { label: 'Practices', file: 'practices.records.json' },
+  adjacentSystems: { label: 'Adjacent Systems', file: 'adjacent-systems.records.json' }
 };
 
+function createPipelineController(
+  runPipeline: (source: string) => Promise<PipelineStageResult[]>
+): PipelineController {
+  let activeRun: Promise<void> | null = null;
+  let status: PipelineStatus = {
+    status: 'idle',
+    source: 'all',
+    results: []
+  };
+
+  async function startRun(source: string): Promise<boolean> {
+    if (activeRun) {
+      return false;
+    }
+
+    const startedAt = new Date().toISOString();
+    status = {
+      status: 'running',
+      source,
+      startedAt,
+      results: []
+    };
+
+    activeRun = (async () => {
+      try {
+        const results = await runPipeline(source);
+        status = {
+          status: 'succeeded',
+          source,
+          startedAt,
+          finishedAt: new Date().toISOString(),
+          results
+        };
+      } catch (error) {
+        const message = error instanceof Error ? error.message : String(error);
+        status = {
+          status: 'failed',
+          source,
+          startedAt,
+          finishedAt: new Date().toISOString(),
+          results: [],
+          error: message
+        };
+      } finally {
+        activeRun = null;
+      }
+    })();
+
+    return true;
+  }
+
+  return {
+    get status() {
+      return status;
+    },
+    startRun
+  };
+}
+
 async function listJsonLikeFiles(dir: string): Promise<string[]> {
-    const names = await readdir(dir, { withFileTypes: true });
-    return names
-        .filter((entry) => entry.isFile())
-        .map((entry) => entry.name)
-        .filter((name) => {
-            const ext = extname(name);
-            return ext === '.json' || ext === '.html' || ext === '.txt';
-        })
-        .sort();
+  const names = await readdir(dir, { withFileTypes: true });
+  return names
+    .filter((entry) => entry.isFile())
+    .map((entry) => entry.name)
+    .filter((name) => {
+      const ext = extname(name);
+      return ext === '.json' || ext === '.html' || ext === '.txt';
+    })
+    .sort();
 }
 
 async function readArrayLength(path: string): Promise<number> {
-    const raw = await readFile(path, 'utf8');
-    const parsed = JSON.parse(raw) as unknown;
-    if (!Array.isArray(parsed)) {
-        throw new Error(`Expected JSON array at ${path}`);
-    }
-    return parsed.length;
+  const raw = await readFile(path, 'utf8');
+  const parsed = JSON.parse(raw) as unknown;
+  if (!Array.isArray(parsed)) {
+    throw new Error(`Expected JSON array at ${path}`);
+  }
+  return parsed.length;
 }
 
 async function readArrayJson(path: string): Promise<unknown[]> {
-    const raw = await readFile(path, 'utf8');
-    const parsed = JSON.parse(raw) as unknown;
-    if (!Array.isArray(parsed)) {
-        throw new Error(`Expected JSON array at ${path}`);
-    }
-    return parsed;
+  const raw = await readFile(path, 'utf8');
+  const parsed = JSON.parse(raw) as unknown;
+  if (!Array.isArray(parsed)) {
+    throw new Error(`Expected JSON array at ${path}`);
+  }
+  return parsed;
 }
 
 function isCategoryId(value: string): value is CategoryId {
-    return Object.prototype.hasOwnProperty.call(CATEGORY_CONFIG, value);
+  return Object.prototype.hasOwnProperty.call(CATEGORY_CONFIG, value);
 }
 
 function itemLabel(item: Record<string, unknown>): string {
-    const fromName = item.name;
-    if (typeof fromName === 'string' && fromName.trim().length > 0) {
-        return fromName;
-    }
+  const fromName = item.name;
+  if (typeof fromName === 'string' && fromName.trim().length > 0) {
+    return fromName;
+  }
 
-    const fromTitle = item.title;
-    if (typeof fromTitle === 'string' && fromTitle.trim().length > 0) {
-        return fromTitle;
-    }
+  const fromTitle = item.title;
+  if (typeof fromTitle === 'string' && fromTitle.trim().length > 0) {
+    return fromTitle;
+  }
 
-    const fromId = item.id;
-    if (typeof fromId === 'string' && fromId.trim().length > 0) {
-        return fromId;
-    }
+  const fromId = item.id;
+  if (typeof fromId === 'string' && fromId.trim().length > 0) {
+    return fromId;
+  }
 
-    return 'Unnamed record';
+  return 'Unnamed record';
 }
 
 function itemId(item: Record<string, unknown>, index: number): string {
-    const id = item.id;
-    if (typeof id === 'string' && id.trim().length > 0) {
-        return id;
-    }
-    return `item-${index + 1}`;
+  const id = item.id;
+  if (typeof id === 'string' && id.trim().length > 0) {
+    return id;
+  }
+  return `item-${index + 1}`;
 }
 
 async function loadCategoryItems(dataDir: string, category: CategoryId): Promise<Record<string, unknown>[]> {
-    const filePath = resolve(dataDir, 'normalized', CATEGORY_CONFIG[category].file);
-    const items = await readArrayJson(filePath);
-    return items.map((item) => {
-        if (!item || typeof item !== 'object') {
-            return { value: item };
-        }
-        return item as Record<string, unknown>;
-    });
+  const filePath = resolve(dataDir, 'normalized', CATEGORY_CONFIG[category].file);
+  const items = await readArrayJson(filePath);
+  return items.map((item) => {
+    if (!item || typeof item !== 'object') {
+      return { value: item };
+    }
+    return item as Record<string, unknown>;
+  });
 }
 
 async function buildDashboardCatalog(dataDir: string): Promise<DashboardCatalog> {
-    const categories: DashboardCategory[] = [];
+  const categories: DashboardCategory[] = [];
 
-    for (const id of Object.keys(CATEGORY_CONFIG) as CategoryId[]) {
-        const items = await loadCategoryItems(dataDir, id);
-        categories.push({
-            id,
-            label: CATEGORY_CONFIG[id].label,
-            count: items.length
-        });
-    }
+  for (const id of Object.keys(CATEGORY_CONFIG) as CategoryId[]) {
+    const items = await loadCategoryItems(dataDir, id);
+    categories.push({
+      id,
+      label: CATEGORY_CONFIG[id].label,
+      count: items.length
+    });
+  }
 
-    return { categories };
+  return { categories };
 }
 
 async function buildCategoryList(dataDir: string, category: CategoryId): Promise<DashboardItemSummary[]> {
-    const items = await loadCategoryItems(dataDir, category);
-    return items.map((item, index) => ({
-        id: itemId(item, index),
-        label: itemLabel(item)
-    }));
+  const items = await loadCategoryItems(dataDir, category);
+  return items.map((item, index) => ({
+    id: itemId(item, index),
+    label: itemLabel(item)
+  }));
 }
 
 async function loadCategoryItemById(
-    dataDir: string,
-    category: CategoryId,
-    requestedItemId: string
+  dataDir: string,
+  category: CategoryId,
+  requestedItemId: string
 ): Promise<Record<string, unknown> | undefined> {
-    const items = await loadCategoryItems(dataDir, category);
-    const index = items.findIndex((item, itemIndex) => itemId(item, itemIndex) === requestedItemId);
-    if (index === -1) {
-        return undefined;
-    }
-    return items[index];
+  const items = await loadCategoryItems(dataDir, category);
+  const index = items.findIndex((item, itemIndex) => itemId(item, itemIndex) === requestedItemId);
+  if (index === -1) {
+    return undefined;
+  }
+  return items[index];
 }
 
 export async function collectPreviewSummary(dataDir: string): Promise<PreviewSummary> {
-    const rawDir = resolve(dataDir, 'raw');
-    const extractedDir = resolve(dataDir, 'extracted');
-    const normalizedDir = resolve(dataDir, 'normalized');
+  const rawDir = resolve(dataDir, 'raw');
+  const extractedDir = resolve(dataDir, 'extracted');
+  const normalizedDir = resolve(dataDir, 'normalized');
 
-    const rawFiles = await listJsonLikeFiles(rawDir);
-    const extractedFiles = await listJsonLikeFiles(extractedDir);
-    const normalizedFiles = await listJsonLikeFiles(normalizedDir);
+  const rawFiles = await listJsonLikeFiles(rawDir);
+  const extractedFiles = await listJsonLikeFiles(extractedDir);
+  const normalizedFiles = await listJsonLikeFiles(normalizedDir);
 
-    const runes = await readArrayLength(resolve(normalizedDir, 'runes.json'));
-    const deities = await readArrayLength(resolve(normalizedDir, 'deities.json'));
-    const worlds = await readArrayLength(resolve(normalizedDir, 'worlds.json'));
-    const practices = await readArrayLength(resolve(normalizedDir, 'practices.records.json'));
-    const adjacentSystems = await readArrayLength(resolve(normalizedDir, 'adjacent-systems.records.json'));
+  const runes = await readArrayLength(resolve(normalizedDir, 'runes.json'));
+  const deities = await readArrayLength(resolve(normalizedDir, 'deities.json'));
+  const worlds = await readArrayLength(resolve(normalizedDir, 'worlds.json'));
+  const practices = await readArrayLength(resolve(normalizedDir, 'practices.records.json'));
+  const adjacentSystems = await readArrayLength(resolve(normalizedDir, 'adjacent-systems.records.json'));
 
-    return {
-        generatedAt: new Date().toISOString(),
-        rawCount: rawFiles.filter((name) => name.endsWith('.metadata.json')).length,
-        extractedCount: extractedFiles.filter((name) => name.endsWith('.records.json')).length,
-        normalizedCounts: {
-            runes,
-            deities,
-            worlds,
-            practices,
-            adjacentSystems
-        },
-        files: {
-            raw: rawFiles,
-            extracted: extractedFiles,
-            normalized: normalizedFiles
-        }
-    };
+  return {
+    generatedAt: new Date().toISOString(),
+    rawCount: rawFiles.filter((name) => name.endsWith('.metadata.json')).length,
+    extractedCount: extractedFiles.filter((name) => name.endsWith('.records.json')).length,
+    normalizedCounts: {
+      runes,
+      deities,
+      worlds,
+      practices,
+      adjacentSystems
+    },
+    files: {
+      raw: rawFiles,
+      extracted: extractedFiles,
+      normalized: normalizedFiles
+    }
+  };
 }
 
 export function buildPreviewHtml(summary: PreviewSummary): string {
-    const summaryJson = JSON.stringify(summary).replace(/</g, '\\u003c');
+  const summaryJson = JSON.stringify(summary).replace(/</g, '\\u003c');
 
-    return `<!doctype html>
+  return `<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -447,6 +525,30 @@ export function buildPreviewHtml(summary: PreviewSummary): string {
       color: var(--muted);
       font-size: 0.82rem;
     }
+    .run-controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 0 0 14px;
+      align-items: center;
+    }
+    .run-btn {
+      border: 1px solid rgba(98,179,168,0.7);
+      background: rgba(98,179,168,0.2);
+      color: var(--ink);
+      border-radius: 10px;
+      padding: 9px 12px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .run-btn:disabled {
+      opacity: 0.6;
+      cursor: wait;
+    }
+    .run-status {
+      font-size: 0.86rem;
+      color: var(--muted);
+    }
     @media (max-width: 1100px) {
       .dashboard {
         grid-template-columns: 1fr;
@@ -476,6 +578,11 @@ export function buildPreviewHtml(summary: PreviewSummary): string {
   <main class="wrap">
     <h1>Elder Futhark ETL Preview</h1>
     <p class="sub">Category-first explorer for normalized records with item drilldown details.</p>
+
+    <section class="run-controls">
+      <button id="run-pipeline" class="run-btn" type="button">Run Full Pipeline</button>
+      <span id="run-status" class="run-status">Pipeline status: idle</span>
+    </section>
 
     <section class="stat-grid" id="cards"></section>
 
@@ -559,6 +666,8 @@ export function buildPreviewHtml(summary: PreviewSummary): string {
     const detailTitle = document.getElementById('detail-title');
     const itemView = document.getElementById('item-view');
     const itemSearchInput = document.getElementById('item-search');
+    const runPipelineButton = document.getElementById('run-pipeline');
+    const runStatusNode = document.getElementById('run-status');
 
     const escapeHtml = (value) =>
       String(value)
@@ -655,6 +764,46 @@ export function buildPreviewHtml(summary: PreviewSummary): string {
         throw new Error('Request failed: ' + response.status + ' ' + response.statusText);
       }
       return response.json();
+    };
+
+    const postJson = async (url) => {
+      const response = await fetch(url, { method: 'POST' });
+      let payload = {};
+      try {
+        payload = await response.json();
+      } catch {
+        payload = {};
+      }
+      if (!response.ok) {
+        const error = payload && typeof payload.error === 'string' ? payload.error : response.statusText;
+        throw new Error('Request failed: ' + error);
+      }
+      return payload;
+    };
+
+    const formatRunSummary = (state) => {
+      if (!state || !state.status) {
+        return 'Pipeline status: unknown';
+      }
+      if (state.status === 'idle') {
+        return 'Pipeline status: idle';
+      }
+      if (state.status === 'running') {
+        return 'Pipeline status: running (' + state.source + ')';
+      }
+      if (state.status === 'failed') {
+        return 'Pipeline status: failed (' + (state.error || 'unknown error') + ')';
+      }
+      const summaries = Array.isArray(state.results)
+        ? state.results.map((entry) => entry.stage + '=' + entry.summary).join(' | ')
+        : '';
+      return 'Pipeline status: succeeded (' + (summaries || 'completed') + ')';
+    };
+
+    const refreshPipelineStatus = async () => {
+      const state = await fetchJson('/api/pipeline/status');
+      runStatusNode.textContent = formatRunSummary(state);
+      runPipelineButton.disabled = state.status === 'running';
     };
 
     const renderItemsFromCurrent = () => {
@@ -754,6 +903,27 @@ export function buildPreviewHtml(summary: PreviewSummary): string {
       setDetail('Dashboard Error', { error: error.message || String(error) });
     });
 
+    runPipelineButton.addEventListener('click', async () => {
+      runPipelineButton.disabled = true;
+      runStatusNode.textContent = 'Pipeline status: starting...';
+      try {
+        await postJson('/api/pipeline/run?source=all');
+        await refreshPipelineStatus();
+      } catch (error) {
+        const message = error instanceof Error ? error.message : String(error);
+        runStatusNode.textContent = 'Pipeline status: failed to start (' + message + ')';
+        runPipelineButton.disabled = false;
+      }
+    });
+
+    refreshPipelineStatus().catch(() => {
+      runStatusNode.textContent = 'Pipeline status: unavailable';
+    });
+
+    setInterval(() => {
+      refreshPipelineStatus().catch(() => {});
+    }, 3000);
+
     itemSearchInput.addEventListener('input', () => {
       if (!activeCategory) {
         return;
@@ -768,120 +938,157 @@ export function buildPreviewHtml(summary: PreviewSummary): string {
 }
 
 function sendJson(res: ServerResponse, status: number, body: unknown): void {
-    res.statusCode = status;
-    res.setHeader('content-type', 'application/json; charset=utf-8');
-    res.end(JSON.stringify(body, null, 2));
+  res.statusCode = status;
+  res.setHeader('content-type', 'application/json; charset=utf-8');
+  res.end(JSON.stringify(body, null, 2));
 }
 
-async function route(req: IncomingMessage, res: ServerResponse, dataDir: string): Promise<void> {
-    const parsed = new URL(req.url ?? '/', 'http://127.0.0.1');
-    const path = parsed.pathname;
+async function route(
+  req: IncomingMessage,
+  res: ServerResponse,
+  dataDir: string,
+  pipeline: PipelineController
+): Promise<void> {
+  const parsed = new URL(req.url ?? '/', 'http://127.0.0.1');
+  const path = parsed.pathname;
+  const method = req.method ?? 'GET';
 
-    if (path === '/healthz') {
-        sendJson(res, 200, { ok: true });
-        return;
+  if (path === '/healthz') {
+    sendJson(res, 200, { ok: true });
+    return;
+  }
+
+  if (path === '/api/summary') {
+    try {
+      const summary = await collectPreviewSummary(dataDir);
+      sendJson(res, 200, summary);
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      sendJson(res, 500, { error: message });
+    }
+    return;
+  }
+
+  if (path === '/api/pipeline/status') {
+    sendJson(res, 200, pipeline.status);
+    return;
+  }
+
+  if (path === '/api/pipeline/run') {
+    if (method !== 'POST') {
+      sendJson(res, 405, { error: 'method not allowed' });
+      return;
     }
 
-    if (path === '/api/summary') {
-        try {
-            const summary = await collectPreviewSummary(dataDir);
-            sendJson(res, 200, summary);
-        } catch (error) {
-            const message = error instanceof Error ? error.message : String(error);
-            sendJson(res, 500, { error: message });
-        }
-        return;
+    const source = parsed.searchParams.get('source')?.trim() || 'all';
+    const started = await pipeline.startRun(source);
+    if (!started) {
+      sendJson(res, 409, { error: 'pipeline already running', status: pipeline.status });
+      return;
     }
 
-    if (path === '/api/catalog') {
-        try {
-            const catalog = await buildDashboardCatalog(dataDir);
-            sendJson(res, 200, catalog);
-        } catch (error) {
-            const message = error instanceof Error ? error.message : String(error);
-            sendJson(res, 500, { error: message });
-        }
-        return;
+    sendJson(res, 202, { ok: true, status: pipeline.status });
+    return;
+  }
+
+  if (path === '/api/catalog') {
+    try {
+      const catalog = await buildDashboardCatalog(dataDir);
+      sendJson(res, 200, catalog);
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      sendJson(res, 500, { error: message });
+    }
+    return;
+  }
+
+  if (path.startsWith('/api/category/')) {
+    const segments = path.replace('/api/category/', '').split('/').map((segment) => decodeURIComponent(segment));
+    const categoryId = segments[0] ?? '';
+
+    if (!isCategoryId(categoryId)) {
+      sendJson(res, 400, { error: 'unknown category' });
+      return;
     }
 
-    if (path.startsWith('/api/category/')) {
-        const segments = path.replace('/api/category/', '').split('/').map((segment) => decodeURIComponent(segment));
-        const categoryId = segments[0] ?? '';
-
-        if (!isCategoryId(categoryId)) {
-            sendJson(res, 400, { error: 'unknown category' });
-            return;
-        }
-
-        if (segments.length === 1 || !segments[1]) {
-            try {
-                const items = await buildCategoryList(dataDir, categoryId);
-                sendJson(res, 200, items);
-            } catch (error) {
-                const message = error instanceof Error ? error.message : String(error);
-                sendJson(res, 500, { error: message });
-            }
-            return;
-        }
-
-        const itemIdValue = segments[1];
-        try {
-            const item = await loadCategoryItemById(dataDir, categoryId, itemIdValue);
-            if (!item) {
-                sendJson(res, 404, { error: 'item not found' });
-                return;
-            }
-            sendJson(res, 200, item);
-        } catch (error) {
-            const message = error instanceof Error ? error.message : String(error);
-            sendJson(res, 500, { error: message });
-        }
-        return;
+    if (segments.length === 1 || !segments[1]) {
+      try {
+        const items = await buildCategoryList(dataDir, categoryId);
+        sendJson(res, 200, items);
+      } catch (error) {
+        const message = error instanceof Error ? error.message : String(error);
+        sendJson(res, 500, { error: message });
+      }
+      return;
     }
 
-    if (path === '/' || path === '/index.html') {
-        const summary = await collectPreviewSummary(dataDir);
-        res.statusCode = 200;
-        res.setHeader('content-type', 'text/html; charset=utf-8');
-        res.end(buildPreviewHtml(summary));
+    const itemIdValue = segments[1];
+    try {
+      const item = await loadCategoryItemById(dataDir, categoryId, itemIdValue);
+      if (!item) {
+        sendJson(res, 404, { error: 'item not found' });
         return;
+      }
+      sendJson(res, 200, item);
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      sendJson(res, 500, { error: message });
     }
+    return;
+  }
 
-    if (path.startsWith('/data/')) {
-        const relative = path.replace('/data/', '');
-        if (relative.includes('..')) {
-            sendJson(res, 400, { error: 'invalid path' });
-            return;
-        }
-        const absolute = join(dataDir, relative);
-        try {
-            const text = await readFile(absolute, 'utf8');
-            res.statusCode = 200;
-            res.setHeader('content-type', 'application/json; charset=utf-8');
-            res.end(text);
-        } catch {
-            sendJson(res, 404, { error: 'not found' });
-        }
-        return;
+  if (path === '/' || path === '/index.html') {
+    const summary = await collectPreviewSummary(dataDir);
+    res.statusCode = 200;
+    res.setHeader('content-type', 'text/html; charset=utf-8');
+    res.end(buildPreviewHtml(summary));
+    return;
+  }
+
+  if (path.startsWith('/data/')) {
+    const relative = path.replace('/data/', '');
+    if (relative.includes('..')) {
+      sendJson(res, 400, { error: 'invalid path' });
+      return;
     }
+    const absolute = join(dataDir, relative);
+    try {
+      const text = await readFile(absolute, 'utf8');
+      res.statusCode = 200;
+      res.setHeader('content-type', 'application/json; charset=utf-8');
+      res.end(text);
+    } catch {
+      sendJson(res, 404, { error: 'not found' });
+    }
+    return;
+  }
 
-    sendJson(res, 404, { error: 'not found' });
+  sendJson(res, 404, { error: 'not found' });
 }
 
-export async function startPreviewServer(dataDir: string, port: number): Promise<void> {
-    const server = createServer((req, res) => {
-        route(req, res, dataDir).catch((error) => {
-            const message = error instanceof Error ? error.message : String(error);
-            sendJson(res, 500, { error: message });
-        });
-    });
+export function createPreviewServer(dataDir: string, options: PreviewServerOptions = {}): Server {
+  const runPipeline = options.runPipeline ?? (async (source: string) => runCommand({ source }));
+  const pipeline = createPipelineController(runPipeline);
 
-    await new Promise<void>((resolvePromise, reject) => {
-        server.once('error', reject);
-        server.listen(port, '127.0.0.1', () => resolvePromise());
+  return createServer((req, res) => {
+    route(req, res, dataDir, pipeline).catch((error) => {
+      const message = error instanceof Error ? error.message : String(error);
+      sendJson(res, 500, { error: message });
     });
+  });
+}
 
-    process.on('SIGINT', () => {
-        server.close(() => process.exit(0));
-    });
+export async function startPreviewServer(dataDir: string, port: number): Promise<Server> {
+  const server = createPreviewServer(dataDir);
+
+  await new Promise<void>((resolvePromise, reject) => {
+    server.once('error', reject);
+    server.listen(port, '127.0.0.1', () => resolvePromise());
+  });
+
+  process.on('SIGINT', () => {
+    server.close(() => process.exit(0));
+  });
+
+  return server;
 }

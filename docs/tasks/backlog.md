@@ -17,10 +17,18 @@ Use this checklist when restarting work:
 
 ## Immediate Next Steps
 
-- [ ] Convert bare URLs in `README.md` to markdown links (resolve markdown lint `MD034`).
-- [ ] Add one integration test that exercises the preview category -> item -> detail flow end-to-end.
-- [ ] Add a regression test that fails if snapshot output reverts from `.raw.txt` back to `.html`.
-- [ ] Capture one sample `review` output in docs for operators running manual quality gates.
+- [x] Convert bare URLs in `README.md` to markdown links (resolve markdown lint `MD034`).
+- [x] Add one integration test that exercises the preview category -> item -> detail flow end-to-end.
+- [x] Add a regression test that fails if snapshot output reverts from `.raw.txt` back to `.html`.
+- [x] Capture one sample `review` output in docs for operators running manual quality gates.
+
+## Build-Complete Checklist (Before First Full Scrape Run)
+
+- [ ] Run full pipeline: `pnpm cli run --source all`
+- [ ] Run canonical comparison gate: `pnpm cli diff`
+- [ ] Review preview dashboard data on `pnpm cli preview --port 4280`
+- [ ] Confirm review stage classification counts look plausible for current source set
+- [ ] Confirm no unexpected removals in diff summary before publishing
 
 ## Near-Term Follow-Ups
 

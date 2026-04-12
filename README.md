@@ -12,13 +12,13 @@ A provenance-aware, source-allowlisted ETL pipeline for building structured JSON
 
 ## Approved initial sources
 
-- https://norse-mythology.org/gods-and-creatures/
-- https://norse-mythology.org/cosmology/the-nine-worlds/
-- https://norse-mythology.org/runes/the-meanings-of-the-runes/
-- https://andreashelley.com/blog/rune-casting-guide-how-to-read-the-runes/
-- https://andreashelley.com/blog/futhark-runes-symbols-and-meanings/
-- https://andreashelley.com/blog/what-are-bindrunes-and-how-to-make-your-own/
-- https://andreashelley.com/blog/icelandic-magic-staves/
+- [https://norse-mythology.org/gods-and-creatures/](https://norse-mythology.org/gods-and-creatures/)
+- [https://norse-mythology.org/cosmology/the-nine-worlds/](https://norse-mythology.org/cosmology/the-nine-worlds/)
+- [https://norse-mythology.org/runes/the-meanings-of-the-runes/](https://norse-mythology.org/runes/the-meanings-of-the-runes/)
+- [https://andreashelley.com/blog/rune-casting-guide-how-to-read-the-runes/](https://andreashelley.com/blog/rune-casting-guide-how-to-read-the-runes/)
+- [https://andreashelley.com/blog/futhark-runes-symbols-and-meanings/](https://andreashelley.com/blog/futhark-runes-symbols-and-meanings/)
+- [https://andreashelley.com/blog/what-are-bindrunes-and-how-to-make-your-own/](https://andreashelley.com/blog/what-are-bindrunes-and-how-to-make-your-own/)
+- [https://andreashelley.com/blog/icelandic-magic-staves/](https://andreashelley.com/blog/icelandic-magic-staves/)
 
 ## Principles
 
@@ -66,3 +66,26 @@ pnpm cli preview --port 4173
 - Use `pnpm cli preview` for a local read-only browser view of generated `data/*` artifacts.
 - Use `pnpm cli review` to run provenance and classification boundary checks on normalized artifacts.
 - Use `pnpm cli diff` to compare `data/normalized` and `data/published` canonical records before shipping.
+
+## Operator Quality Gate
+
+Use this sequence before accepting new published artifacts:
+
+```bash
+pnpm cli run --source all
+pnpm cli diff
+pnpm cli preview --port 4280
+```
+
+Example `review` stage output shape:
+
+```text
+review: canonical runes=24 deities=12 worlds=9 practices=3 adjacent=2
+review: classifications reference_like=28 practical_guide=4 modern_interpretation=3 adjacent_symbolic_system=2
+```
+
+Interpretation guide:
+
+- unexpected drops in canonical counts should be treated as potential extraction drift
+- classification totals should remain plausible for the current source registry
+- if `pnpm cli diff` reports unexplained removals, pause publishing and investigate
