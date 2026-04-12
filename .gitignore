@@ -5,3 +5,7 @@ dist
 .DS_Store
 *.log
 .data-cache
+
+# Keep heavyweight raw snapshots out of source control by default.
+data/raw/*.raw.txt
+data/raw/*.metadata.json

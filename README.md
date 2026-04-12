@@ -2,6 +2,10 @@
 
 A provenance-aware, source-allowlisted ETL pipeline for building structured JSON datasets for the Elder Futhark Academy application.
 
+## License
+
+This repository is licensed under the MIT License. See `LICENSE`.
+
 ## Objectives
 
 - Fetch content only from approved source URLs.
@@ -66,6 +70,24 @@ pnpm cli preview --port 4173
 - Use `pnpm cli preview` for a local read-only browser view of generated `data/*` artifacts.
 - Use `pnpm cli review` to run provenance and classification boundary checks on normalized artifacts.
 - Use `pnpm cli diff` to compare `data/normalized` and `data/published` canonical records before shipping.
+
+## Public Repository Data Policy
+
+- Keep source code and documentation public.
+- Keep heavyweight raw snapshots out of GitHub by default (`data/raw/*.raw.txt`, `data/raw/*.metadata.json` are gitignored).
+- Use published artifacts in `data/published` for application ingestion.
+
+If raw files were already tracked before ignore rules were added, untrack them with:
+
+```bash
+git rm --cached data/raw/*.raw.txt data/raw/*.metadata.json
+```
+
+## Source Content Rights and Use
+
+- Original website content remains the property of its respective owners.
+- This repository stores transformed, provenance-attributed research artifacts for educational and development use.
+- Reuse or redistribution of source-derived content should be evaluated against each source site's terms and applicable law.
 
 ## Operator Quality Gate
 
