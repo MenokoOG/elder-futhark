@@ -1,6 +1,6 @@
 # Elder Futhark Academy (Pure MERN)
 
-https://elder-futhark-academy-1.onrender.com/
+
 
 This repo is intentionally **not** a monorepo. It has two folders:
 
