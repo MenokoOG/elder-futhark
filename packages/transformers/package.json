@@ -1,0 +1,19 @@
+{
+  "name": "@efa/transformers",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "echo transformers lint placeholder",
+    "test": "vitest run --passWithNoTests",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@efa/schemas": "workspace:*",
+    "zod": "^3.24.3"
+  }
+}

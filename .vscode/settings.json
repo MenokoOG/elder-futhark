@@ -1,0 +1,12 @@
+{
+  "files.associations": {
+    "data/raw/*.html": "plaintext",
+    "**/data/raw/*.html": "plaintext",
+    "/data/raw/*.html": "plaintext"
+  },
+  "html.validate.enabled": false,
+  "html.validate.styles": false,
+  "html.validate.scripts": false,
+  "htmlhint.enable": false,
+  "webhint.enable": false
+}

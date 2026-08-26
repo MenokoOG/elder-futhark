@@ -12,27 +12,26 @@ secrets/
 **/id_ed25519
 
 # =========================
-# PRE-MONOREPO SOURCES — remove after verification
-# The four original directories this monorepo was assembled from. They are
-# left in place (not deleted) because elder-futhark-academy/server/.env holds
-# live credentials that only Lawrence moves. Once the monorepo is verified,
-# delete them and delete this block. See README "Retiring the source folders".
-# =========================
-/elder-futhark-academy/
-/elder-futhark-etl/
-/einarr_bindrunes_package/
-/elder-futhark-final-agent-package/
-
-# =========================
 # Agent operating files (core-context.md Context File Policy)
 # core-context.md itself IS tracked — it is the standards mirror.
+# Root-anchored on purpose: the ETL subtree tracks folder-level AGENTS.md
+# guardrails by design, and those stay. Only the repo-root operating files
+# are ignored here.
 # =========================
-CLASSHUMAN.md
-CLAUDE.md
-AGENTS.md
+/CLASSHUMAN.md
+/CLAUDE.md
+/AGENTS.md
 .claude/
 .remember/
 ai-code-reviews/
+
+# =========================
+# CodeGuard instruction files
+# Distributed onto this machine from the Prompt & Agent Library; they were
+# never tracked in elder-futhark-academy either. Consume, don't fork — the
+# canonical copy lives in the library.
+# =========================
+.github/instructions/
 
 # =========================
 # Node / build

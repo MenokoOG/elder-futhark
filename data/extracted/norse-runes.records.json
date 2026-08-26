@@ -1,0 +1,108 @@
+[
+  {
+    "id": "norse-runes:page",
+    "kind": "rune_source",
+    "title": "Norse Mythology for Smart People",
+    "summary": "This page is the fourth part of a five-part article on the runes. The other four parts are:",
+    "sections": [
+      {
+        "text": "This page is the fourth part of a five-part article on the runes. The other four parts are:"
+      },
+      {
+        "text": "Part I: Introduction Part II: The Origins of the Runes Part III: Runic Philosophy and Magic Part V: The 10 Best Books on the Runes"
+      },
+      {
+        "text": "This section provides the sign, name, phoneme (sound), and short description of the meaning of each of the twenty-four runes that comprise the Elder Futhark. The given meanings are based on the medieval Rune Poems (which are conveniently available online here) exclusively. Where our present knowledge isn’t extensive enough to give an explanation of which one can be reasonably certain, this is noted and the meaning is left unexplained or only partially explained. This article is hardly the place for esoteric speculations, which have been avoided. (If you’re interested in going beyond the evidence and using less academically acceptable means of discerning other meanings of the runes, you have to do that yourself. The books on my list of The 10 Best Books on the Runes might help.)"
+      },
+      {
+        "text": "Name: Fehu, “cattle.” Phoneme: F. Meaning: wealth."
+      },
+      {
+        "text": "Name: Uruz, “aurochs.” Phoneme: U (long and/or short). Meaning: strength of will."
+      },
+      {
+        "text": "Name: Thurisaz, “Giant.” Phoneme: Th (both soft and hard). Meaning: danger, suffering."
+      },
+      {
+        "text": "Name: Ansuz, “an Aesir god.” Phoneme: A (long and/or short). Meaning: prosperity, vitality."
+      },
+      {
+        "text": "Name: Raidho, “journey on horseback.” Phoneme: R. Meaning: movement, work, growth."
+      },
+      {
+        "text": "Name: Kaunan, “ulcer.” Phoneme: K. Meaning: mortality, pain."
+      },
+      {
+        "text": "Name: Gebo, “gift.” Phoneme: G. Meaning: generosity."
+      },
+      {
+        "text": "Name: Wunjo, “joy.” Phoneme: W. Meaning: joy, ecstasy."
+      },
+      {
+        "text": "Name:Hagalaz, “hail.” Phoneme: H. Meaning: destruction, chaos."
+      },
+      {
+        "text": "Name: Naudhiz, “need.” Phoneme: N. Meaning: need, unfulfilled desire."
+      },
+      {
+        "text": "Name: Isaz, “ice.” Phoneme: I (long and/or short). Meaning: unknown (the rune poems are ambiguous and contradictory)."
+      },
+      {
+        "text": "Name: Jera, “year.” Phoneme: Germanic J, modern English Y. Meaning: harvest, reward."
+      },
+      {
+        "text": "Name: Eihwaz, “yew.” Phoneme: I pronounced like “Eye.” Meaning: strength, stability."
+      },
+      {
+        "text": "Name: unknown. Phoneme: P. Meaning: unknown. (Note: the theory that this rune’s name was “Pertho” is just speculation. No one really knows, because the Viking Age and medieval sources are too vague.)"
+      },
+      {
+        "text": "Name: unknown (the rune poems are contradictory). Phoneme: Z. Meaning: protection from enemies, defense of that which one loves."
+      },
+      {
+        "text": "Name: Sowilo, “sun.” Phoneme: S. Meaning: success, solace."
+      },
+      {
+        "text": "Name: Tiwaz, “the god Tiwaz.” Phoneme: T. Meaning: victory, honor."
+      },
+      {
+        "text": "Name: Berkanan, “birch.” Phoneme: B. Meaning: fertility, growth, sustenance."
+      },
+      {
+        "text": "Name: Ehwaz, “horse.” Phoneme: E (long and/or short). Meaning: trust, faith, companionship."
+      },
+      {
+        "text": "Name: Mannaz, “man.” Phoneme: M. Meaning: augmentation, support."
+      },
+      {
+        "text": "Name: Laguz. Phoneme: L. Meaning: formlessness, chaos, potentiality, the unknown."
+      },
+      {
+        "text": "Name: Ingwaz, “the god Ingwaz.” Phoneme: Ng. Meaning: fertilization, the beginning of something, the actualization of potential."
+      },
+      {
+        "text": "Name: Othalan, “inheritance.” Phoneme: O (long and/or short). Meaning: inheritance, heritage, tradition, nobility."
+      },
+      {
+        "text": "Name: Dagaz, “day.” Phoneme: D. Meaning: hope, happiness."
+      },
+      {
+        "text": "Continue on to Part V, The 10 Best Books on the Runes."
+      }
+    ],
+    "references": [
+      {
+        "sourceSite": "norse-mythology.org",
+        "sourceUrl": "https://norse-mythology.org/runes/the-meanings-of-the-runes/",
+        "sourceTitle": "Norse Mythology for Smart People",
+        "extractedAt": "2026-04-12T05:12:59.037Z",
+        "extractorVersion": "0.1.0",
+        "contentHash": "d22519e0ec26ca236ceda9c1d570f4ad1fb4e267189ded2e96fb1ad0ec49d30d",
+        "classification": "reference_like"
+      }
+    ],
+    "tags": [
+      "reference_like"
+    ]
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "id": "norse-world-vanaheim:page",
+    "kind": "world_source",
+    "title": "Norse Mythology for Smart People",
+    "summary": "Vanaheim (Old Norse Vanaheimr, “Homeland of the Vanir“) is one of the Nine Worlds that are situated around the world-tree Yggdrasil. As the name implies, it’s the home of the Vanir tribe of deities, who tend to be somewhat more associated with fertility and what we today would call “nature” than the other tribe of Norse deities, the Aesir, who have their home in Asgard.",
+    "sections": [
+      {
+        "text": "Vanaheim (Old Norse Vanaheimr, “Homeland of the Vanir“) is one of the Nine Worlds that are situated around the world-tree Yggdrasil. As the name implies, it’s the home of the Vanir tribe of deities, who tend to be somewhat more associated with fertility and what we today would call “nature” than the other tribe of Norse deities, the Aesir, who have their home in Asgard."
+      },
+      {
+        "text": "The surviving sources for our information on Norse mythology and religion, as fragmentary as they are, don’t contain any explicit mention of where exactly Vanaheim is located.[1] The sole clue we have comes from the Lokasenna (“The Taunting of Loki“), one of the poems in the Poetic Edda, which states that the Vanir god Njord went eastward when he went to Asgard as a hostage at the conclusion of the Aesir-Vanir War.[2] Presumably, then, Vanaheim lies somewhere to the west of Asgard."
+      },
+      {
+        "text": "Some scholars have gone so far as to claim that Vanaheim was invented by the thirteenth-century Icelandic Christian historian and poet Snorri Sturluson.[3] However, there is one authentic and reliable Old Norse poem that mentions Vanaheim by name,[4] so we can be reasonably certain that it was a genuine element of pre-Christian Norse religion."
+      },
+      {
+        "text": "It should come as no surprise, then, that the sources are completely silent as to what kind of world Vanaheim is. However, its name may contain an indication of the place’s character. One of the primary ways the pre-Christian Norse and other Germanic peoples classified geographical spaces (as well as psychological states) was with reference to their concept of the distinction between the innangard and utangard. That which is innangard (“inside the fence”) is orderly, law-abiding, and civilized, while that which is utangard (“beyond the fence”) is chaotic, anarchic, and wild. This psychogeography found its natural expression in agrarian land-use patterns, where the fence (the -gard or, in Old Norse, -garðr of the above terms) separated pastures and fields of crops from the wilderness beyond them. Of the Nine Worlds, two are innangard spaces: Asgard and Midgard, the world of human civilization. Both of these contain -gard in their names and are depicted as having a fence or fortification surrounding them. The rest of the Nine Worlds’ names end in -heim, and there’s no reference to their being enclosed in any way, which seems to indicate that they’re essentially utangard places. Such a designation is certainly in keeping with the way these places are described in Old Norse literature. Thus, we can infer that Vanaheim, like the Vanir themselves, is somewhat more wild or “natural,” and less “cultural,” than the world of the Vanir’s Aesir counterparts, or even that of humanity."
+      },
+      {
+        "text": "Looking for more great information on Norse mythology and religion? While this site provides the ultimate online introduction to the topic, my book The Viking Spirit provides the ultimate introduction to Norse mythology and religion period. I’ve also written a popular list of The 10 Best Norse Mythology Books, which you’ll probably find helpful in your pursuit."
+      },
+      {
+        "text": "References:"
+      },
+      {
+        "text": "[1] Ellis Davidson, Hilda Roderick. 1993. The Lost Beliefs of Northern Europe. p. 70."
+      },
+      {
+        "text": "[2] The Poetic Edda. Lokasenna, stanza 34."
+      },
+      {
+        "text": "[3] Simek, Rudolf. 2010. The Vanir: an Obituary. In The Retrospective Methods Newsletter, December 2010. Edited by Helen F. Leslie and Mathais Nordvig."
+      },
+      {
+        "text": "[4] The Poetic Edda. Vafþrúðnismál, stanza 39."
+      }
+    ],
+    "references": [
+      {
+        "sourceSite": "norse-mythology.org",
+        "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/vanaheim/",
+        "sourceTitle": "Norse Mythology for Smart People",
+        "extractedAt": "2026-04-12T05:13:09.299Z",
+        "extractorVersion": "0.1.0",
+        "contentHash": "b1e280f927a1321dbca26d60cf85c16f95b68ee81e7f5a0e810c3cb8a4250322",
+        "classification": "reference_like"
+      }
+    ],
+    "tags": [
+      "reference_like"
+    ]
+  }
+]

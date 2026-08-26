@@ -1,0 +1,51 @@
+[
+  {
+    "id": "norse-god-idun:page",
+    "kind": "deity_source",
+    "title": "Norse Mythology for Smart People",
+    "summary": "Idun (pronounced “IH-dune;” from Old Norse Iðunn, “The Rejuvenating One”[1]) is a goddess who belongs to the Aesir tribe of deities. Her role in the pre-Christian mythology and religion of the Norse and other Germanic peoples is unfortunately obscure, but she features prominently in one of the best-known mythological tales, The Kidnapping of Idun. In this tale, which comes to us from the skaldic poem Haustlöng and the Prose Edda, Idun is depicted as the owner and dispenser of a fruit that imparts immortality.",
+    "sections": [
+      {
+        "text": "Idun (pronounced “IH-dune;” from Old Norse Iðunn, “The Rejuvenating One”[1]) is a goddess who belongs to the Aesir tribe of deities. Her role in the pre-Christian mythology and religion of the Norse and other Germanic peoples is unfortunately obscure, but she features prominently in one of the best-known mythological tales, The Kidnapping of Idun. In this tale, which comes to us from the skaldic poem Haustlöng and the Prose Edda, Idun is depicted as the owner and dispenser of a fruit that imparts immortality."
+      },
+      {
+        "text": "In modern books on Norse mythology, these fruits are almost invariably considered to be apples, but this wasn’t necessarily the case in heathen times. The Old Norse word for “apple,” epli, was often used to denote any fruit or nut, and “apples” in the modern English sense didn’t arrive in Scandinavia until late in the Middle Ages.[2] Whatever species Idun’s produce belongs to, its ability to sustain the immortality of the gods and goddesses makes Idun an indispensable presence in Asgard."
+      },
+      {
+        "text": "Idun is the wife of Asgard’s court poet and minstrel, Bragi. One Old Norse poem has Loki accuse her of sleeping with her brother’s murderer,[3] but the identities of her brother and his slayer are unknown, and no tale explaining this accusation has survived into the modern era."
+      },
+      {
+        "text": "Unfortunately, that’s about all we know about Idun, due to the sparseness of mentions of her in the sources of our present-day knowledge of Norse mythology and religion."
+      },
+      {
+        "text": "Looking for more great information on Norse mythology and religion? While this site provides the ultimate online introduction to the topic, my book The Viking Spirit provides the ultimate introduction to Norse mythology and religion period. I’ve also written a popular list of The 10 Best Norse Mythology Books, which you’ll probably find helpful in your pursuit."
+      },
+      {
+        "text": "References:"
+      },
+      {
+        "text": "[1] Simek, Rudolf. 1993. Dictionary of Northern Mythology. Translated by Angela Hall. p. 171."
+      },
+      {
+        "text": "[2] Turville-Petre, E.O.G. 1964. Myth and Religion of the North: The Religion of Ancient Scandinavia. p. 186."
+      },
+      {
+        "text": "[3] The Poetic Edda. Lokasenna, verse 17."
+      }
+    ],
+    "references": [
+      {
+        "sourceSite": "norse-mythology.org",
+        "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/idun/",
+        "sourceTitle": "Norse Mythology for Smart People",
+        "extractedAt": "2026-04-12T05:13:35.466Z",
+        "extractorVersion": "0.1.0",
+        "contentHash": "4dc60feb985f92a107d2b52164d5a2ca5dfeff484deed0d9a16a90ecb3eb87c7",
+        "classification": "reference_like"
+      }
+    ],
+    "tags": [
+      "reference_like"
+    ]
+  }
+]

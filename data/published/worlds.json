@@ -1,0 +1,202 @@
+[
+  {
+    "id": "the-nine-worlds",
+    "name": "The Nine Worlds",
+    "summary": "The Nine Worlds (Old Norse Níu Heimar) are the homelands of the various types of beings found in the pre-Christian worldview of the Norse and other Germanic peoples. They’re held in the branches and roots of the world-tree Yggdrasil, although none of the sources for our present knowledge of Norse mythology and religion describe exactly where in and around Yggdrasil they’re located. (Any and all modern images of the worlds arranged around Yggdrasil are by definition speculative and unverifiable.)",
+    "associations": [
+      "reference_like"
+    ],
+    "sources": [
+      {
+        "sourceSite": "norse-mythology.org",
+        "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/",
+        "sourceTitle": "Norse Mythology for Smart People",
+        "extractedAt": "2026-04-12T05:12:57.381Z",
+        "extractorVersion": "0.1.0",
+        "contentHash": "c798d32e1fdeadbc9e075cd9d00604a4baca766b396b072deb66b982ba1da144",
+        "classification": "reference_like"
+      }
+    ],
+    "confidence": 0.75
+  },
+  {
+    "id": "midgard",
+    "name": "Midgard",
+    "summary": "Midgard (Old Norse Miðgarðr, Gothic midjungards, Old English middangeard, Old Saxon middilgard, Old High German mittilgart or mittangard, Proto-Germanic *meðjanagarðaz,[1][2] “Middle Enclosure”) is one of the Nine Worlds of Norse mythology and an important concept in the pre-Christian worldview of all of the Germanic peoples. It’s the inhabited world, and roughly corresponds to the modern English word and concept of “civilization.” It’s the only one of the Nine Worlds that’s primarily located in the visible world; the others, while they may intersect with the visible world at various points, are first and foremost invisible locations.",
+    "associations": [
+      "reference_like"
+    ],
+    "sources": [
+      {
+        "sourceSite": "norse-mythology.org",
+        "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/midgard/",
+        "sourceTitle": "Norse Mythology for Smart People",
+        "extractedAt": "2026-04-12T05:13:05.984Z",
+        "extractorVersion": "0.1.0",
+        "contentHash": "964803e1316e46af6a7e1ac5dd287ea6d4f5f347e4453f8592301758af7764c7",
+        "classification": "reference_like"
+      }
+    ],
+    "confidence": 0.75
+  },
+  {
+    "id": "asgard",
+    "name": "Asgard",
+    "summary": "Asgard (Old Norse Ásgarðr, “Enclosure of the Aesir) is one of the Nine Worlds of Norse mythology and the home and fortress of the Aesir, one of the two tribes of gods (the other being the Vanir, who have their home in Vanaheim). Asgard is located in the sky[1] (albeit spiritually rather than physically, of course) and is connected to Midgard, the world of humanity, by the rainbow bridge Bifrost.",
+    "associations": [
+      "reference_like"
+    ],
+    "sources": [
+      {
+        "sourceSite": "norse-mythology.org",
+        "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/asgard/",
+        "sourceTitle": "Norse Mythology for Smart People",
+        "extractedAt": "2026-04-12T05:13:07.672Z",
+        "extractorVersion": "0.1.0",
+        "contentHash": "fde6ff6ca9496d903e78169b3b3274479b9f9570ab4b79e732c5f8f608111373",
+        "classification": "reference_like"
+      }
+    ],
+    "confidence": 0.75
+  },
+  {
+    "id": "vanaheim",
+    "name": "Vanaheim",
+    "summary": "Vanaheim (Old Norse Vanaheimr, “Homeland of the Vanir“) is one of the Nine Worlds that are situated around the world-tree Yggdrasil. As the name implies, it’s the home of the Vanir tribe of deities, who tend to be somewhat more associated with fertility and what we today would call “nature” than the other tribe of Norse deities, the Aesir, who have their home in Asgard.",
+    "associations": [
+      "reference_like"
+    ],
+    "sources": [
+      {
+        "sourceSite": "norse-mythology.org",
+        "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/vanaheim/",
+        "sourceTitle": "Norse Mythology for Smart People",
+        "extractedAt": "2026-04-12T05:13:09.299Z",
+        "extractorVersion": "0.1.0",
+        "contentHash": "b1e280f927a1321dbca26d60cf85c16f95b68ee81e7f5a0e810c3cb8a4250322",
+        "classification": "reference_like"
+      }
+    ],
+    "confidence": 0.75
+  },
+  {
+    "id": "jotunheim",
+    "name": "Jotunheim",
+    "summary": "Jotunheim (pronounced “YO-tun-hame;” Old Norse Jötunheimr, “World of the Giants”) is one of the Nine Worlds, and, as the name implies, the homeland of the giants (Old Norse jötnar).",
+    "associations": [
+      "reference_like"
+    ],
+    "sources": [
+      {
+        "sourceSite": "norse-mythology.org",
+        "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/jotunheim/",
+        "sourceTitle": "Norse Mythology for Smart People",
+        "extractedAt": "2026-04-12T05:13:11.300Z",
+        "extractorVersion": "0.1.0",
+        "contentHash": "0b053f24eaf38b8f6f4f9210889bdc4cc23d543e85eb3f38aa481ad7f924f1da",
+        "classification": "reference_like"
+      }
+    ],
+    "confidence": 0.75
+  },
+  {
+    "id": "niflheim",
+    "name": "Niflheim",
+    "summary": "Niflheim (pronounced “NIF-el-hame;” from Old Norse Niflheimr, “World of Fog”) is one of the Nine Worlds of Norse mythology and the homeland of primordial darkness, cold, mist, and ice. As such, it’s the opposite cosmological principle of Muspelheim, the world of fire and heat.",
+    "associations": [
+      "reference_like"
+    ],
+    "sources": [
+      {
+        "sourceSite": "norse-mythology.org",
+        "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/niflheim/",
+        "sourceTitle": "Norse Mythology for Smart People",
+        "extractedAt": "2026-04-12T05:13:13.143Z",
+        "extractorVersion": "0.1.0",
+        "contentHash": "03e9d3c7cab17c62b111d9e9314fc4eb9d787089c636f2996f9d9d620450c3d2",
+        "classification": "reference_like"
+      }
+    ],
+    "confidence": 0.75
+  },
+  {
+    "id": "muspelheim",
+    "name": "Muspelheim",
+    "summary": "Muspelheim (pronounced “MOO-spell-hame;” Old Norse Múspellsheimr, “The World of Múspell“) is one of the Nine Worlds and the home of the fire giants.",
+    "associations": [
+      "reference_like"
+    ],
+    "sources": [
+      {
+        "sourceSite": "norse-mythology.org",
+        "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/muspelheim/",
+        "sourceTitle": "Norse Mythology for Smart People",
+        "extractedAt": "2026-04-12T05:13:14.986Z",
+        "extractorVersion": "0.1.0",
+        "contentHash": "75f867cb54dd0090f84d37cfaf904b2a32eb5fedcf4d212ba6c5b8c415552cf1",
+        "classification": "reference_like"
+      }
+    ],
+    "confidence": 0.75
+  },
+  {
+    "id": "alfheim",
+    "name": "Alfheim",
+    "summary": "Alfheim (pronounced “ALF-hame;” Old Norse Álfheimr, “The Homeland of the Elves”) is, as the name suggests, the world inhabited by the elves, a class of demigod-like beings in the pre-Christian mythology and religion of the Norse and other Germanic peoples.",
+    "associations": [
+      "reference_like"
+    ],
+    "sources": [
+      {
+        "sourceSite": "norse-mythology.org",
+        "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/alfheim/",
+        "sourceTitle": "Norse Mythology for Smart People",
+        "extractedAt": "2026-04-12T05:13:16.829Z",
+        "extractorVersion": "0.1.0",
+        "contentHash": "5310694412e50c5953cce746b630084bfe171b64c9ca980ebab9a3f1f2ea578d",
+        "classification": "reference_like"
+      }
+    ],
+    "confidence": 0.75
+  },
+  {
+    "id": "svartalfheim",
+    "name": "Svartalfheim",
+    "summary": "In Old Norse literature, the home of the dwarves is called either Nidavellir (pronounced “NID-uh-vell-ir;” Old Norse Niðavellir, “Low Fields” or “Dark Fields”) or Svartalfheim (pronounced “SVART-alf-hame;” Old Norse Svartálfaheimr, “Homeland of the Black Elves”).",
+    "associations": [
+      "reference_like"
+    ],
+    "sources": [
+      {
+        "sourceSite": "norse-mythology.org",
+        "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/svartalfheim/",
+        "sourceTitle": "Norse Mythology for Smart People",
+        "extractedAt": "2026-04-12T05:13:18.675Z",
+        "extractorVersion": "0.1.0",
+        "contentHash": "8478c62aea38db72b7c531db2b4480d22d887fe75851cc88988adc3bd5e000b3",
+        "classification": "reference_like"
+      }
+    ],
+    "confidence": 0.75
+  },
+  {
+    "id": "helheim",
+    "name": "Helheim",
+    "summary": "Hel (Old Norse Hel, “Hidden;”[1] pronounced like the English word “Hell”) is the most general name for the underworld where many of the dead dwell. It’s presided over by a fearsome goddess whose name is also Hel. Occasionally, it’s also referred to as “Helheim,” “The Realm of Hel,” although this is much more common in the secondary literature than in the Old Norse primary sources.",
+    "associations": [
+      "reference_like"
+    ],
+    "sources": [
+      {
+        "sourceSite": "norse-mythology.org",
+        "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/helheim/",
+        "sourceTitle": "Norse Mythology for Smart People",
+        "extractedAt": "2026-04-12T05:13:20.519Z",
+        "extractorVersion": "0.1.0",
+        "contentHash": "2a2991ee5efd2c9695b80a40812ee61cd0af9dc9d91015ae361d832e5e31d6bb",
+        "classification": "reference_like"
+      }
+    ],
+    "confidence": 0.75
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "id": "norse-world-jotunheim:page",
+    "kind": "world_source",
+    "title": "Norse Mythology for Smart People",
+    "summary": "Jotunheim (pronounced “YO-tun-hame;” Old Norse Jötunheimr, “World of the Giants”) is one of the Nine Worlds, and, as the name implies, the homeland of the giants (Old Norse jötnar).",
+    "sections": [
+      {
+        "text": "Jotunheim (pronounced “YO-tun-hame;” Old Norse Jötunheimr, “World of the Giants”) is one of the Nine Worlds, and, as the name implies, the homeland of the giants (Old Norse jötnar)."
+      },
+      {
+        "text": "Jotunheim is also known as Utgard (pronounced “OOT-guard;” Old Norse Útgarðr, “Beyond the Fence”), a name which establishes the realm as occupying one extreme end of the traditional Germanic conceptual spectrum between the innangard and the utangard. That which is innangard (“inside the fence”) is orderly, law-abiding, and civilized, while that which is utangard (“beyond the fence”) is chaotic, anarchic, and wild. This psychogeography found its natural expression in agrarian land-use patterns, where the fence (the “gard” or garðr of the above terms) separated pastures and fields of crops from the wilderness beyond them. In fact, the very word “wilderness” comes from a Germanic language, Old English, where the word formed from the roots wild-deor-ness literally means “the place of self-willed beasts.”[1] One would therefore expect the cosmological Utgard/Jotunheim to be symbolized as a vast, mighty wilderness that surrounds a more civilized world."
+      },
+      {
+        "text": "And, indeed, that is exactly the place Jotunheim occupies in the pre-Christian Germanic cosmology. At the center of this cosmology are Asgard, “The Enclosure of the Aesir Deities,” and its human counterpart, Midgard, “The Middle Enclosure.” Asgard is the divine model of the innangard. Midgard, the visible world and especially human civilization, is patterned upon the divine model. The “Middle” element in its name largely refers to its being surrounded by – in the middle of – Jotunheim."
+      },
+      {
+        "text": "In the Eddas, the dwelling-places of the giants are described as deep, dark forests, mountain peaks where winter never eases its grip, and similarly inhospitable and grim landscapes, and this certainly seems to be how the heathen Norse and other Germanic peoples symbolically visualized the invisible Jotunheim itself."
+      },
+      {
+        "text": "Looking for more great information on Norse mythology and religion? While this site provides the ultimate online introduction to the topic, my book The Viking Spirit provides the ultimate introduction to Norse mythology and religion period. I’ve also written a popular list of The 10 Best Norse Mythology Books, which you’ll probably find helpful in your pursuit."
+      },
+      {
+        "text": "References:"
+      },
+      {
+        "text": "[1] Nash, Roderick Frazier. 1967. Wilderness and the American Mind. p. 1-2."
+      }
+    ],
+    "references": [
+      {
+        "sourceSite": "norse-mythology.org",
+        "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/jotunheim/",
+        "sourceTitle": "Norse Mythology for Smart People",
+        "extractedAt": "2026-04-12T05:13:11.300Z",
+        "extractorVersion": "0.1.0",
+        "contentHash": "0b053f24eaf38b8f6f4f9210889bdc4cc23d543e85eb3f38aa481ad7f924f1da",
+        "classification": "reference_like"
+      }
+    ],
+    "tags": [
+      "reference_like"
+    ]
+  }
+]

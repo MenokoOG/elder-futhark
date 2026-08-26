@@ -1,0 +1,572 @@
+{
+  "dataset_name": "northernblack_bind_runes_dataset",
+  "version": "2026-04-14",
+  "scope": {
+    "seed_url": "https://northernblack.shop/en-us/blogs/news/runes-sigils-and-bindrunes-faqs",
+    "crawl_depth": 2,
+    "included_pages": [
+      {
+        "id": "bindrunes_faq",
+        "title": "Runes, Sigils & Bind Runes: A Beginner’s Guide to Norse Symbols & Magic",
+        "url": "https://northernblack.shop/en-us/blogs/news/runes-sigils-and-bindrunes-faqs",
+        "role": "primary_bind_rune_reference"
+      },
+      {
+        "id": "nordic_runes_overview",
+        "title": "What Are Nordic Runes? Why do we use them today?",
+        "url": "https://northernblack.shop/blogs/news/what-are-nordic-runes",
+        "role": "rune_meanings_reference"
+      },
+      {
+        "id": "tank_tolman_project",
+        "title": "Keep Forging Forward: Bindrune Project with Tank Tolman",
+        "url": "https://northernblack.shop/blogs/news/keep-forging-forward-bindrune-project-with-tank-tolman",
+        "role": "applied_bind_rune_examples"
+      }
+    ]
+  },
+  "bind_rune_basics": {
+    "definition": "A bind rune combines two or more individual runes into a single symbol that blends their meanings.",
+    "stated_uses": [
+      "practical abbreviation or signature",
+      "decorative art",
+      "magical intent"
+    ],
+    "historical_framing": {
+      "viking_age": "Rare but attested; often treated as practical or space-saving in inscriptions.",
+      "icelandic_esoteric": "Later post-medieval magical stave tradition overlaps with related sigil-like forms.",
+      "modern": "Used for personal art, inspiration, empowerment, divination, and contemporary magical practice."
+    }
+  },
+  "design_types": [
+    {
+      "key": "stacked",
+      "name": "Stacked Bind Rune",
+      "family": "linear",
+      "description": "Runes overlap vertically and often share a central line.",
+      "common_use": [
+        "amplification",
+        "condensed symbolism",
+        "focused magical intent"
+      ]
+    },
+    {
+      "key": "stave",
+      "name": "Stave Bind Rune",
+      "family": "linear",
+      "description": "Runes are arranged sequentially along a single stave or backbone.",
+      "common_use": [
+        "spelling a concept",
+        "name inscriptions",
+        "structured linear forms"
+      ]
+    },
+    {
+      "key": "symmetrical",
+      "name": "Symmetrical Bind Rune",
+      "family": "balanced",
+      "description": "Mirrored or harmonized around a central axis.",
+      "common_use": [
+        "peace",
+        "balance",
+        "unity",
+        "tattoos",
+        "jewellery",
+        "artwork"
+      ]
+    },
+    {
+      "key": "radial_sigil_style",
+      "name": "Radial or Sigil-Style Bind Rune",
+      "family": "radial",
+      "description": "Rune elements project from a center point in a wheel-like or star-like figure.",
+      "common_use": [
+        "protection",
+        "guidance",
+        "later Icelandic stave-adjacent designs"
+      ]
+    },
+    {
+      "key": "runic_monogram",
+      "name": "Runic Monogram",
+      "family": "compact",
+      "description": "Compact combinations used for names, ownership marks, and abbreviations.",
+      "common_use": [
+        "identity marks",
+        "signatures",
+        "name compression"
+      ]
+    },
+    {
+      "key": "hybrid_freestyle",
+      "name": "Hybrid / Freestyle Bind Rune",
+      "family": "modern",
+      "description": "Modern combinations blending stacking, overlap, radial, and symmetrical features.",
+      "common_use": [
+        "personal magic",
+        "spiritual expression",
+        "contemporary art"
+      ]
+    }
+  ],
+  "creation_steps": [
+    {
+      "step": 1,
+      "label": "set_intention",
+      "description": "Decide what the bind rune is meant to do."
+    },
+    {
+      "step": 2,
+      "label": "choose_runes",
+      "description": "Pick 2–4 runes that reflect the goal."
+    },
+    {
+      "step": 3,
+      "label": "sketch",
+      "description": "Draw different arrangements and test overlap, rotation, and mirroring."
+    },
+    {
+      "step": 4,
+      "label": "check_design",
+      "description": "Check that overlap does not accidentally create unwanted meanings."
+    },
+    {
+      "step": 5,
+      "label": "finalize",
+      "description": "Create the final design on the desired medium."
+    },
+    {
+      "step": 6,
+      "label": "empower",
+      "description": "Charge or dedicate the bind rune through ritual, focus, or intention."
+    },
+    {
+      "step": 7,
+      "label": "use_release",
+      "description": "Carry, wear, or display it, then release it respectfully when done."
+    }
+  ],
+  "bind_rune_examples": [
+    {
+      "key": "protection",
+      "name": "Protection Bind Rune",
+      "component_runes": [
+        "algiz",
+        "thurisaz",
+        "uruz"
+      ],
+      "intended_meaning": [
+        "defence",
+        "force",
+        "strength"
+      ],
+      "description": "Protective shield style example."
+    },
+    {
+      "key": "wealth",
+      "name": "Wealth Bind Rune",
+      "component_runes": [
+        "fehu",
+        "jera",
+        "wunjo"
+      ],
+      "intended_meaning": [
+        "prosperity",
+        "success",
+        "joy"
+      ],
+      "description": "Prosperity and positive outcome example."
+    },
+    {
+      "key": "love",
+      "name": "Love Bind Rune",
+      "component_runes": [
+        "gebo",
+        "berkano",
+        "wunjo"
+      ],
+      "intended_meaning": [
+        "giving",
+        "nurturing",
+        "happiness"
+      ],
+      "description": "Relationship and affection example."
+    },
+    {
+      "key": "clarity",
+      "name": "Clarity Bind Rune",
+      "component_runes": [
+        "ansuz",
+        "kenaz",
+        "laguz"
+      ],
+      "intended_meaning": [
+        "communication",
+        "insight",
+        "intuition"
+      ],
+      "description": "Mental clarity and inner guidance example."
+    }
+  ],
+  "project_examples": [
+    {
+      "project": "keep_forging_forward",
+      "theme": "mental_health_positive_boost",
+      "component_runes": [
+        "nauthiz",
+        "gebo",
+        "uruz",
+        "eihwaz",
+        "dagaz",
+        "tiwaz",
+        "raidho",
+        "sowilo"
+      ],
+      "notes": "The article presents three bindrunes for encouragement and self-betterment but does not fully label each composition in the text."
+    }
+  ],
+  "runes": [
+    {
+      "key": "fehu",
+      "name": "Fehu",
+      "phonetic": "F",
+      "meaning_keywords": [
+        "wealth",
+        "abundance",
+        "good fortune",
+        "success",
+        "generosity"
+      ]
+    },
+    {
+      "key": "uruz",
+      "name": "Uruz",
+      "phonetic": "U",
+      "meaning_keywords": [
+        "strength",
+        "survival",
+        "physical power",
+        "independence",
+        "endurance",
+        "courage",
+        "determination"
+      ]
+    },
+    {
+      "key": "thurisaz",
+      "name": "Thurisaz",
+      "phonetic": "Th",
+      "meaning_keywords": [
+        "reactive force",
+        "nature's power",
+        "self defence",
+        "freedom",
+        "strength",
+        "protection"
+      ]
+    },
+    {
+      "key": "ansuz",
+      "name": "Ansuz",
+      "phonetic": "A",
+      "meaning_keywords": [
+        "divine wisdom",
+        "insight",
+        "inspiration",
+        "communication",
+        "speech",
+        "creativity",
+        "persuasion"
+      ]
+    },
+    {
+      "key": "raidho",
+      "name": "Raidho",
+      "phonetic": "R",
+      "meaning_keywords": [
+        "journey",
+        "evolution",
+        "progress",
+        "travel",
+        "movement"
+      ]
+    },
+    {
+      "key": "kenaz",
+      "name": "Kenaz",
+      "phonetic": "K",
+      "meaning_keywords": [
+        "fire",
+        "passion",
+        "enlightenment",
+        "creativity",
+        "vision"
+      ]
+    },
+    {
+      "key": "gebo",
+      "name": "Gebo",
+      "phonetic": "G",
+      "meaning_keywords": [
+        "gift",
+        "dedication",
+        "relationships",
+        "sacrifice",
+        "honour",
+        "respect",
+        "appreciation"
+      ]
+    },
+    {
+      "key": "wunjo",
+      "name": "Wunjo",
+      "phonetic": "W",
+      "meaning_keywords": [
+        "joy",
+        "hope",
+        "harmony",
+        "pleasure",
+        "improvement",
+        "love",
+        "friendship",
+        "kinship"
+      ]
+    },
+    {
+      "key": "hagalaz",
+      "name": "Hagalaz",
+      "phonetic": "H",
+      "meaning_keywords": [
+        "destruction",
+        "opposition",
+        "catastrophe",
+        "uncontrollable change",
+        "opportunity"
+      ]
+    },
+    {
+      "key": "nauthiz",
+      "name": "Nauthiz",
+      "phonetic": "N",
+      "meaning_keywords": [
+        "necessity",
+        "innovation",
+        "survival",
+        "endurance",
+        "restraint",
+        "life lessons",
+        "consequence"
+      ]
+    },
+    {
+      "key": "isa",
+      "name": "Isa",
+      "phonetic": "I",
+      "meaning_keywords": [
+        "ice",
+        "harshness",
+        "frustration",
+        "conflict",
+        "challenges",
+        "self control",
+        "focus"
+      ]
+    },
+    {
+      "key": "jera",
+      "name": "Jera",
+      "phonetic": "J",
+      "meaning_keywords": [
+        "year",
+        "harvest",
+        "peace",
+        "prosperity",
+        "hope",
+        "patience",
+        "growth",
+        "gain",
+        "foresight"
+      ]
+    },
+    {
+      "key": "eihwaz",
+      "name": "Eihwaz",
+      "phonetic": "Ei/Y",
+      "meaning_keywords": [
+        "life and death",
+        "stability",
+        "toughness",
+        "resistance",
+        "strength",
+        "trust",
+        "immortality",
+        "eternity"
+      ]
+    },
+    {
+      "key": "perthro",
+      "name": "Perthro",
+      "phonetic": "P",
+      "meaning_keywords": [
+        "fate",
+        "chance",
+        "luck",
+        "games",
+        "loyalty",
+        "probability"
+      ]
+    },
+    {
+      "key": "algiz",
+      "name": "Algiz",
+      "phonetic": "Z",
+      "meaning_keywords": [
+        "self defence",
+        "shielding",
+        "protection",
+        "higher self",
+        "divine connection"
+      ]
+    },
+    {
+      "key": "sowilo",
+      "name": "Sowilo",
+      "phonetic": "S",
+      "meaning_keywords": [
+        "sun",
+        "victory",
+        "guidance",
+        "goal setting",
+        "honour",
+        "optimism"
+      ]
+    },
+    {
+      "key": "tiwaz",
+      "name": "Tiwaz",
+      "phonetic": "T",
+      "meaning_keywords": [
+        "Tyr",
+        "sacrifice for greater good",
+        "bravery",
+        "courage",
+        "just victory",
+        "law",
+        "systems"
+      ]
+    },
+    {
+      "key": "berkano",
+      "name": "Berkano",
+      "phonetic": "B",
+      "meaning_keywords": [
+        "birth",
+        "growth",
+        "sanctuary",
+        "plant life",
+        "beauty",
+        "fertility",
+        "wisdom"
+      ]
+    },
+    {
+      "key": "ehwaz",
+      "name": "Ehwaz",
+      "phonetic": "E",
+      "meaning_keywords": [
+        "horse",
+        "trust",
+        "cooperation",
+        "teamwork",
+        "love",
+        "loyalty",
+        "travel",
+        "common goal"
+      ]
+    },
+    {
+      "key": "mannaz",
+      "name": "Mannaz",
+      "phonetic": "M",
+      "meaning_keywords": [
+        "humanity",
+        "mind",
+        "memory",
+        "intellect",
+        "culture",
+        "higher self"
+      ]
+    },
+    {
+      "key": "laguz",
+      "name": "Laguz",
+      "phonetic": "L",
+      "meaning_keywords": [
+        "water",
+        "intuition",
+        "psychic powers",
+        "subconscious",
+        "dreams",
+        "imagination",
+        "healing"
+      ]
+    },
+    {
+      "key": "ingwaz",
+      "name": "Ingwaz",
+      "phonetic": "NG",
+      "meaning_keywords": []
+    },
+    {
+      "key": "dagaz",
+      "name": "Dagaz",
+      "phonetic": "D",
+      "meaning_keywords": [
+        "enlightenment",
+        "clarity",
+        "revelation",
+        "hope",
+        "comfort",
+        "warmth",
+        "safety"
+      ]
+    },
+    {
+      "key": "othala",
+      "name": "Othala",
+      "phonetic": "O",
+      "meaning_keywords": []
+    }
+  ],
+  "taxonomies": {
+    "intent_categories": [
+      "protection",
+      "wealth",
+      "love",
+      "clarity",
+      "guidance",
+      "balance",
+      "identity",
+      "healing",
+      "family",
+      "strength",
+      "marriage",
+      "home_protection"
+    ],
+    "construction_styles": [
+      "stacked",
+      "stave",
+      "symmetrical",
+      "radial_sigil_style",
+      "runic_monogram",
+      "hybrid_freestyle"
+    ]
+  },
+  "provenance": {
+    "notes": [
+      "This dataset is a normalized extraction and synthesis of prose content from Northern Black pages.",
+      "Not every rune on the linked rune overview page was available in the retrieved excerpt; Ingwaz and Othala remain placeholder entries pending a fuller scrape.",
+      "The Tank Tolman page references three bindrunes but does not fully enumerate each finished design in machine-readable form."
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "id": "norse-world-midgard:page",
+    "kind": "world_source",
+    "title": "Norse Mythology for Smart People",
+    "summary": "Midgard (Old Norse Miðgarðr, Gothic midjungards, Old English middangeard, Old Saxon middilgard, Old High German mittilgart or mittangard, Proto-Germanic *meðjanagarðaz,[1][2] “Middle Enclosure”) is one of the Nine Worlds of Norse mythology and an important concept in the pre-Christian worldview of all of the Germanic peoples. It’s the inhabited world, and roughly corresponds to the modern English word and concept of “civilization.” It’s the only one of the Nine Worlds that’s primarily located in the visible world; the others, while they may intersect with the visible world at various points, are first and foremost invisible locations.",
+    "sections": [
+      {
+        "text": "Midgard (Old Norse Miðgarðr, Gothic midjungards, Old English middangeard, Old Saxon middilgard, Old High German mittilgart or mittangard, Proto-Germanic *meðjanagarðaz,[1][2] “Middle Enclosure”) is one of the Nine Worlds of Norse mythology and an important concept in the pre-Christian worldview of all of the Germanic peoples. It’s the inhabited world, and roughly corresponds to the modern English word and concept of “civilization.” It’s the only one of the Nine Worlds that’s primarily located in the visible world; the others, while they may intersect with the visible world at various points, are first and foremost invisible locations."
+      },
+      {
+        "text": "The name “Midgard” (“Middle Enclosure”) has a double meaning. The first meaning of the word refers to civilization’s position “in the middle of” an otherwise wild world, which is reflected on the cosmological plane by Midgard’s being surrounded by the uninhabited wilderness of Jotunheim, the world of the often-hostile giants. This is akin to the way in which the continents are surrounded by the ocean, which is, in the ancient Germanic perspective, also teeming with giants. The serpent Jormungand lives in the sea and encircles the terrestrial Midgard and the wilderness at its borders, and Aegir and Ran dwell in the same watery depths and claim the lives of unfortunate seafarers. You might call this part of the word’s meaning “horizontal.” The second and “vertical” sense of the word’s meaning refers to Midgard’s position below Asgard, the world of the Aesir gods and goddesses, and above the underworld. This vertical axis is represented by the world-tree Yggdrasil, which holds Asgard in its upper branches, Midgard at the base of its trunk, and the underworld amongst its roots."
+      },
+      {
+        "text": "Both of these senses of the word’s meaning ultimately refer to Midgard’s place in the psychogeographical distinction between the innangard and utangard, one of the most important concepts in the ancient Germanic worldview. That which is innangard (“inside the fence”) is orderly, law-abiding, and civilized, while that which is utangard (“beyond the fence”) is chaotic, anarchic, and wild. This applies both to the geographical plane and the human psyche; thoughts and actions can be innangard or utangard just as readily as spatial locations. Asgard, the “Enclosure of the Aesir,” is the divine model of the innangard, while Jotunheim, the “Homeland of the Giants,” is the model of the utangard. Midgard is, once again, somewhere in the middle. But, as the -gard element in the name implies, Midgard is – at least in theory – striving to be more like Asgard, more ordered according to the divine model upon which it’s patterned."
+      },
+      {
+        "text": "When the gods gave the world its initial shape, they slew the giant Ymir and created the various part of the world from his body parts. In order to protect Midgard and humanity from the giants, they built a fence around Midgard out of Ymir’s eyebrows. Building fences around farms repeated this paradigmatic act, marking off that which was within the fences as innangard and that which was outside the fences as utangard."
+      },
+      {
+        "text": "During Ragnarok, the destruction of the cosmos, Midgard sinks into the sea along with everything else in the universe."
+      },
+      {
+        "text": "Looking for more great information on Norse mythology and religion? While this site provides the ultimate online introduction to the topic, my book The Viking Spirit provides the ultimate introduction to Norse mythology and religion period. I’ve also written a popular list of The 10 Best Norse Mythology Books, which you’ll probably find helpful in your pursuit."
+      },
+      {
+        "text": "References:"
+      },
+      {
+        "text": "[1] Orel, Vladimir. 2003. A Handbook of Germanic Etymology. p. 264."
+      },
+      {
+        "text": "[2] Simek, Rudolf. 1993. Dictionary of Northern Mythology. Translated by Angela Hall. p. 214."
+      }
+    ],
+    "references": [
+      {
+        "sourceSite": "norse-mythology.org",
+        "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/midgard/",
+        "sourceTitle": "Norse Mythology for Smart People",
+        "extractedAt": "2026-04-12T05:13:05.984Z",
+        "extractorVersion": "0.1.0",
+        "contentHash": "964803e1316e46af6a7e1ac5dd287ea6d4f5f347e4453f8592301758af7764c7",
+        "classification": "reference_like"
+      }
+    ],
+    "tags": [
+      "reference_like"
+    ]
+  }
+]

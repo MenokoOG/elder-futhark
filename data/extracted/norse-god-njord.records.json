@@ -1,0 +1,54 @@
+[
+  {
+    "id": "norse-god-njord:page",
+    "kind": "deity_source",
+    "title": "Norse Mythology for Smart People",
+    "summary": "Njord (pronounced “NYORD;” Old Norse Njörðr, whose meaning/etymology is unknown) is one of the principal gods of the Vanir tribe of deities. He’s also an honorary member of the Aesir gods, having been sent to them during the Aesir-Vanir War along with his son, Freyr, and his daughter, Freya. Freyr and Freya’s mother is Njord’s unnamed sister, who, based on linguistic evidence, is probably Nerthus or an equivalent goddess.",
+    "sections": [
+      {
+        "text": "Njord (pronounced “NYORD;” Old Norse Njörðr, whose meaning/etymology is unknown) is one of the principal gods of the Vanir tribe of deities. He’s also an honorary member of the Aesir gods, having been sent to them during the Aesir-Vanir War along with his son, Freyr, and his daughter, Freya. Freyr and Freya’s mother is Njord’s unnamed sister, who, based on linguistic evidence, is probably Nerthus or an equivalent goddess."
+      },
+      {
+        "text": "Njord was particularly associated with wealth, fertility, the sea, and seafaring in the Vikings’ religion.[1][2] A saying among the Norse peoples held especially wealthy people to be “as rich as Njord.”[3]"
+      },
+      {
+        "text": "The tale in which Njord features most prominently is The Marriage of Njord and Skadi. Skadi, a giantess, had come to the Aesir seeking restitution for the slaying of her father. As part of the settlement, they agreed that she could have any of the gods she desired as her husband. She chose Njord by mistake, thinking him to be Baldur. Their marriage was short and unpleasant. Half of their time was spent in Skadi’s home in the snowy mountains, which Njord couldn’t tolerate; the other half was spent in Njord’s home, Nóatún (“The Place of Ships”), which was located on the beach. Skadi couldn’t tolerate Njord’s home, either, so the two parted ways."
+      },
+      {
+        "text": "Unfortunately, that’s about all that the surviving sources tell us about Njord. Despite this paucity of literary descriptions, though, other forms of evidence show us that he was once a very widely-worshiped god amongst the Norse.[4]"
+      },
+      {
+        "text": "Looking for more great information on Norse mythology and religion? While this site provides the ultimate online introduction to the topic, my book The Viking Spirit provides the ultimate introduction to Norse mythology and religion period. I’ve also written a popular list of The 10 Best Norse Mythology Books, which you’ll probably find helpful in your pursuit."
+      },
+      {
+        "text": "References:"
+      },
+      {
+        "text": "[1] Snorri Sturluson. The Prose Edda. Gylfaginning 23."
+      },
+      {
+        "text": "[2] Turville-Petre, E.O.G. 1964. Myth and Religion of the North: The Religion of Ancient Scandinavia. p. 162."
+      },
+      {
+        "text": "[3] Ibid. p. 163."
+      },
+      {
+        "text": "[4] Simek, Rudolf. 1993. Dictionary of Northern Mythology. Translated by Angela Hall. p. 234."
+      }
+    ],
+    "references": [
+      {
+        "sourceSite": "norse-mythology.org",
+        "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-vanir-gods-and-goddesses/njord/",
+        "sourceTitle": "Norse Mythology for Smart People",
+        "extractedAt": "2026-04-12T05:13:43.043Z",
+        "extractorVersion": "0.1.0",
+        "contentHash": "416056f4605560ff7897f46360b9108b879f45ef83ab504a7efffc7faed19f9f",
+        "classification": "reference_like"
+      }
+    ],
+    "tags": [
+      "reference_like"
+    ]
+  }
+]

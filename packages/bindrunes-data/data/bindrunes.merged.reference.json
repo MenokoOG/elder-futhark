@@ -1,0 +1,277 @@
+{
+  "dataset_name": "elder_futhark_bindrunes_merged_reference",
+  "version": "2026-04-14",
+  "intent": "reference dataset for bind-rune taxonomy, examples, builder presets, FAQ content, and UI planning",
+  "sources": [
+    {
+      "id": "einarr",
+      "priority": "primary",
+      "title": "Einarr's Journey bindrunes page",
+      "url": "https://einarrsjourney.com/pages/bindrunes",
+      "used_for": [
+        "taxonomy",
+        "faq framing",
+        "visual direction",
+        "builder modes",
+        "historical framing"
+      ]
+    },
+    {
+      "id": "northern_black_faq",
+      "priority": "secondary",
+      "title": "Northern Black bindrunes FAQ",
+      "url": "https://northernblack.shop/en-us/blogs/news/runes-sigils-and-bindrunes-faqs",
+      "used_for": [
+        "creation steps",
+        "beginner examples",
+        "modern use cases"
+      ]
+    },
+    {
+      "id": "northern_black_runes",
+      "priority": "secondary",
+      "title": "Northern Black rune overview",
+      "url": "https://northernblack.shop/blogs/news/what-are-nordic-runes",
+      "used_for": [
+        "expanded meaning keywords"
+      ]
+    },
+    {
+      "id": "northern_black_tank_tolman",
+      "priority": "secondary",
+      "title": "Northern Black Tank Tolman bindrune project",
+      "url": "https://northernblack.shop/blogs/news/keep-forging-forward-bindrune-project-with-tank-tolman",
+      "used_for": [
+        "applied project example"
+      ]
+    }
+  ],
+  "bindrune_types": [
+    {
+      "key": "stacked",
+      "name": "Stacked Bindrunes",
+      "description": "Two or more runes share a central axis or main stave.",
+      "ui_builder_mode": "shared_axis_overlay",
+      "historical_note": "Primary UI category and historically plausible compression pattern."
+    },
+    {
+      "key": "same_stave",
+      "name": "Same Stave Bindrunes",
+      "description": "Multiple runes are placed in sequence on a single stave.",
+      "ui_builder_mode": "linear_stave",
+      "historical_note": "Good for names, words, or ordered rune strings."
+    },
+    {
+      "key": "radial_sigil",
+      "name": "Radial / Sigil-Style Bindrunes",
+      "description": "Rune parts radiate from a center point or circular structure.",
+      "ui_builder_mode": "radial_center_out",
+      "historical_note": "Best treated as a modern expressive mode in the app."
+    },
+    {
+      "key": "symmetrical",
+      "name": "Symmetrical Bindrunes",
+      "description": "Mirrored or balanced around a center line.",
+      "ui_builder_mode": "mirror_axis",
+      "historical_note": "Useful as a secondary derived style in the builder."
+    }
+  ],
+  "faq": [
+    {
+      "key": "definition",
+      "question": "What is a bindrune?",
+      "answer": "A bindrune merges two or more rune forms into one symbol."
+    },
+    {
+      "key": "purpose",
+      "question": "Why make a bindrune?",
+      "answer": "For protection, focus, identity, personal symbolism, or modern spiritual/artistic use."
+    },
+    {
+      "key": "historical_scope",
+      "question": "Are bindrunes historical?",
+      "answer": "Some compact rune combinations are historical, but many contemporary bindrunes are modern interpretations."
+    },
+    {
+      "key": "vegvisir_not_bindrune",
+      "question": "Are Vegvísir or Helm of Awe bindrunes?",
+      "answer": "No. Treat them as separate Icelandic magical stave traditions, not Elder Futhark bindrunes."
+    }
+  ],
+  "creation_steps": [
+    {
+      "step": 1,
+      "label": "set_intention",
+      "description": "Choose the goal, mood, or quality the bindrune should express."
+    },
+    {
+      "step": 2,
+      "label": "choose_runes",
+      "description": "Pick 2–4 runes aligned to that goal."
+    },
+    {
+      "step": 3,
+      "label": "select_mode",
+      "description": "Choose stacked, same stave, radial/sigil, or symmetry-driven composition."
+    },
+    {
+      "step": 4,
+      "label": "compose",
+      "description": "Sketch combinations and adjust overlap, order, and legibility."
+    },
+    {
+      "step": 5,
+      "label": "check_meaning",
+      "description": "Verify the result does not imply accidental or conflicting symbolism."
+    },
+    {
+      "step": 6,
+      "label": "finalize",
+      "description": "Commit the design, export it, and attach notes about intent and component runes."
+    }
+  ],
+  "examples": [
+    {
+      "key": "protection",
+      "name": "Protection",
+      "component_runes": [
+        "algiz",
+        "thurisaz",
+        "uruz"
+      ],
+      "intent_tags": [
+        "protection",
+        "strength",
+        "defence"
+      ],
+      "source": "northern_black_faq"
+    },
+    {
+      "key": "wealth",
+      "name": "Wealth",
+      "component_runes": [
+        "fehu",
+        "jera",
+        "wunjo"
+      ],
+      "intent_tags": [
+        "wealth",
+        "harvest",
+        "joy"
+      ],
+      "source": "northern_black_faq"
+    },
+    {
+      "key": "love",
+      "name": "Love",
+      "component_runes": [
+        "gebo",
+        "berkano",
+        "wunjo"
+      ],
+      "intent_tags": [
+        "relationship",
+        "growth",
+        "harmony"
+      ],
+      "source": "northern_black_faq"
+    },
+    {
+      "key": "clarity",
+      "name": "Clarity",
+      "component_runes": [
+        "ansuz",
+        "kenaz",
+        "laguz"
+      ],
+      "intent_tags": [
+        "communication",
+        "insight",
+        "intuition"
+      ],
+      "source": "northern_black_faq"
+    },
+    {
+      "key": "keep_forging_forward",
+      "name": "Keep Forging Forward",
+      "component_runes": [
+        "nauthiz",
+        "gebo",
+        "uruz",
+        "eihwaz",
+        "dagaz",
+        "tiwaz",
+        "raidho",
+        "sowilo"
+      ],
+      "intent_tags": [
+        "endurance",
+        "recovery",
+        "forward_motion",
+        "strength"
+      ],
+      "source": "northern_black_tank_tolman"
+    }
+  ],
+  "builder_presets": [
+    {
+      "key": "stacked_axis_basic",
+      "label": "Stacked Axis",
+      "type": "stacked",
+      "default_options": {
+        "flip": false,
+        "mirror": false,
+        "overlap": 0.55,
+        "rotation": 0
+      }
+    },
+    {
+      "key": "name_on_stave",
+      "label": "Name on Stave",
+      "type": "same_stave",
+      "default_options": {
+        "spacing": 0.15,
+        "mergeBranches": true,
+        "rotation": 0
+      }
+    },
+    {
+      "key": "radial_sigil_basic",
+      "label": "Radial Sigil",
+      "type": "radial_sigil",
+      "default_options": {
+        "arms": 4,
+        "mirror": true,
+        "rotation": 0
+      }
+    }
+  ],
+  "visual_direction": {
+    "notes": [
+      "Use dark atmospheric backgrounds with strong rune contrast.",
+      "Create original graphics inspired by mythic/cosmic composition, not copied site art.",
+      "Support a clean light theme with stone/parchment-inspired surfaces and slate-blue accents."
+    ],
+    "theme_tokens": {
+      "dark_bg": "#07111f",
+      "dark_surface": "#0d1a2b",
+      "dark_surface_2": "#13243b",
+      "dark_text": "#f1f5f9",
+      "dark_muted": "#94a3b8",
+      "dark_accent": "#1f8a8a",
+      "light_bg": "#eef4f7",
+      "light_surface": "#ffffff",
+      "light_surface_2": "#dfe8ed",
+      "light_text": "#0f172a",
+      "light_muted": "#475569",
+      "light_accent": "#2b5f73"
+    }
+  },
+  "provenance": {
+    "rules": [
+      "Use as internal reference data and source-attributed lesson material.",
+      "Do not present speculative history as hard fact.",
+      "Do not copy third-party graphics directly into production without rights review."
+    ]
+  }
+}

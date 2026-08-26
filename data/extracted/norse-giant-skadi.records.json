@@ -1,0 +1,60 @@
+[
+  {
+    "id": "norse-giant-skadi:page",
+    "kind": "deity_source",
+    "title": "Norse Mythology for Smart People",
+    "summary": "Skadi (pronounced “SKAHD-ee;” Old Norse Skaði) is a giantess and goddess in Norse mythology. Her name is either identical with the Old Norse common noun skaði, “harm,” or comes from another Germanic root preserved in the Gothic word skadus and the Old English sceadu, both of which mean “shadow.”[1] Her name is likely related to the name “Scandinavia,” but whether Skadi lent her name to the land-mass or vice versa is uncertain.[2]",
+    "sections": [
+      {
+        "text": "Skadi (pronounced “SKAHD-ee;” Old Norse Skaði) is a giantess and goddess in Norse mythology. Her name is either identical with the Old Norse common noun skaði, “harm,” or comes from another Germanic root preserved in the Gothic word skadus and the Old English sceadu, both of which mean “shadow.”[1] Her name is likely related to the name “Scandinavia,” but whether Skadi lent her name to the land-mass or vice versa is uncertain.[2]"
+      },
+      {
+        "text": "Skadi lives in the highest reaches of the mountains, where the snow never melts. She’s an avid huntress, and her bow, snowshoes, and skis are her most often-mentioned attributes.[3][4][5]"
+      },
+      {
+        "text": "She was once married to the god Njord. However, their marriage was a failure; Njord couldn’t stand the cold and dreariness of the mountains, and Skadi couldn’t stand the light and noise of Njord’s home by the seashore, so the two parted ways."
+      },
+      {
+        "text": "The giants (or, to use a word that more properly translates their Old Norse name, the “devourers”) are predominantly forces of darkness, cold, and death. Skadi fits this pattern, and seems to have had particular associations with winter. Her status as a goddess by marriage, however, along with the frequency of her historical worship,[6] seem to suggest that she has a more benevolent demeanor than most of her kin, perhaps in a capacity as a patroness of winter subsistence activities."
+      },
+      {
+        "text": "Looking for more great information on Norse mythology and religion? While this site provides the ultimate online introduction to the topic, my book The Viking Spirit provides the ultimate introduction to Norse mythology and religion period. I’ve also written a popular list of The 10 Best Norse Mythology Books, which you’ll probably find helpful in your pursuit."
+      },
+      {
+        "text": "References:"
+      },
+      {
+        "text": "[1] Turville-Petre, E.O.G. 1964. Myth and Religion of the North: The Religion of Ancient Scandinavia. p. 164."
+      },
+      {
+        "text": "[2] McKinnell, John. 2005. Meeting the Other in Norse Myth and Legend. p. 63."
+      },
+      {
+        "text": "[3] Eyvindr Skáldaspillir. Háleygjatal, stanza 4."
+      },
+      {
+        "text": "[4] Bragi Boddason. Ragnarsdrápa, stanza 20."
+      },
+      {
+        "text": "[5] Snorri Sturluson. The Prose Edda. Gylfaginning 23."
+      },
+      {
+        "text": "[6] Turville-Petre, E.O.G. 1964. Myth and Religion of the North: The Religion of Ancient Scandinavia. p. 165."
+      }
+    ],
+    "references": [
+      {
+        "sourceSite": "norse-mythology.org",
+        "sourceUrl": "https://norse-mythology.org/gods-and-creatures/giants/skadi/",
+        "sourceTitle": "Norse Mythology for Smart People",
+        "extractedAt": "2026-04-12T05:13:48.766Z",
+        "extractorVersion": "0.1.0",
+        "contentHash": "7d4d4622fc31112f4446524e4864898b672aa3d0b0445854ef2aac973f9138b6",
+        "classification": "reference_like"
+      }
+    ],
+    "tags": [
+      "reference_like"
+    ]
+  }
+]

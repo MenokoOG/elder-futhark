@@ -1,0 +1,23 @@
+[
+  {
+    "key": "wikisource_dickins_1915_runic_poems",
+    "title": "Runic and Heroic Poems of the Old Teutonic Peoples",
+    "author": "Bruce Dickins (translator)",
+    "year": 1915,
+    "notes": "Public-domain translation; includes the Anglo-Saxon and Norwegian rune poems. Online edition via Wikisource (Rune poems)."
+  },
+  {
+    "key": "gutenberg_anderson_1879_prose_edda",
+    "title": "The Younger Edda; Also called Snorre's Edda, or The Prose Edda",
+    "author": "Snorri Sturluson; trans. Rasmus B. Anderson",
+    "year": 1879,
+    "notes": "Project Gutenberg eBook #18947 (public domain in the USA)."
+  },
+  {
+    "key": "gutenberg_bellows_1923_poetic_edda",
+    "title": "The Poetic Edda: Translated from the Icelandic with an introduction and notes",
+    "author": "Anonymous Old Norse poems; trans. Henry Adams Bellows",
+    "year": 1923,
+    "notes": "Project Gutenberg eBook #73533 (public domain in the USA)."
+  }
+]

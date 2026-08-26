@@ -1,0 +1,40 @@
+{
+  "name": "elder-futhark",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Elder Futhark ecosystem monorepo — the Academy app and the ETL pipeline that feeds it.",
+  "license": "MIT",
+  "packageManager": "pnpm@10.8.1",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck",
+    "format": "prettier --write .",
+    "clean": "rimraf data/raw/* data/extracted/* data/normalized/* data/curated/* dist .turbo",
+    "dev:api": "pnpm --filter @efa/academy-api dev",
+    "dev:web": "pnpm --filter @efa/academy-web dev",
+    "build:web": "pnpm --filter @efa/academy-web build",
+    "start:api": "pnpm --filter @efa/academy-api start",
+    "seed:api": "pnpm --filter @efa/academy-api seed",
+    "dev:etl": "pnpm --filter @efa/cli dev",
+    "cli": "pnpm --filter @efa/cli cli"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.17",
+    "eslint": "^9.25.1",
+    "prettier": "^3.5.3",
+    "rimraf": "^6.0.1",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.2"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}
