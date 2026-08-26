@@ -24,7 +24,7 @@ secrets/
 .claude/
 .remember/
 ai-code-reviews/
-
+/core-context.md
 # =========================
 # CodeGuard instruction files
 # Distributed onto this machine from the Prompt & Agent Library; they were
