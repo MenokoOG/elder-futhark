@@ -1,0 +1,171 @@
+{
+  "dataset_name": "einarrs_journey_bindrunes_dataset",
+  "version": "2026-04-14",
+  "primary_source": {
+    "title": "BINDRUNES: Everything you need to know | Einarr's Journey",
+    "url": "https://einarrsjourney.com/pages/bindrunes"
+  },
+  "content_model": {
+    "definition": "Bindrunes are combinations of ancient runic symbols made by merging two or more runes into a single design.",
+    "purpose_summary": [
+      "protection",
+      "enhancing personal attributes",
+      "focusing intentions for specific outcomes"
+    ],
+    "historical_notes": {
+      "historical_claim": "The page describes bindrunes as historically rooted in Norse and Germanic cultures and used on artifacts, weapons, and amulets.",
+      "viking_age_note": "The page says bindrunes are not really Viking in the broad modern sense, but a few examples exist in Viking-age runestones using Younger Futhark.",
+      "elder_vs_younger_note": "The page states bindrunes are primarily created with Elder Futhark today, while citing Younger Futhark historical examples such as Bluetooth and a reconstructed Thor bindrune."
+    }
+  },
+  "bindrune_types": [
+    {
+      "key": "stacked",
+      "name": "Stacked Bindrunes",
+      "description": "One or more runes stacked on the same axis.",
+      "historical_context": "Presented as historically common for efficiency in stone carving.",
+      "canonical_example": {
+        "name": "Bluetooth mark",
+        "notes": "Described on the page as a recognizable stacked bindrune using Younger Futhark H and B for Harald Bluetooth."
+      },
+      "ui_recommendations": {
+        "builder_mode": "shared_axis_overlay",
+        "controls": [
+          "base stave",
+          "rune ordering",
+          "overlap depth",
+          "flip left/right"
+        ]
+      }
+    },
+    {
+      "key": "same_stave",
+      "name": "Same Stave Bindrunes",
+      "description": "A series of runes arranged on one singular line or stave.",
+      "historical_context": "Useful for names or words and for more complex meaningful designs.",
+      "canonical_example": {
+        "name": "Thor bindrune reconstruction",
+        "notes": "The page says the Thor bindrune shown was reconstructed from the Sønder Kirkeby Runestone."
+      },
+      "ui_recommendations": {
+        "builder_mode": "linear_stave",
+        "controls": [
+          "word/name input",
+          "transliteration source",
+          "stave spacing",
+          "branch merge rules"
+        ]
+      }
+    },
+    {
+      "key": "radial_sigil",
+      "name": "Radial Bindrunes & Sigils",
+      "description": "More modern radial or sigil-like bindrunes arranged around a center point.",
+      "historical_context": "Described as a modern art style with sigil-like presentation.",
+      "canonical_example": {
+        "name": "radial artist examples",
+        "notes": "The page presents multiple radial examples but does not label them individually in text."
+      },
+      "ui_recommendations": {
+        "builder_mode": "radial_center_out",
+        "controls": [
+          "center point",
+          "arm count",
+          "rotation",
+          "symmetry",
+          "ornamental toggles"
+        ]
+      }
+    }
+  ],
+  "faq": [
+    {
+      "key": "what_are_bindrunes",
+      "question": "What are bindrunes?",
+      "answer": "Combinations of ancient runic symbols made by merging two or more runes into a single design."
+    },
+    {
+      "key": "purpose",
+      "question": "What is the purpose of a bindrune?",
+      "answer": "Invoking protection, enhancing personal attributes, or focusing intentions for specific outcomes."
+    },
+    {
+      "key": "historical",
+      "question": "Are bindrunes historical?",
+      "answer": "The page presents bindrunes as historically rooted in Norse and Germanic cultures, used on artifacts, weapons, and amulets."
+    },
+    {
+      "key": "viking",
+      "question": "Are bindrunes Viking?",
+      "answer": "The page says not really in the broad sense, though a few examples exist on Viking-age runestones using Younger Futhark."
+    },
+    {
+      "key": "vegvisir_helm_of_awe",
+      "question": "Are the Vegvísir and Helm of Awe bindrunes?",
+      "answer": "No; the page classifies them as Icelandic magic staves (galdrastafir), not bindrunes."
+    }
+  ],
+  "builder_presets": [
+    {
+      "key": "stacked_axis_basic",
+      "label": "Stacked Axis",
+      "type": "stacked",
+      "description": "Best for compact symbolic combinations."
+    },
+    {
+      "key": "name_on_stave",
+      "label": "Name on Stave",
+      "type": "same_stave",
+      "description": "Best for names, words, and transliterated concepts."
+    },
+    {
+      "key": "radial_sigil_basic",
+      "label": "Radial Sigil",
+      "type": "radial_sigil",
+      "description": "Best for modern circular or star-like compositions."
+    }
+  ],
+  "frontend_integration_notes": {
+    "recommended_routes": [
+      "/bindrunes",
+      "/bindrunes/types",
+      "/bindrunes/builder"
+    ],
+    "recommended_components": [
+      "BindRuneHero",
+      "BindRuneTypeGallery",
+      "BindRuneFAQ",
+      "BindRuneBuilder",
+      "BindRuneExamplesGrid"
+    ],
+    "stones_replacement_strategy": "Do not hard-delete the current Stones route. Either redirect it to a BindRunes landing page after verification, or preserve Stones temporarily and add BindRunes as a new nav item first."
+  },
+  "visual_direction": {
+    "observed_style": [
+      "dark blue / teal atmospheric background",
+      "high-contrast white rune marks",
+      "centered glyph focus",
+      "gallery-style examples",
+      "mythic / cosmic mood"
+    ],
+    "safe_use_guidance": [
+      "Use as design inspiration, not as a source of copied production graphics.",
+      "Derive your own gradients, texture layers, card treatments, and rune illustrations."
+    ],
+    "app_theme_tokens_suggestion": {
+      "dark_bg": "#07111f",
+      "dark_surface": "#0d1a2b",
+      "dark_accent": "#1f8a8a",
+      "light_bg": "#eef4f7",
+      "light_surface": "#ffffff",
+      "light_accent": "#2b5f73"
+    }
+  },
+  "provenance": {
+    "notes": [
+      "This dataset is a normalized extraction from a single Einarr's Journey bindrunes page.",
+      "The page contains many example images but few individually labeled machine-readable examples.",
+      "The page's 'How to make your own bindrunes' section is marked 'Coming soon', so no explicit build algorithm was extracted from the source."
+    ]
+  }
+}

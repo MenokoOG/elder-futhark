@@ -1,0 +1,15 @@
+{
+  "name": "@efa/bindrunes-data",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Curated bind-rune reference datasets consumed by the Academy bind-rune workstream.",
+  "type": "module",
+  "exports": {
+    "./einarrs-journey": "./data/einarrs_journey_bindrunes_dataset.json",
+    "./merged-reference": "./data/bindrunes.merged.reference.json",
+    "./northernblack": "./data/northernblack_bindrunes_dataset.json"
+  },
+  "files": [
+    "data"
+  ]
+}
