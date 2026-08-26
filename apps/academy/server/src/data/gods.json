@@ -1,0 +1,280 @@
+[
+  {
+    "key": "odinn",
+    "name": "Odhinn (Odin)",
+    "group": "Aesir",
+    "functions": ["sovereignty", "wisdom"],
+    "domains": ["inspiration", "ecstasy", "rulership", "magic"],
+    "summary": "Chief god associated with rulership, wisdom-seeking, and runic knowledge.",
+    "citations": [
+      {
+        "sourceKey": "gutenberg_bellows_1923_poetic_edda",
+        "pages": "Hávamál; also references in Völuspá",
+        "note": "Public-domain translation used for mythic context."
+      },
+      {
+        "sourceKey": "gutenberg_anderson_1879_prose_edda",
+        "pages": "Gylfaginning (Odin and the Aesir)",
+        "note": "Public-domain translation used for overview and names."
+      }
+    ]
+  },
+  {
+    "key": "thor",
+    "name": "Thorr (Thor)",
+    "group": "Aesir",
+    "functions": ["strength", "protection"],
+    "domains": ["strength", "storm", "defense"],
+    "summary": "Protector figure associated with strength and defense against chaotic forces.",
+    "citations": [
+      {
+        "sourceKey": "gutenberg_bellows_1923_poetic_edda",
+        "pages": "Þrymskviða; Hymiskviða",
+        "note": "Poems where Thor features prominently."
+      },
+      {
+        "sourceKey": "gutenberg_anderson_1879_prose_edda",
+        "pages": "Gylfaginning (Thor, Mjöllnir, giants)",
+        "note": "Narrative overview."
+      }
+    ]
+  },
+  {
+    "key": "tyr",
+    "name": "Tyr",
+    "group": "Aesir",
+    "functions": ["strength", "law"],
+    "domains": ["justice", "oaths", "courage"],
+    "summary": "Associated with law, oaths, and courageous commitment.",
+    "citations": [
+      {
+        "sourceKey": "gutenberg_anderson_1879_prose_edda",
+        "pages": "Gylfaginning (Fenrir binding)",
+        "note": "Týr and the wolf episode."
+      }
+    ]
+  },
+  {
+    "key": "freyja",
+    "name": "Freyja",
+    "group": "Vanir",
+    "functions": ["production", "love"],
+    "domains": ["love", "seidr", "fertility"],
+    "summary": "Vanic goddess linked with fertility, love, and magical practice.",
+    "citations": [
+      {
+        "sourceKey": "gutenberg_anderson_1879_prose_edda",
+        "pages": "Gylfaginning (Freyja, Folkvangr)",
+        "note": "Narrative overview."
+      }
+    ]
+  },
+  {
+    "key": "freyr",
+    "name": "Freyr",
+    "group": "Vanir",
+    "functions": ["production"],
+    "domains": ["fertility", "harvest", "peace"],
+    "summary": "Vanic god linked with fertility, good seasons, and prosperity.",
+    "citations": [
+      {
+        "sourceKey": "gutenberg_bellows_1923_poetic_edda",
+        "pages": "Skírnismál",
+        "note": "Frey and the wooing of Gerðr."
+      },
+      {
+        "sourceKey": "gutenberg_anderson_1879_prose_edda",
+        "pages": "Gylfaginning (Vanir and Frey)",
+        "note": "Narrative overview."
+      }
+    ]
+  },
+  {
+    "key": "njordhr",
+    "name": "Njordhr (Njord)",
+    "group": "Vanir",
+    "functions": ["production"],
+    "domains": ["sea", "wealth", "voyaging"],
+    "summary": "Vanic deity associated with the sea and prosperity.",
+    "citations": []
+  },
+  {
+    "key": "frigg",
+    "name": "Frigg",
+    "group": "Aesir",
+    "functions": ["sovereignty"],
+    "domains": ["home", "foresight", "queenship"],
+    "summary": "Associated with queenship and household order.",
+    "citations": [
+      {
+        "sourceKey": "gutenberg_anderson_1879_prose_edda",
+        "pages": "Gylfaginning (Frigg; Baldr’s protections)",
+        "note": "Narrative overview."
+      }
+    ]
+  },
+  {
+    "key": "heimdallr",
+    "name": "Heimdallr",
+    "group": "Aesir",
+    "functions": ["sovereignty", "guardianship"],
+    "domains": ["watch", "boundaries", "order"],
+    "summary": "Guardian figure associated with boundaries and watchfulness.",
+    "citations": [
+      {
+        "sourceKey": "gutenberg_bellows_1923_poetic_edda",
+        "pages": "Rígsþula (Rig); Völuspá (Gjallarhorn at Ragnarök)",
+        "note": "Heimdall/Rig references."
+      }
+    ]
+  },
+  {
+    "key": "baldr",
+    "name": "Baldr",
+    "group": "Aesir",
+    "functions": ["sovereignty"],
+    "domains": ["light", "beauty", "renewal"],
+    "summary": "Associated with light and ideals of harmony.",
+    "citations": [
+      {
+        "sourceKey": "gutenberg_anderson_1879_prose_edda",
+        "pages": "Gylfaginning (Baldr’s death)",
+        "note": "Narrative overview."
+      }
+    ]
+  },
+  {
+    "key": "hel",
+    "name": "Hel",
+    "group": "Other",
+    "functions": ["threshold"],
+    "domains": ["underworld", "rest", "limits"],
+    "summary": "Associated with the realm of the dead and the boundary of life.",
+    "citations": [
+      {
+        "sourceKey": "gutenberg_anderson_1879_prose_edda",
+        "pages": "Gylfaginning (Hel and the realm of Hel)",
+        "note": "Narrative overview."
+      }
+    ]
+  },
+  {
+    "key": "mani",
+    "name": "Mani",
+    "group": "Other",
+    "functions": ["phenomena"],
+    "domains": ["moon", "cycles"],
+    "summary": "Personification of the moon and its cycles.",
+    "citations": []
+  },
+  {
+    "key": "sol",
+    "name": "Sol (Sunna)",
+    "group": "Other",
+    "functions": ["phenomena"],
+    "domains": ["sun", "illumination"],
+    "summary": "Personification of the sun; illumination and clarity.",
+    "citations": []
+  },
+  {
+    "key": "nornir",
+    "name": "Nornir",
+    "group": "Other",
+    "functions": ["sovereignty"],
+    "domains": ["fate", "weaving"],
+    "summary": "Fate-weavers; the shaping of destinies.",
+    "citations": []
+  },
+  {
+    "key": "valkyrjur",
+    "name": "Valkyrjur",
+    "group": "Other",
+    "functions": ["strength"],
+    "domains": ["choice", "battle"],
+    "summary": "Choosers of the slain; associated with battle selection and honor.",
+    "citations": []
+  },
+  {
+    "key": "ullr",
+    "name": "Ullr",
+    "group": "Aesir",
+    "functions": ["strength"],
+    "domains": ["skill", "oaths"],
+    "summary": "Associated with skill and steadiness in commitments.",
+    "citations": []
+  },
+  {
+    "key": "ymir",
+    "name": "Ymir",
+    "group": "Other",
+    "functions": ["chaos"],
+    "domains": ["primordial"],
+    "summary": "Primordial being representing primal, untamed forces.",
+    "citations": []
+  },
+  {
+    "key": "ing",
+    "name": "Ing (Yngvi)",
+    "group": "Other",
+    "functions": ["production"],
+    "domains": ["fertility", "seed"],
+    "summary": "Figure associated with seed-power and latent growth.",
+    "citations": []
+  },
+  {
+    "key": "ostara",
+    "name": "Ostara",
+    "group": "Other",
+    "functions": ["production"],
+    "domains": ["dawn", "renewal"],
+    "summary": "Associated with dawn and renewal.",
+    "citations": []
+  },
+  {
+    "key": "forseti",
+    "name": "Forseti",
+    "group": "Aesir",
+    "functions": ["law"],
+    "domains": ["conciliation", "justice"],
+    "summary": "Associated with lawful settlement and fair judgment.",
+    "citations": []
+  },
+  {
+    "key": "loki",
+    "name": "Loki",
+    "group": "Aesir/Jotnar",
+    "functions": ["change", "challenge"],
+    "domains": ["trickery", "transformation", "chaos"],
+    "summary": "A boundary-breaker figure; catalyst for change, disruption, and hard lessons.",
+    "citations": [
+      {
+        "sourceKey": "gutenberg_bellows_1923_poetic_edda",
+        "pages": "Lokasenna",
+        "note": "Loki’s flyting in poem form."
+      },
+      {
+        "sourceKey": "gutenberg_anderson_1879_prose_edda",
+        "pages": "Gylfaginning (Loki, Baldr, Ragnarök arc)",
+        "note": "Narrative overview."
+      }
+    ]
+  },
+  {
+    "key": "idunn",
+    "name": "Iðunn (Idunn)",
+    "group": "Aesir",
+    "functions": ["renewal", "care"],
+    "domains": ["youth", "renewal", "apples"],
+    "summary": "Associated with renewal and the life-giving apples that sustain the gods.",
+    "citations": []
+  },
+  {
+    "key": "skadhi",
+    "name": "Skaði (Skadi)",
+    "group": "Jotnar",
+    "functions": ["endurance", "strength"],
+    "domains": ["winter", "mountains", "hunting"],
+    "summary": "A winter/mountain figure tied to endurance, independence, and the hard path.",
+    "citations": []
+  }
+]
