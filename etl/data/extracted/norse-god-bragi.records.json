@@ -1,0 +1,60 @@
+[
+  {
+    "id": "norse-god-bragi:page",
+    "kind": "deity_source",
+    "title": "Norse Mythology for Smart People",
+    "summary": "Bragi (pronounced “BRAG-ee;” Old Norse Bragi, “Poet”) is the wise and learned bard (Old Norse þulr, pronounced “THOOL-ur”) of Valhalla, the magnificent hall of the god Odin. Old Norse poetry from the Viking Age frequently features him regaling the einherjar, the dead who dwell in Valhalla, and welcoming recently deceased heroes into their midst.[1] One Eddic poem depicts him as having runes carved on his tongue.[2]",
+    "sections": [
+      {
+        "text": "Bragi (pronounced “BRAG-ee;” Old Norse Bragi, “Poet”) is the wise and learned bard (Old Norse þulr, pronounced “THOOL-ur”) of Valhalla, the magnificent hall of the god Odin. Old Norse poetry from the Viking Age frequently features him regaling the einherjar, the dead who dwell in Valhalla, and welcoming recently deceased heroes into their midst.[1] One Eddic poem depicts him as having runes carved on his tongue.[2]"
+      },
+      {
+        "text": "Bragi was originally the historical ninth-century bard Bragi Boddason. His poems were so outstandingly artful and moving that subsequent generations imagined that, upon his death, Odin had appointed him the court poet of Valhalla. After all, a troop of elite warriors, kings, and others favored by Odin needed an elite bard to sing of their countless exploits.[3]"
+      },
+      {
+        "text": "The Old Norse writers of the Christian Middle Ages took this a step further and portrayed Bragi as having been nothing less than a god of poetry. One such author even claimed that one of the Old Norse words for “poetry,” bragr, was derived from Bragi’s name.[4] He was said to be the husband of the goddess Idun, whose fruits guarantee the continued immortality of the gods."
+      },
+      {
+        "text": "However, this seems to have been a misunderstanding on the part of such late authors, and there’s no evidence that Bragi was ever actually worshiped as a god while the pre-Christian Norse religion was still a living tradition. [5][6]"
+      },
+      {
+        "text": "Looking for more great information on Norse mythology and religion? While this site provides the ultimate online introduction to the topic, my book The Viking Spirit provides the ultimate introduction to Norse mythology and religion period. I’ve also written a popular list of The 10 Best Norse Mythology Books, which you’ll probably find helpful in your pursuit."
+      },
+      {
+        "text": "References:"
+      },
+      {
+        "text": "[1] See, for example, the skaldic poems Hákonarmál and Eiríksmál."
+      },
+      {
+        "text": "[2] The Poetic Edda. Sigrdrífumál, verse 16."
+      },
+      {
+        "text": "[3] Lindow, John. 2004. Narrative Worlds, Human Environments, and Poets: The Case of Bragi. In Old Norse Religion in Long-Term Perspectives: Origins, Changes, and Interactions. Edited by Anders Andrén, Kristina Jennbert, and Catharina Raudvere. p. 21."
+      },
+      {
+        "text": "[4] Snorri Sturluson. The Prose Edda. Gylfaginning 26."
+      },
+      {
+        "text": "[5] Lindow, John. 2004. Narrative Worlds, Human Environments, and Poets: The Case of Bragi. In Old Norse Religion in Long-Term Perspectives: Origins, Changes, and Interactions. Edited by Anders Andrén, Kristina Jennbert, and Catharina Raudvere. p. 21."
+      },
+      {
+        "text": "[6] Turville-Petre, E.O.G. 1964. Myth and Religion of the North: The Religion of Ancient Scandinavia. p. 185-186."
+      }
+    ],
+    "references": [
+      {
+        "sourceSite": "norse-mythology.org",
+        "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/bragi/",
+        "sourceTitle": "Norse Mythology for Smart People",
+        "extractedAt": "2026-04-12T05:13:37.309Z",
+        "extractorVersion": "0.1.0",
+        "contentHash": "33a2600e7165737b1a00f849495aae7f93ce04e012862260388f6f21f86741b9",
+        "classification": "reference_like"
+      }
+    ],
+    "tags": [
+      "reference_like"
+    ]
+  }
+]
