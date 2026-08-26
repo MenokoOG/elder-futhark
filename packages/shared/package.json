@@ -3,6 +3,13 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "scripts": {"build": "tsc -p tsconfig.json", "lint": "echo shared lint placeholder", "test": "vitest run --passWithNoTests", "typecheck": "tsc -p tsconfig.json --noEmit"},
-  "dependencies": {"pino": "^9.7.0"}
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint .",
+    "test": "vitest run --passWithNoTests",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "pino": "^9.7.0"
+  }
 }

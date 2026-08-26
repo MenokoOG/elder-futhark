@@ -674,7 +674,7 @@ export function buildPreviewHtml(summary: PreviewSummary): string {
         .replace(/&/g, '&amp;')
         .replace(/</g, '&lt;')
         .replace(/>/g, '&gt;')
-        .replace(/\"/g, '&quot;')
+        .replace(/"/g, '&quot;')
         .replace(/'/g, '&#39;');
 
     const setDetail = (title, data) => {

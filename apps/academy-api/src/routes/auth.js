@@ -6,10 +6,6 @@ import { signToken } from "../utils/jwt.js";
 
 export const authRouter = express.Router();
 
-function normalizeEmail(email) {
-  return String(email || "").trim().toLowerCase();
-}
-
 const CredsSchema = z.object({
   email: z.string().trim().toLowerCase().email("Email is required"),
   password: z.string().min(8, "Password must be at least 8 characters"),

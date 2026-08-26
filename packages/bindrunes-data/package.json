@@ -11,5 +11,8 @@
   },
   "files": [
     "data"
-  ]
+  ],
+  "scripts": {
+    "lint": "eslint ."
+  }
 }
