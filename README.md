@@ -93,24 +93,11 @@ Recorded honestly rather than papered over.
 4. **Client bundle is 1,285 kB** (over Vite's 500 kB warning). Pre-existing; wants code-splitting.
 5. **Accessibility is unassessed.** No audit has been run against the Academy UI.
 
-## Retiring the source folders
+## Provenance
 
-This monorepo was assembled from four directories that are still present and gitignored:
+This monorepo was assembled on 2026-08-25 from four separate units: `elder-futhark-academy`, `elder-futhark-etl`, `einarr_bindrunes_package` and `elder-futhark-final-agent-package`. Those directories have been removed; their contents live here now.
 
-```
-elder-futhark-academy/  elder-futhark-etl/
-einarr_bindrunes_package/  elder-futhark-final-agent-package/
-```
-
-They are **not deleted** because `elder-futhark-academy/server/.env` holds live credentials — moving that file is yours to do, never an agent's. Once you have copied it to `apps/academy-api/.env` and verified the app:
-
-```bash
-rm -rf elder-futhark-academy elder-futhark-etl einarr_bindrunes_package elder-futhark-final-agent-package
-```
-
-Then delete the matching block from `.gitignore`.
-
-Both source repos' full histories are preserved in this repo's history, and `MenokoOG/elder-futhark-academy` and `MenokoOG/elder-futhark-etl` remain untouched on GitHub as the rollback path.
+Both source repositories' full histories are preserved in this repo — `git blame` on a moved file still attributes lines to the original commits. `MenokoOG/elder-futhark-academy` and `MenokoOG/elder-futhark-etl` remain untouched on GitHub as the rollback path.
 
 ## License
 
