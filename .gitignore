@@ -1,0 +1,81 @@
+# =========================
+# Secrets / env  (FIRST — nothing below matters if this fails)
+# =========================
+.env
+.env.*
+!.env.example
+secrets/
+*.pem
+*.p12
+*.key
+**/id_rsa
+**/id_ed25519
+
+# =========================
+# PRE-MONOREPO SOURCES — remove after verification
+# The four original directories this monorepo was assembled from. They are
+# left in place (not deleted) because elder-futhark-academy/server/.env holds
+# live credentials that only Lawrence moves. Once the monorepo is verified,
+# delete them and delete this block. See README "Retiring the source folders".
+# =========================
+/elder-futhark-academy/
+/elder-futhark-etl/
+/einarr_bindrunes_package/
+/elder-futhark-final-agent-package/
+
+# =========================
+# Agent operating files (core-context.md Context File Policy)
+# core-context.md itself IS tracked — it is the standards mirror.
+# =========================
+CLASSHUMAN.md
+CLAUDE.md
+AGENTS.md
+.claude/
+.remember/
+ai-code-reviews/
+
+# =========================
+# Node / build
+# =========================
+node_modules/
+dist/
+build/
+out/
+coverage/
+*.tsbuildinfo
+.turbo/
+.cache/
+tmp/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# ETL run artifacts — heavyweight raw snapshots stay out of source control
+# =========================
+data/raw/*.raw.txt
+data/raw/*.metadata.json
+.data-cache
+
+# =========================
+# OS / editor
+# =========================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+*.tmp
+*.bak
+*.orig
+.idea/
+*.iml
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+*.pid
