@@ -56,14 +56,12 @@
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/giants/fenrir/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:46.935Z",
+        "extractedAt": "2026-08-28T01:46:42.889Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "51c91fe90ec1fa650485ff3af1293bde54687473b00ae1af72498d37483d0eb4",
+        "contentHash": "2ae8c68a219746479a7340a15df329736968895d092ac0f428aed9153832eed0",
         "classification": "reference_like"
       }
     ],
-    "tags": [
-      "reference_like"
-    ]
+    "tags": []
   }
 ]

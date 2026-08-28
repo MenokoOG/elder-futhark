@@ -41,14 +41,12 @@
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-vanir-gods-and-goddesses/njord/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:43.043Z",
+        "extractedAt": "2026-08-28T01:46:39.514Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "416056f4605560ff7897f46360b9108b879f45ef83ab504a7efffc7faed19f9f",
+        "contentHash": "90d18263371705075257ca2a3a02971b5ec274079ac791f8358145622d817b9f",
         "classification": "reference_like"
       }
     ],
-    "tags": [
-      "reference_like"
-    ]
+    "tags": []
   }
 ]

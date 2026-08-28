@@ -47,14 +47,12 @@
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/giants/skadi/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:48.766Z",
+        "extractedAt": "2026-08-28T01:46:44.573Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "7d4d4622fc31112f4446524e4864898b672aa3d0b0445854ef2aac973f9138b6",
+        "contentHash": "1239f02147334cec190b5d77dfe0adc56987357d719332f530b333e1b83a632c",
         "classification": "reference_like"
       }
     ],
-    "tags": [
-      "reference_like"
-    ]
+    "tags": []
   }
 ]

@@ -1,7 +1,8 @@
-import { mkdir, mkdtemp, rm, writeFile } from 'node:fs/promises';
+import { mkdir, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { afterEach, describe, expect, it } from 'vitest';
+import { ELDER_FUTHARK } from '@efa/transformers';
 import { validateCommand } from './validate.js';
 
 const tempDirs: string[] = [];
@@ -42,31 +43,33 @@ async function setupWorkspace(): Promise<string> {
     const normalizedDir = join(root, 'data', 'normalized');
     await mkdir(normalizedDir, { recursive: true });
 
+    // A full, valid rune row. The Elder Futhark is a closed set of twenty-four,
+    // and validateCommand now refuses a short one.
     await writeFile(
         join(normalizedDir, 'runes.json'),
-        JSON.stringify([
-            {
-                id: 'fehu',
-                glyph: 'F',
-                name: 'Fehu',
+        JSON.stringify(
+            ELDER_FUTHARK.map((entry) => ({
+                id: entry.key,
+                glyph: entry.glyph,
+                name: entry.key,
                 phonetic: [],
-                coreMeanings: ['wealth'],
+                coreMeanings: ['a meaning'],
                 historicalNotes: ['historical'],
                 interpretiveNotes: [],
-                keywords: ['reference_like'],
+                keywords: [],
                 sources: [
                     {
                         sourceSite: 'norse-mythology.org',
                         sourceUrl: 'https://norse-mythology.org/runes/the-meanings-of-the-runes/',
                         extractedAt: '2026-04-11T00:00:00.000Z',
-                        extractorVersion: '0.1.0',
+                        extractorVersion: '0.2.0',
                         contentHash: 'abc123',
                         classification: 'reference_like'
                     }
                 ],
                 confidence: 0.8
-            }
-        ])
+            }))
+        )
     );
 
     await writeFile(
@@ -174,11 +177,23 @@ describe('validateCommand', () => {
         process.chdir(cliDir);
 
         const result = await validateCommand();
-        expect(result.runes).toBe(1);
+        expect(result.runes).toBe(24);
         expect(result.deities).toBe(1);
         expect(result.worlds).toBe(1);
         expect(result.practices).toBe(1);
         expect(result.adjacentSystems).toBe(1);
+    });
+
+    it('refuses a partial rune row rather than publishing it', async () => {
+        const cliDir = await setupWorkspace();
+        cwdStack.push(process.cwd());
+        process.chdir(cliDir);
+
+        const runesPath = join(cliDir, '..', '..', 'data', 'normalized', 'runes.json');
+        const full = JSON.parse(await readFile(runesPath, 'utf8')) as unknown[];
+        await writeFile(runesPath, JSON.stringify(full.slice(0, 4)));
+
+        await expect(validateCommand()).rejects.toThrow(/closed set|expected 24/i);
     });
 
     it('fails when practice and adjacent boundaries are violated', async () => {

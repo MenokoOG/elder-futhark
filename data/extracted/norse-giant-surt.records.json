@@ -38,14 +38,12 @@
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/giants/surt/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:56.134Z",
+        "extractedAt": "2026-08-28T01:46:51.319Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "3f43275dd3008ed5b753127c2ed1c9d574a51cf46bef0ab82a3e5d28f2af8f7c",
+        "contentHash": "b2811376a3069c5f06656ddbbefaeb66da7217f07251d65ae0b94bef224212b7",
         "classification": "reference_like"
       }
     ],
-    "tags": [
-      "reference_like"
-    ]
+    "tags": []
   }
 ]

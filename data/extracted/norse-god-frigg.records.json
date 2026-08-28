@@ -101,14 +101,12 @@
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/frigg/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:28.092Z",
+        "extractedAt": "2026-08-28T01:46:25.968Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "9ce4dfb07f920fe4ae010e1af2eafc05d07fccc5b66198f9779857a0ddd18025",
+        "contentHash": "f13be5152c072fd26d9f8555cf144e9de26f15b06981de399d5d11c3693070d8",
         "classification": "reference_like"
       }
     ],
-    "tags": [
-      "reference_like"
-    ]
+    "tags": []
   }
 ]

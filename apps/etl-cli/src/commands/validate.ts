@@ -11,6 +11,7 @@ import {
     type World
 } from '@efa/schemas';
 import { loadConfig, resolveSourceRegistryPath } from '@efa/config';
+import { assertElderFutharkComplete } from '@efa/transformers';
 
 export interface ValidateCommandResult {
     runes: number;
@@ -70,6 +71,11 @@ export async function validateCommand(): Promise<ValidateCommandResult> {
     const adjacentSystems = SourceRecordSchema.array().parse(await readJson(adjacentPath)) as SourceRecord[];
 
     assertPracticeBoundary(practices, adjacentSystems);
+
+    // The Elder Futhark is a closed set of twenty-four. A short row means an
+    // extractor lost runes silently, which is exactly the failure that let four
+    // article headings reach the published dataset.
+    assertElderFutharkComplete(runes);
 
     return {
         runes: runes.length,

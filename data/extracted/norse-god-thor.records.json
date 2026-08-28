@@ -101,14 +101,12 @@
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/thor/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:24.414Z",
+        "extractedAt": "2026-08-28T01:46:22.574Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "36fd02a787660c8b494c05b0583758ea23666bbd498a717098bcc813662ff2ec",
+        "contentHash": "329d27adc13dd2bba8fc8fd7435d5710ad24eab048e59d82a88bed8d34dbcc23",
         "classification": "reference_like"
       }
     ],
-    "tags": [
-      "reference_like"
-    ]
+    "tags": []
   }
 ]

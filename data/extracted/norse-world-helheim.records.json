@@ -101,14 +101,12 @@
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/helheim/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:20.519Z",
+        "extractedAt": "2026-08-28T01:46:19.158Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "2a2991ee5efd2c9695b80a40812ee61cd0af9dc9d91015ae361d832e5e31d6bb",
+        "contentHash": "b91198071c0c7ae06ba9e125600ca49ca03743c5a0d496b64b1a685fee4f52d9",
         "classification": "reference_like"
       }
     ],
-    "tags": [
-      "reference_like"
-    ]
+    "tags": []
   }
 ]

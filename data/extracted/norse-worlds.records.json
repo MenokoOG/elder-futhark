@@ -44,14 +44,12 @@
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:12:57.381Z",
+        "extractedAt": "2026-08-28T01:45:57.380Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "c798d32e1fdeadbc9e075cd9d00604a4baca766b396b072deb66b982ba1da144",
+        "contentHash": "ddf21e4b643156a74b80d5aa21382d7dee39a0d7bae55bcc091bd2f883252f7d",
         "classification": "reference_like"
       }
     ],
-    "tags": [
-      "reference_like"
-    ]
+    "tags": []
   }
 ]

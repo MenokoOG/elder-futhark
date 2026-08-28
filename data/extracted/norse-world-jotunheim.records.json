@@ -32,14 +32,12 @@
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/jotunheim/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:11.300Z",
+        "extractedAt": "2026-08-28T01:46:10.742Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "0b053f24eaf38b8f6f4f9210889bdc4cc23d543e85eb3f38aa481ad7f924f1da",
+        "contentHash": "c1f14d7787481237aba69b62a2ede35a1aceab221de943e902a9094b6601224a",
         "classification": "reference_like"
       }
     ],
-    "tags": [
-      "reference_like"
-    ]
+    "tags": []
   }
 ]

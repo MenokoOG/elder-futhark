@@ -26,14 +26,12 @@
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:12:55.634Z",
+        "extractedAt": "2026-08-28T01:45:55.731Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "7dd0b7848007289b1af09684b028f9707f43ff72dc8d5a5a14b3249aadde2d91",
+        "contentHash": "91e8da15e32074c354616a0dbba09c3fc52e1d1ed82087d4c2d1f631c3b7497f",
         "classification": "reference_like"
       }
     ],
-    "tags": [
-      "reference_like"
-    ]
+    "tags": []
   }
 ]

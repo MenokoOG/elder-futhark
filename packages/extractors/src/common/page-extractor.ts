@@ -57,7 +57,12 @@ export function buildGenericPageRecord(html: string, context: ExtractorContext, 
                     classification: context.classification
                 }
             ],
-            tags: [context.classification]
+            // Deliberately empty. `tags` is a content field that downstream
+            // transformers map onto things like a deity's domains, and putting
+            // the source classification here made every deity come out with
+            // domains: ["reference_like"]. The classification is already
+            // preserved, correctly, on each reference above.
+            tags: []
         }
     ];
 }

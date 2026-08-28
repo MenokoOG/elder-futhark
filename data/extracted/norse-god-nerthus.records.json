@@ -47,14 +47,12 @@
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-vanir-gods-and-goddesses/nerthus/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:45.091Z",
+        "extractedAt": "2026-08-28T01:46:41.200Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "70f34dbed187f1f33f44ec2b741fd824cbccee557457163e515e9f2986b3a088",
+        "contentHash": "26fec618b9765fe0d090f71e349b3c454b6aa2479331272be53125e80fe9322f",
         "classification": "reference_like"
       }
     ],
-    "tags": [
-      "reference_like"
-    ]
+    "tags": []
   }
 ]

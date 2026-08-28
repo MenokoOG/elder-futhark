@@ -77,14 +77,12 @@
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/baldur/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:29.921Z",
+        "extractedAt": "2026-08-28T01:46:27.664Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "bb5d1b0c1d6ccfa7b240b5fa65e91ec4518bf90d6347db25c9e959994b0ad000",
+        "contentHash": "a50f71d03099a2699e7ba6b6e5d2ff9005a7db9e060c8862831b4b3446a856f8",
         "classification": "reference_like"
       }
     ],
-    "tags": [
-      "reference_like"
-    ]
+    "tags": []
   }
 ]

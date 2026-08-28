@@ -101,14 +101,12 @@
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/odin/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:22.563Z",
+        "extractedAt": "2026-08-28T01:46:20.872Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "67fd43e4dc19f5939f8807e5d5710caca115ce19b94f043f26f2d10b6b61971e",
+        "contentHash": "db7555423e2e325515e548b1a1a963cfb2797e052b8f30a2a7a9a7189f7c11f8",
         "classification": "reference_like"
       }
     ],
-    "tags": [
-      "reference_like"
-    ]
+    "tags": []
   }
 ]

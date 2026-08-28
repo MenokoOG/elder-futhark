@@ -1,7 +1,7 @@
 [
   {
     "id": "norse-runes-books:page",
-    "kind": "rune_source",
+    "kind": "generic_page",
     "title": "Norse Mythology for Smart People",
     "summary": "Those who want to begin to study the runes are immediately confronted with the deluge of books that have been written on these fascinating and mysterious symbols from the ancient Norse/Germanic world.",
     "sections": [
@@ -101,14 +101,12 @@
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/runes/the-best-books-on-the-runes/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:04.353Z",
+        "extractedAt": "2026-08-28T01:46:04.038Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "cc1714a7170ef885025c504451cca35fc7ae054d7ef19b63e793a30c9f7370ce",
+        "contentHash": "4e9a0828df1c9236dfa291893bd7da1fd3d6c997b119d3112dcf65ff10e78f90",
         "classification": "reference_like"
       }
     ],
-    "tags": [
-      "reference_like"
-    ]
+    "tags": []
   }
 ]

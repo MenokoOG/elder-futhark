@@ -5,6 +5,7 @@ import { futharkRunesExtractor } from './andrea-shelley/futhark-runes.extractor.
 import { icelandicStavesExtractor } from './andrea-shelley/icelandic-staves.extractor.js';
 import { runeCastingExtractor } from './andrea-shelley/rune-casting.extractor.js';
 import type { ExtractorContext } from './common/page-extractor.js';
+import { elderFutharkExtractor } from './norse-mythology/elder-futhark.extractor.js';
 import { godsExtractor } from './norse-mythology/gods.extractor.js';
 import { runesExtractor } from './norse-mythology/runes.extractor.js';
 import { worldsExtractor } from './norse-mythology/worlds.extractor.js';
@@ -55,6 +56,12 @@ function selectExtractor(sourceId: string, sourceUrl: string) {
 
     if (sourceId === 'shelley-staves') {
         return icelandicStavesExtractor;
+    }
+
+    // The meanings page is the only one that defines the rune row itself.
+    // Every other /runes/ page is prose about runes.
+    if (sourceId === 'norse-runes') {
+        return elderFutharkExtractor;
     }
 
     if (sourceId.startsWith('norse-runes')) {
