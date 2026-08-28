@@ -7,9 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      # No version pin here on purpose: pnpm/action-setup fails outright when a
+      # version is given in both this file and package.json's packageManager.
+      # packageManager (pnpm@10.8.1) is the single source of truth.
       - uses: pnpm/action-setup@v4
-        with:
-          version: 10
       - uses: actions/setup-node@v4
         with:
           node-version: 22
