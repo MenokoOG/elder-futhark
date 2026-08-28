@@ -42,7 +42,7 @@ What is needed to land desktop and mobile together:
 - The Draw canvas and the Stones canvas at narrow widths, given the existing mobile fix
 - Touch target sizes for the aett pill filter and the 0–5 rating row in Decks
 
-## 3. Collision — `Runes.jsx` reverts in-flight work
+## 3. Collision — `Runes.jsx` reverts work already on `main`
 
 The bundle's `src/views/Runes.jsx` hardcodes:
 
@@ -50,7 +50,7 @@ The bundle's `src/views/Runes.jsx` hardcodes:
 const AETTS = [["", "All"], ["1", "Aett 1"], ["2", "Aett 2"], ["3", "Aett 3"]];
 ```
 
-Work already in review replaces those bare numbers with the real aett names, themes and groupings, served from `@efa/futhark-aetts`. Dropping the bundle file in verbatim would revert it.
+Those bare numbers were replaced on `main` (PR #4) with the real aett names, themes and groupings, served from `@efa/futhark-aetts`. Dropping the bundle file in verbatim would revert shipped work.
 
 Not a design problem — the redesign's pill-filter treatment is an improvement on the old dropdown. It only needs the labels sourced from the module rather than hardcoded, so the pills read **"Freyr's Aett"**, **"Hagal's Aett"**, **"Tyr's Aett"**. The implementation will merge the two; noted here so it is not lost.
 
@@ -63,7 +63,7 @@ Not a design problem — the redesign's pill-filter treatment is an improvement 
 
 ## What happens next
 
-Held pending items 1 and 2. When the bundle returns with contrast and responsive coverage, implementation stacks on the aett branch so both survive, and the fifteen routes get walked as the bundle's step 5 describes.
+Held pending items 1 and 2. When the bundle returns with contrast and responsive coverage, implementation branches from `main` — which now carries the aett work — reconciles `Runes.jsx` so the pill labels come from `@efa/futhark-aetts`, and walks the fifteen routes as the bundle's step 5 describes.
 
 ---
 LAHA — Love All Humans Always.
