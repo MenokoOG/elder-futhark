@@ -101,14 +101,12 @@
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-vanir-gods-and-goddesses/freya/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:39.345Z",
+        "extractedAt": "2026-08-28T01:46:36.141Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "ae035ad2c9aebb9f131e2ba90a8a4392e49fe8fc69fa8583bb93472abe75fd8d",
+        "contentHash": "49994a390c4b3bbda11b85ff61ed848002963f2ddee241882c75613ac26b8398",
         "classification": "reference_like"
       }
     ],
-    "tags": [
-      "reference_like"
-    ]
+    "tags": []
   }
 ]

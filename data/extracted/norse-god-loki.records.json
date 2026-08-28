@@ -92,14 +92,12 @@
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/loki/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:26.236Z",
+        "extractedAt": "2026-08-28T01:46:24.270Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "66f2e73a9c7bf39501c809cafa985b0ee7ba4d26c9877f642ff1e36215e0e25c",
+        "contentHash": "3f3a70017f43f51270ed9e172860884356841309d741683a607a324f4add118b",
         "classification": "reference_like"
       }
     ],
-    "tags": [
-      "reference_like"
-    ]
+    "tags": []
   }
 ]

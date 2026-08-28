@@ -101,14 +101,12 @@
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/tyr/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:33.623Z",
+        "extractedAt": "2026-08-28T01:46:31.063Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "15e7b89192178da05ff390ff8a57b45b57ba214faacdd579c071a3468f2dc91c",
+        "contentHash": "4cc1d0d53ad8ec0f8c9727f94e9c1116f79a3e25eef15fef532439ac642dfa8c",
         "classification": "reference_like"
       }
     ],
-    "tags": [
-      "reference_like"
-    ]
+    "tags": []
   }
 ]

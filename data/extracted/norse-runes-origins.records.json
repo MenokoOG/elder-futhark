@@ -1,7 +1,7 @@
 [
   {
     "id": "norse-runes-origins:page",
-    "kind": "rune_source",
+    "kind": "generic_page",
     "title": "Norse Mythology for Smart People",
     "summary": "This page is the second part of a five-part article on the runes. The other four parts are:",
     "sections": [
@@ -101,14 +101,12 @@
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/runes/the-origins-of-the-runes/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:00.839Z",
+        "extractedAt": "2026-08-28T01:46:00.718Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "7cda167f6fe8ee7d08cef0837e570f2f9b20a453e93650684f76c93914d8250b",
+        "contentHash": "72a862b9aeacb06d8710471478209208505238b293ebb57e0f019616e9d8f564",
         "classification": "reference_like"
       }
     ],
-    "tags": [
-      "reference_like"
-    ]
+    "tags": []
   }
 ]

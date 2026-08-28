@@ -92,14 +92,12 @@
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/giants/ymir/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:50.622Z",
+        "extractedAt": "2026-08-28T01:46:46.263Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "02edd79cfe987e72305a696d79eedb6d829f0afc9ce58701951286f88212f6b9",
+        "contentHash": "292376e1fd1bac31a27a968af3bd1ce424e69570c9ab3e8b37666bbda99f74d5",
         "classification": "reference_like"
       }
     ],
-    "tags": [
-      "reference_like"
-    ]
+    "tags": []
   }
 ]

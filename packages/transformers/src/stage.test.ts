@@ -58,17 +58,18 @@ describe('transformExtractedRecords', () => {
             recordWithUrl('deity_source', 'd1', 'Norse Mythology for Smart People', 'https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/odin/'),
             recordWithUrl('deity_source', 'd2', 'Norse Mythology for Smart People', 'https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/thor/'),
             recordWithUrl('world_source', 'w1', 'Norse Mythology for Smart People', 'https://norse-mythology.org/cosmology/the-nine-worlds/asgard/'),
-            recordWithUrl('world_source', 'w2', 'Norse Mythology for Smart People', 'https://norse-mythology.org/cosmology/the-nine-worlds/midgard/'),
-            recordWithUrl('rune_source', 'r1', 'Norse Mythology for Smart People', 'https://norse-mythology.org/runes/the-meanings-of-the-runes/'),
-            recordWithUrl('rune_source', 'r2', 'Norse Mythology for Smart People', 'https://norse-mythology.org/runes/the-origins-of-the-runes/')
+            recordWithUrl('world_source', 'w2', 'Norse Mythology for Smart People', 'https://norse-mythology.org/cosmology/the-nine-worlds/midgard/')
         ]);
 
         const deityIds = output.deities.map((item) => item.id).sort();
         const worldIds = output.worlds.map((item) => item.id).sort();
-        const runeIds = output.runes.map((item) => item.id).sort();
 
         expect(deityIds).toEqual(['odin', 'thor']);
         expect(worldIds).toEqual(['asgard', 'midgard']);
-        expect(runeIds).toEqual(['the-meanings-of-the-runes', 'the-origins-of-the-runes']);
+
+        // Runes are deliberately absent here. Rune identity comes from the
+        // canonical table, never from the page URL — this test used to assert
+        // rune ids of 'the-meanings-of-the-runes' and 'the-origins-of-the-runes',
+        // which is the defect, not the contract.
     });
 });

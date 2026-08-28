@@ -98,14 +98,12 @@
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-vanir-gods-and-goddesses/freyr/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:41.201Z",
+        "extractedAt": "2026-08-28T01:46:37.833Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "0ec9d1d111fb2f23a8ac9ba7382e4ac4b3c0cbfe41f2679988422cb3096f38af",
+        "contentHash": "fae7e9ce6c46708983956f9bb9943ab0ee09b2ee60e4334988745768d668c0bb",
         "classification": "reference_like"
       }
     ],
-    "tags": [
-      "reference_like"
-    ]
+    "tags": []
   }
 ]

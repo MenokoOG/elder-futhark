@@ -38,14 +38,12 @@
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/idun/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:35.466Z",
+        "extractedAt": "2026-08-28T01:46:32.762Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "4dc60feb985f92a107d2b52164d5a2ca5dfeff484deed0d9a16a90ecb3eb87c7",
+        "contentHash": "5ccedf2389b10976aa4b96a914fccea2e3de39fb774c9854cb92b9ecf6ed7add",
         "classification": "reference_like"
       }
     ],
-    "tags": [
-      "reference_like"
-    ]
+    "tags": []
   }
 ]

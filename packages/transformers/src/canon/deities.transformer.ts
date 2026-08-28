@@ -14,7 +14,11 @@ export function deities(records: SourceRecord[]): Deity[] {
             id,
             name,
             aliases: [],
-            domains: record.tags,
+            // Not record.tags. Tags used to carry the source classification,
+            // which made every deity come out with domains: ["reference_like"].
+            // No source is parsed for domains yet, so this is honestly empty
+            // until an extractor produces them.
+            domains: [],
             description: record.summary ?? record.sections[0]?.text ?? '',
             sources: record.references,
             confidence: baselineConfidence()

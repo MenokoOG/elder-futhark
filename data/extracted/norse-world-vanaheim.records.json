@@ -41,14 +41,12 @@
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/vanaheim/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:09.299Z",
+        "extractedAt": "2026-08-28T01:46:09.051Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "b1e280f927a1321dbca26d60cf85c16f95b68ee81e7f5a0e810c3cb8a4250322",
+        "contentHash": "25a3da4da237b6952a2f4de2cd89226e8c632ffd6739c2e5e7efc707a5a1d051",
         "classification": "reference_like"
       }
     ],
-    "tags": [
-      "reference_like"
-    ]
+    "tags": []
   }
 ]

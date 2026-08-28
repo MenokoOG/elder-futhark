@@ -38,14 +38,12 @@
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/midgard/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:05.984Z",
+        "extractedAt": "2026-08-28T01:46:05.732Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "964803e1316e46af6a7e1ac5dd287ea6d4f5f347e4453f8592301758af7764c7",
+        "contentHash": "31c66651fb500bf47ee0a2c3b2438e5fcca59960edc837388cb617eb7af9967b",
         "classification": "reference_like"
       }
     ],
-    "tags": [
-      "reference_like"
-    ]
+    "tags": []
   }
 ]

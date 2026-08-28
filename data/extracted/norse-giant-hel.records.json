@@ -53,14 +53,12 @@
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/giants/hel/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:52.459Z",
+        "extractedAt": "2026-08-28T01:46:47.950Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "f61fc076e949ffb3a43a286c46883e3a7f2e4c4233baf622b555f64892eb9c97",
+        "contentHash": "2a6a7104685842c056bea86b7040a13f48618c585e41339eba15a9a3936c9833",
         "classification": "reference_like"
       }
     ],
-    "tags": [
-      "reference_like"
-    ]
+    "tags": []
   }
 ]

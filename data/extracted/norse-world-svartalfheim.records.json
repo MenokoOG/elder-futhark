@@ -56,14 +56,12 @@
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/cosmology/the-nine-worlds/svartalfheim/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:18.675Z",
+        "extractedAt": "2026-08-28T01:46:17.458Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "8478c62aea38db72b7c531db2b4480d22d887fe75851cc88988adc3bd5e000b3",
+        "contentHash": "6eae32884606a4617caea64bb8a221b8d589da5c9007849600c6cee2c889e2f5",
         "classification": "reference_like"
       }
     ],
-    "tags": [
-      "reference_like"
-    ]
+    "tags": []
   }
 ]

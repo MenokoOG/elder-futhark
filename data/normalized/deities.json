@@ -3,18 +3,16 @@
     "id": "gods-and-creatures",
     "name": "Gods And Creatures",
     "aliases": [],
-    "domains": [
-      "reference_like"
-    ],
+    "domains": [],
     "description": "The gods and other spiritual beings of Norse mythology are among the most wondrous and unique of any mythology. The Norse gods had very human-like personalities and frequently intervened in human affairs, but were larger-than-life and awe-inspiring in ways that decisively set them apart from mere humans. Their characters were often richly complex and multifaceted; one-dimensional epithets like “god of war” or “goddess of fertility” typically fail to describe anything more than one of their several aspects.",
     "sources": [
       {
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:12:55.634Z",
+        "extractedAt": "2026-08-28T01:45:55.731Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "7dd0b7848007289b1af09684b028f9707f43ff72dc8d5a5a14b3249aadde2d91",
+        "contentHash": "91e8da15e32074c354616a0dbba09c3fc52e1d1ed82087d4c2d1f631c3b7497f",
         "classification": "reference_like"
       }
     ],
@@ -24,18 +22,16 @@
     "id": "odin",
     "name": "Odin",
     "aliases": [],
-    "domains": [
-      "reference_like"
-    ],
+    "domains": [],
     "description": "Odin (pronounced “OH-din”; Old Norse Óðinn, Old English and Old Saxon Woden, Old High German Wuotan, Wotan, or Wodan, Proto-Germanic *Woðanaz, “Master of Ecstasy”) is one of the most complex and enigmatic characters in Norse mythology, and perhaps in all of world literature. He’s the ruler of the Aesir tribe of deities, yet he often ventures far from their kingdom, Asgard, on long, solitary wanderings throughout the cosmos on purely self-interested quests. He’s a relentless seeker after and giver of wisdom, but he has little regard for communal values such as justice, fairness, or respect for law and convention. He’s the divine patron of rulers, and also of outlaws. He’s a war-god, but also a poetry-god, and he has prominent “effeminate” qualities that would have brought unspeakable shame to any historical Viking warrior. He’s worshiped by those in search of prestige, honor, and nobility, yet he’s often cursed for being a fickle trickster. What kind of literary figure – let alone a god whose historical worship spanned much of a continent and several centuries – could possibly embody all of these qualities at once, with their apparently glaring contradictions?",
     "sources": [
       {
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/odin/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:22.563Z",
+        "extractedAt": "2026-08-28T01:46:20.872Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "67fd43e4dc19f5939f8807e5d5710caca115ce19b94f043f26f2d10b6b61971e",
+        "contentHash": "db7555423e2e325515e548b1a1a963cfb2797e052b8f30a2a7a9a7189f7c11f8",
         "classification": "reference_like"
       }
     ],
@@ -45,18 +41,16 @@
     "id": "thor",
     "name": "Thor",
     "aliases": [],
-    "domains": [
-      "reference_like"
-    ],
+    "domains": [],
     "description": "Thor (Old Norse Þórr, Old English Đunor, Old High German Donar, Proto-Germanic *Þunraz, “Thunder”[1]) is one of the most prominent figures in Norse mythology. He was a major god of all branches of the Germanic peoples before their conversion to Christianity, although he reached the height of his popularity among the Scandinavians of the late Viking Age.",
     "sources": [
       {
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/thor/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:24.414Z",
+        "extractedAt": "2026-08-28T01:46:22.574Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "36fd02a787660c8b494c05b0583758ea23666bbd498a717098bcc813662ff2ec",
+        "contentHash": "329d27adc13dd2bba8fc8fd7435d5710ad24eab048e59d82a88bed8d34dbcc23",
         "classification": "reference_like"
       }
     ],
@@ -66,18 +60,16 @@
     "id": "loki",
     "name": "Loki",
     "aliases": [],
-    "domains": [
-      "reference_like"
-    ],
+    "domains": [],
     "description": "Loki (pronounced “LOAK-ee;” Old Norse Loki, the meaning of which will be discussed below) is the wily trickster god of Norse mythology.",
     "sources": [
       {
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/loki/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:26.236Z",
+        "extractedAt": "2026-08-28T01:46:24.270Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "66f2e73a9c7bf39501c809cafa985b0ee7ba4d26c9877f642ff1e36215e0e25c",
+        "contentHash": "3f3a70017f43f51270ed9e172860884356841309d741683a607a324f4add118b",
         "classification": "reference_like"
       }
     ],
@@ -87,18 +79,16 @@
     "id": "frigg",
     "name": "Frigg",
     "aliases": [],
-    "domains": [
-      "reference_like"
-    ],
+    "domains": [],
     "description": "Frigg (pronounced “FRIG;” Old Norse Frigg, “Beloved”[1]), sometimes Anglicized as “Frigga,” is the highest-ranking of the Aesir goddesses. She’s the wife of Odin, the leader of the gods, and the mother of Baldur.",
     "sources": [
       {
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/frigg/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:28.092Z",
+        "extractedAt": "2026-08-28T01:46:25.968Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "9ce4dfb07f920fe4ae010e1af2eafc05d07fccc5b66198f9779857a0ddd18025",
+        "contentHash": "f13be5152c072fd26d9f8555cf144e9de26f15b06981de399d5d11c3693070d8",
         "classification": "reference_like"
       }
     ],
@@ -108,18 +98,16 @@
     "id": "baldur",
     "name": "Baldur",
     "aliases": [],
-    "domains": [
-      "reference_like"
-    ],
+    "domains": [],
     "description": "Baldur (pronounced “BALD-er;” Old Norse Baldr, Old English and Old High German Balder) is one of the Aesir gods. He’s the son of Odin and Frigg, the husband of the obscure goddess Nanna, and the father of the god Forseti.",
     "sources": [
       {
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/baldur/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:29.921Z",
+        "extractedAt": "2026-08-28T01:46:27.664Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "bb5d1b0c1d6ccfa7b240b5fa65e91ec4518bf90d6347db25c9e959994b0ad000",
+        "contentHash": "a50f71d03099a2699e7ba6b6e5d2ff9005a7db9e060c8862831b4b3446a856f8",
         "classification": "reference_like"
       }
     ],
@@ -129,18 +117,16 @@
     "id": "heimdall",
     "name": "Heimdall",
     "aliases": [],
-    "domains": [
-      "reference_like"
-    ],
+    "domains": [],
     "description": "Heimdall (pronounced “HAME-doll;” Old Norse Heimdallr, whose meaning/etymology is unknown[1]) is one of the Aesir gods and the ever-vigilant guardian of the gods’ stronghold, Asgard.",
     "sources": [
       {
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/heimdall/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:31.779Z",
+        "extractedAt": "2026-08-28T01:46:29.349Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "d9a48b9bd986ee811ee9f115e0651f5d4af7b4ec17f40609059533b733d8048c",
+        "contentHash": "05f27d2d231ba8aa65f94fdbbcf8c1132c6329146985b4b0e76e25a23838d9cf",
         "classification": "reference_like"
       }
     ],
@@ -150,18 +136,16 @@
     "id": "tyr",
     "name": "Tyr",
     "aliases": [],
-    "domains": [
-      "reference_like"
-    ],
+    "domains": [],
     "description": "Tyr (pronounced like the English word “tier”; Old Norse Týr, Old English Tiw, Old High German *Ziu, Gothic Tyz, Proto-Germanic *Tiwaz, “god”[1][2]) is a Norse war god, but also the god who, more than any other, presides over matters of law and justice. His role in the surviving Viking Age myths is relatively slight, and his status in the later part of the Viking Age may have been correspondingly minor. But this wasn’t always the case. Other kinds of evidence show us that Tyr was once one of the most important gods to the Norse and other Germanic peoples.",
     "sources": [
       {
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/tyr/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:33.623Z",
+        "extractedAt": "2026-08-28T01:46:31.063Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "15e7b89192178da05ff390ff8a57b45b57ba214faacdd579c071a3468f2dc91c",
+        "contentHash": "4cc1d0d53ad8ec0f8c9727f94e9c1116f79a3e25eef15fef532439ac642dfa8c",
         "classification": "reference_like"
       }
     ],
@@ -171,18 +155,16 @@
     "id": "idun",
     "name": "Idun",
     "aliases": [],
-    "domains": [
-      "reference_like"
-    ],
+    "domains": [],
     "description": "Idun (pronounced “IH-dune;” from Old Norse Iðunn, “The Rejuvenating One”[1]) is a goddess who belongs to the Aesir tribe of deities. Her role in the pre-Christian mythology and religion of the Norse and other Germanic peoples is unfortunately obscure, but she features prominently in one of the best-known mythological tales, The Kidnapping of Idun. In this tale, which comes to us from the skaldic poem Haustlöng and the Prose Edda, Idun is depicted as the owner and dispenser of a fruit that imparts immortality.",
     "sources": [
       {
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/idun/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:35.466Z",
+        "extractedAt": "2026-08-28T01:46:32.762Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "4dc60feb985f92a107d2b52164d5a2ca5dfeff484deed0d9a16a90ecb3eb87c7",
+        "contentHash": "5ccedf2389b10976aa4b96a914fccea2e3de39fb774c9854cb92b9ecf6ed7add",
         "classification": "reference_like"
       }
     ],
@@ -192,18 +174,16 @@
     "id": "bragi",
     "name": "Bragi",
     "aliases": [],
-    "domains": [
-      "reference_like"
-    ],
+    "domains": [],
     "description": "Bragi (pronounced “BRAG-ee;” Old Norse Bragi, “Poet”) is the wise and learned bard (Old Norse þulr, pronounced “THOOL-ur”) of Valhalla, the magnificent hall of the god Odin. Old Norse poetry from the Viking Age frequently features him regaling the einherjar, the dead who dwell in Valhalla, and welcoming recently deceased heroes into their midst.[1] One Eddic poem depicts him as having runes carved on his tongue.[2]",
     "sources": [
       {
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/bragi/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:37.309Z",
+        "extractedAt": "2026-08-28T01:46:34.444Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "33a2600e7165737b1a00f849495aae7f93ce04e012862260388f6f21f86741b9",
+        "contentHash": "0f4178ba9318deec9b99f62e15f49abca83dee6972f808e52ad5a885209c3329",
         "classification": "reference_like"
       }
     ],
@@ -213,18 +193,16 @@
     "id": "freya",
     "name": "Freya",
     "aliases": [],
-    "domains": [
-      "reference_like"
-    ],
+    "domains": [],
     "description": "Freya (Old Norse Freyja, “Lady”) is one of the preeminent goddesses in Norse mythology. She’s a member of the Vanir tribe of deities, but became an honorary member of the Aesir gods after the Aesir-Vanir War. Her father is Njord. Her mother is unknown, but could be Nerthus. Freyr is her brother. Her husband, named Odr in late Old Norse literature, is certainly none other than Odin, and, accordingly, Freya is ultimately identical with Odin’s wife Frigg (see below for a discussion of this).",
     "sources": [
       {
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-vanir-gods-and-goddesses/freya/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:39.345Z",
+        "extractedAt": "2026-08-28T01:46:36.141Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "ae035ad2c9aebb9f131e2ba90a8a4392e49fe8fc69fa8583bb93472abe75fd8d",
+        "contentHash": "49994a390c4b3bbda11b85ff61ed848002963f2ddee241882c75613ac26b8398",
         "classification": "reference_like"
       }
     ],
@@ -234,18 +212,16 @@
     "id": "freyr",
     "name": "Freyr",
     "aliases": [],
-    "domains": [
-      "reference_like"
-    ],
+    "domains": [],
     "description": "Freyr (pronounced “FREY-ur;” Old Norse Freyr, “Lord;” sometimes anglicized as “Frey”) is a god who belongs to the Vanir tribe of deities. He’s also an honorary member of the other tribe of Norse gods, the Aesir, having arrived in their fortress, Asgard, as a hostage at the closing of the Aesir-Vanir War.",
     "sources": [
       {
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-vanir-gods-and-goddesses/freyr/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:41.201Z",
+        "extractedAt": "2026-08-28T01:46:37.833Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "0ec9d1d111fb2f23a8ac9ba7382e4ac4b3c0cbfe41f2679988422cb3096f38af",
+        "contentHash": "fae7e9ce6c46708983956f9bb9943ab0ee09b2ee60e4334988745768d668c0bb",
         "classification": "reference_like"
       }
     ],
@@ -255,18 +231,16 @@
     "id": "njord",
     "name": "Njord",
     "aliases": [],
-    "domains": [
-      "reference_like"
-    ],
+    "domains": [],
     "description": "Njord (pronounced “NYORD;” Old Norse Njörðr, whose meaning/etymology is unknown) is one of the principal gods of the Vanir tribe of deities. He’s also an honorary member of the Aesir gods, having been sent to them during the Aesir-Vanir War along with his son, Freyr, and his daughter, Freya. Freyr and Freya’s mother is Njord’s unnamed sister, who, based on linguistic evidence, is probably Nerthus or an equivalent goddess.",
     "sources": [
       {
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-vanir-gods-and-goddesses/njord/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:43.043Z",
+        "extractedAt": "2026-08-28T01:46:39.514Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "416056f4605560ff7897f46360b9108b879f45ef83ab504a7efffc7faed19f9f",
+        "contentHash": "90d18263371705075257ca2a3a02971b5ec274079ac791f8358145622d817b9f",
         "classification": "reference_like"
       }
     ],
@@ -276,18 +250,16 @@
     "id": "nerthus",
     "name": "Nerthus",
     "aliases": [],
-    "domains": [
-      "reference_like"
-    ],
+    "domains": [],
     "description": "Nerthus (Proto-Germanic *Nerþus) is a pre-Christian goddess venerated by some of the continental Germanic tribes described by the Roman historian Tacitus in his Germania (authored about 100 CE). Tacitus provides us with the following haunting description of her veneration:",
     "sources": [
       {
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/the-vanir-gods-and-goddesses/nerthus/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:45.091Z",
+        "extractedAt": "2026-08-28T01:46:41.200Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "70f34dbed187f1f33f44ec2b741fd824cbccee557457163e515e9f2986b3a088",
+        "contentHash": "26fec618b9765fe0d090f71e349b3c454b6aa2479331272be53125e80fe9322f",
         "classification": "reference_like"
       }
     ],
@@ -297,18 +269,16 @@
     "id": "fenrir",
     "name": "Fenrir",
     "aliases": [],
-    "domains": [
-      "reference_like"
-    ],
+    "domains": [],
     "description": "Fenrir (pronounced “FEN-rir;” Old Norse Fenrir, “He Who Dwells in the Marshes”[1]) is the most infamous of the many wolves in Norse mythology. His importance for the pre-Christian Scandinavians is demonstrated by his being depicted on numerous surviving runestones, not to mention his ubiquity in Old Norse literary sources.",
     "sources": [
       {
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/giants/fenrir/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:46.935Z",
+        "extractedAt": "2026-08-28T01:46:42.889Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "51c91fe90ec1fa650485ff3af1293bde54687473b00ae1af72498d37483d0eb4",
+        "contentHash": "2ae8c68a219746479a7340a15df329736968895d092ac0f428aed9153832eed0",
         "classification": "reference_like"
       }
     ],
@@ -318,18 +288,16 @@
     "id": "skadi",
     "name": "Skadi",
     "aliases": [],
-    "domains": [
-      "reference_like"
-    ],
+    "domains": [],
     "description": "Skadi (pronounced “SKAHD-ee;” Old Norse Skaði) is a giantess and goddess in Norse mythology. Her name is either identical with the Old Norse common noun skaði, “harm,” or comes from another Germanic root preserved in the Gothic word skadus and the Old English sceadu, both of which mean “shadow.”[1] Her name is likely related to the name “Scandinavia,” but whether Skadi lent her name to the land-mass or vice versa is uncertain.[2]",
     "sources": [
       {
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/giants/skadi/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:48.766Z",
+        "extractedAt": "2026-08-28T01:46:44.573Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "7d4d4622fc31112f4446524e4864898b672aa3d0b0445854ef2aac973f9138b6",
+        "contentHash": "1239f02147334cec190b5d77dfe0adc56987357d719332f530b333e1b83a632c",
         "classification": "reference_like"
       }
     ],
@@ -339,18 +307,16 @@
     "id": "ymir",
     "name": "Ymir",
     "aliases": [],
-    "domains": [
-      "reference_like"
-    ],
+    "domains": [],
     "description": "Ymir (pronounced roughly “EE-mir;” Old Norse Ymir, “Screamer”[1]) is a hermaphroditic giant and the first creature to come into being in the Norse creation myth. As the first giant, he’s the ancestor of all of the other giants – and, since almost all of the gods are partially descended from giants, he’s their ancestor as well. Another name for Ymir in some Old Norse poems is Aurgelmir (“Sand/Gravel Screamer”).[2]",
     "sources": [
       {
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/giants/ymir/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:50.622Z",
+        "extractedAt": "2026-08-28T01:46:46.263Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "02edd79cfe987e72305a696d79eedb6d829f0afc9ce58701951286f88212f6b9",
+        "contentHash": "292376e1fd1bac31a27a968af3bd1ce424e69570c9ab3e8b37666bbda99f74d5",
         "classification": "reference_like"
       }
     ],
@@ -360,18 +326,16 @@
     "id": "hel",
     "name": "Hel",
     "aliases": [],
-    "domains": [
-      "reference_like"
-    ],
+    "domains": [],
     "description": "Hel (Old Norse Hel, “Hidden”[1]) is a giantess and/or goddess who rules over the identically-named Hel, the underworld where many of the dead dwell. Her name’s meaning of “Hidden” surely has to do with the underworld and the dead being “hidden” or buried beneath the ground.",
     "sources": [
       {
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/giants/hel/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:52.459Z",
+        "extractedAt": "2026-08-28T01:46:47.950Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "f61fc076e949ffb3a43a286c46883e3a7f2e4c4233baf622b555f64892eb9c97",
+        "contentHash": "2a6a7104685842c056bea86b7040a13f48618c585e41339eba15a9a3936c9833",
         "classification": "reference_like"
       }
     ],
@@ -381,18 +345,16 @@
     "id": "jormungand",
     "name": "Jormungand",
     "aliases": [],
-    "domains": [
-      "reference_like"
-    ],
+    "domains": [],
     "description": "Jormungand (pronounced “YOUR-mun-gand;” Old Norse Jörmungandr, “Great Beast”), also called the “Midgard Serpent,” is a snake or dragon who lives in the ocean that surrounds Midgard, the visible world. So enormous is he that his body forms a circle around the entirety of Midgard. He’s one of the three children of Loki and the giantess Angrboda, along with Hel and Fenrir.",
     "sources": [
       {
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/giants/jormungand/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:54.308Z",
+        "extractedAt": "2026-08-28T01:46:49.639Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "ba98007ef1bcbcf60c402177b2f5d371bf3ee878a597c5a9b78ecf5d23e6b94c",
+        "contentHash": "2f3eca9def9f799d97299114459ab0924522f2e9ef416062269be42bc5408391",
         "classification": "reference_like"
       }
     ],
@@ -402,18 +364,16 @@
     "id": "surt",
     "name": "Surt",
     "aliases": [],
-    "domains": [
-      "reference_like"
-    ],
+    "domains": [],
     "description": "Surt (Old Norse Surtr, “Black,”[1] presumably a reference to his charred appearance) is a fire giant who leads his kin into battle against the Aesir and Vanir gods during Ragnarok, the destruction of the cosmos. His particular fate is to kill the god Freyr and to be slain by him in turn. He arrives from Muspelheim, the extreme southern region of heat and fire, bearing his weapon of choice of a burning sword, with which the world is razed before it sinks into the sea.[2][3][4]",
     "sources": [
       {
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/giants/surt/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:56.134Z",
+        "extractedAt": "2026-08-28T01:46:51.319Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "3f43275dd3008ed5b753127c2ed1c9d574a51cf46bef0ab82a3e5d28f2af8f7c",
+        "contentHash": "b2811376a3069c5f06656ddbbefaeb66da7217f07251d65ae0b94bef224212b7",
         "classification": "reference_like"
       }
     ],
@@ -423,18 +383,16 @@
     "id": "nidhogg",
     "name": "Nidhogg",
     "aliases": [],
-    "domains": [
-      "reference_like"
-    ],
+    "domains": [],
     "description": "Nidhogg (Old Norse Níðhöggr, literally “Curse-striker” or “He Who Strikes with Malice”) is the foremost of several serpents or dragons who dwell beneath the world-tree Yggdrasil and eat its roots. This is highly injurious to the tree, which holds the Nine Worlds of the cosmos.[1] Nidhogg’s actions have the intention of pulling the cosmos back to chaos, and he, along with his reptilian cohort, can therefore surely be classified among the giants (or, as they were called in pre-Christian times, “devourers”).",
     "sources": [
       {
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/giants/nidhogg/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:57.995Z",
+        "extractedAt": "2026-08-28T01:46:53.014Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "c70302afa9d708b57b1f0b731d503dcb1edd41b84750a5aa133d678b2de41063",
+        "contentHash": "ba339e656ba93d8216ae9170cdb590eff7a18a73ee40f5357f399995433fde6a",
         "classification": "reference_like"
       }
     ],

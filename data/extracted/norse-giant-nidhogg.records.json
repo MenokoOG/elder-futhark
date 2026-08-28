@@ -35,14 +35,12 @@
         "sourceSite": "norse-mythology.org",
         "sourceUrl": "https://norse-mythology.org/gods-and-creatures/giants/nidhogg/",
         "sourceTitle": "Norse Mythology for Smart People",
-        "extractedAt": "2026-04-12T05:13:57.995Z",
+        "extractedAt": "2026-08-28T01:46:53.014Z",
         "extractorVersion": "0.1.0",
-        "contentHash": "c70302afa9d708b57b1f0b731d503dcb1edd41b84750a5aa133d678b2de41063",
+        "contentHash": "ba339e656ba93d8216ae9170cdb590eff7a18a73ee40f5357f399995433fde6a",
         "classification": "reference_like"
       }
     ],
-    "tags": [
-      "reference_like"
-    ]
+    "tags": []
   }
 ]
