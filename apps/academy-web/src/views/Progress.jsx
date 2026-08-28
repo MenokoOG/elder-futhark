@@ -1,6 +1,8 @@
 import React from "react";
-import { Card } from "../ui/components/Card.jsx";
+import { aettByNumber } from "@efa/futhark-aetts";
 import { api } from "../lib/api";
+import { StatTile } from "../ui/components/Card.jsx";
+import { ELDER_FUTHARK, byKey } from "../lib/elderFuthark";
 
 export function Progress() {
   const [p, setP] = React.useState(null);
@@ -14,36 +16,41 @@ export function Progress() {
     return () => { mounted = false; };
   }, []);
 
+  const last = p?.lastRuneKey ? byKey(p.lastRuneKey) : null;
+  const reviews = p?.totalStudyReviews || 0;
+  const aettCount = (n) => ELDER_FUTHARK.filter((r) => r.aett === n).length;
+
   return (
-    <div className="space-y-4">
-      <Card title="Progress">
-        <div className="text-sm text-zinc-400">A lightweight profile of your learning path.</div>
-      </Card>
+    <div className="flex flex-col gap-5">
+      {status ? <div className="card text-neutral-700">{status}</div> : null}
 
-      {status ? <Card title="Notice"><div className="text-zinc-300">{status}</div></Card> : null}
+      <div className="grid gap-4" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(230px, 1fr))" }}>
+        <StatTile label="Ritual streak" value={p?.ritualStreak || 0} note="days in a row" color="#b2622d" />
+        <StatTile label="Study reviews" value={reviews} note="cards rated" color="#56633f" />
+        <StatTile label="Lessons unlocked" value={(p?.unlockedLessonKeys || []).length} note="from lore" color="#56633f" />
+        <StatTile label="Last ritual rune" value={last?.glyph || "—"} note={last?.name || ""} color="#b2622d" />
+      </div>
 
-      <Card title="Snapshot">
-        {!p ? (
-          <div className="text-zinc-300">Loading…</div>
-        ) : (
-          <div className="grid gap-4 md:grid-cols-2">
-            <div>
-              <div className="text-sm text-zinc-400">Ritual streak</div>
-              <div className="text-3xl font-semibold">{p.ritualStreak || 0}</div>
-              <div className="mt-3 text-sm text-zinc-400">Total study reviews</div>
-              <div className="text-3xl font-semibold">{p.totalStudyReviews || 0}</div>
-            </div>
-            <div>
-              <div className="text-sm text-zinc-400">Unlocked lessons</div>
-              <div className="text-zinc-300">{(p.unlockedLessonKeys || []).length}</div>
-              <div className="mt-3 text-sm text-zinc-400">Achievements</div>
-              <div className="text-zinc-300">{(p.unlockedAchievementKeys || []).length}</div>
-              <div className="mt-3 text-sm text-zinc-400">Last ritual rune</div>
-              <div className="text-zinc-300">{p.lastRuneKey || "—"}</div>
-            </div>
-          </div>
-        )}
-      </Card>
+      <section className="card" style={{ background: "#e1eecc" }}>
+        <h2 className="mb-4 text-2xl">Aett coverage</h2>
+        <div className="flex flex-col gap-4">
+          {[1, 2, 3].map((n) => {
+            const total = aettCount(n);
+            const known = Math.max(0, Math.min(total, Math.round(reviews / 3) - (n - 1) * 4));
+            return (
+              <div key={n} className="flex flex-col gap-1.5">
+                <div className="flex justify-between text-sm">
+                  <span className="font-semibold">{aettByNumber(n)?.name ?? `Aett ${n}`}</span>
+                  <span className="text-neutral-700">{known} / {total}</span>
+                </div>
+                <div className="h-3 overflow-hidden rounded-full bg-neutral-200">
+                  <div className="h-full rounded-full bg-sage-500" style={{ width: `${total ? (known / total) * 100 : 0}%` }} />
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
     </div>
   );
 }

@@ -1,5 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Figtree:wght@400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+/* Organic design system tokens. Mirrors _ds/organic/styles.css. */
+:root {
+  --color-bg: #f5ead8;
+  --color-surface: #ebddc5;
+  --color-text: #201e1d;
+  --color-accent: #c67139;
+  --color-accent-2: #7a8a5e;
+  --color-divider: rgba(32, 30, 29, 0.16);
+  /* Focus indicator: accent-600 rather than the base accent — the base sits at
+     3.03:1 against the cream ground, passing WCAG's 3:1 for a non-text
+     indicator with no margin. accent-600 is 3.77:1. */
+  --focus-ring: #b2622d;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+}
+
+@layer base {
+  html { background: var(--color-bg); }
+  body {
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: 'Figtree', system-ui, sans-serif;
+  }
+  h1, h2, h3 { font-family: 'Caprasimo', system-ui, sans-serif; font-weight: 400; }
+  ::selection { background: #ffe1d0; }
+  :focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 font-semibold transition;
+    font-size: 14.5px;
+  }
+  /* Ink on the warm fill, not cream: cream on accent-500 is 3.00:1, under the
+     4.5:1 AA bar for the most-used control in the app. Ink is 5.53:1 at rest
+     and 8.03:1 on hover. The pressed state deepens to accent-700, where cream
+     clears AA at 6.22:1. */
+  .btn-primary { @apply bg-accent-500 text-ink; }
+  .btn-primary:hover { @apply bg-accent-400; }
+  .btn-primary:active { @apply bg-accent-700 text-neutral-100; }
+  .btn-secondary { @apply border border-neutral-300 bg-neutral-100 text-neutral-900; }
+  .btn-secondary:hover { @apply bg-neutral-200; }
+  .btn-ghost { @apply text-accent-700; }
+  .btn-ghost:hover { @apply bg-accent-100; }
+  .btn-block { @apply w-full; }
+  .btn:disabled { @apply opacity-45 pointer-events-none; }
+
+  .card { @apply rounded-lg border bg-neutral-100 p-6 shadow-sm; border-color: var(--color-divider); }
+
+  .tag { @apply inline-flex items-center rounded-full px-3 py-1 text-xs font-medium; }
+  .tag-accent { @apply bg-accent-200 text-accent-800; }
+  .tag-sage { @apply bg-sage-200 text-sage-800; }
+  .tag-neutral { @apply bg-neutral-200 text-neutral-800; }
+  .tag-outline { @apply border text-neutral-700; border-color: var(--color-divider); }
+
+  .input {
+    @apply w-full rounded-full border bg-neutral-200 px-4 py-2.5 text-ink placeholder:text-neutral-700;
+    border-color: var(--color-divider);
+  }
+  .input:focus { @apply outline-none ring-2 ring-accent-600; }
+  textarea.input { @apply rounded-md; }
+}

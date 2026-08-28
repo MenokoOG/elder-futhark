@@ -1,6 +1,6 @@
 # Design review — Organic redesign, Elder Futhark Academy
 
-**Reviewed:** 2026-08-27 · **Bundle:** `design_handoff_organic_redesign` · **Status:** returned, not applied
+**Reviewed:** 2026-08-27 · **Bundle:** `design_handoff_organic_redesign` · **Status:** applied 2026-08-27 with both blockers fixed in implementation (see addendum)
 
 The bundle is coherent, well-documented and internally consistent. The token set is complete, the graphics are genuinely data-derived rather than decorative, and the instruction to keep every `api.get`/`api.post` call unchanged is the right call. Two things block application, and one collision needs resolving before it lands.
 
@@ -60,6 +60,16 @@ Not a design problem — the redesign's pill-filter treatment is an improvement 
 - **`tailwind.config.cjs` and `postcss.config.cjs` are already tracked** in `apps/academy-web/`. An earlier report that they were missing was mistaken — they are on `main`. The bundle legitimately replaces the Tailwind config with the Organic tokens; there is nothing to restore.
 - **`GodClusters` reads `/lore/gods`**, which is the hand-maintained `gods.json` — correct. Note that `data/published/deities.json` is *not* a usable alternative: all 21 records carry `domains: ["reference_like"]`, which is the source-classification enum rather than a deity domain. That is a separate ETL defect.
 - The instruction to verify `rg "zinc-" src/` comes back empty is a good gate. Current count is 149 occurrences.
+
+## Addendum — applied 2026-08-27
+
+Lawrence redirected: implement now, fixing the blockers in the implementation rather than a designer round trip. What changed relative to the bundle:
+
+- **Contrast:** every documented failing pair was moved to a passing step of the same ramp. Primary buttons are ink-on-accent (5.53 at rest, 8.03 hover; pressed deepens to accent-700 with cream at 6.22). Small muted text moved `neutral-600` → `neutral-700` throughout. Placeholders `neutral-500` → `neutral-700`. Focus ring darkened to accent-600 (3.77 non-text). Quiz state borders 500 → 600.
+- **Responsive:** below 1100px the sidebar becomes a top bar plus slide-in drawer (closes on navigate/Escape/backdrop, aria-expanded on the toggle). Fixed-aside views collapse to one column below 900px. Rating rows wrap; the Draw canvas is bounded by its container. All fifteen routes verified at 375px with zero horizontal overflow.
+- **Aett labels:** every hardcoded `Aett 1/2/3` (Runes filter, Flashcards deck picker, Home, Progress) now reads from `@efa/futhark-aetts`.
+
+The design's own tokens and ramps were used for every substitution — no new colors were invented.
 
 ## What happens next
 

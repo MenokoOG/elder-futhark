@@ -1,6 +1,6 @@
 import React from "react";
-import { Card } from "../ui/components/Card.jsx";
 import { api } from "../lib/api";
+import { GodClusters } from "../ui/components/graphics.jsx";
 
 export function Gods() {
   const [q, setQ] = React.useState("");
@@ -9,80 +9,42 @@ export function Gods() {
   const [status, setStatus] = React.useState(null);
 
   const load = React.useCallback(async () => {
-    setLoading(true);
-    setStatus(null);
+    setLoading(true); setStatus(null);
     try {
       const params = {};
       if (q.trim()) params.q = q.trim();
       const res = await api.get("/lore/gods", { params });
       setItems(res.data?.items || []);
-    } catch {
-      setStatus("Couldn't load gods from server.");
-    } finally {
-      setLoading(false);
-    }
+    } catch { setStatus("Couldn't load gods from server."); }
+    finally { setLoading(false); }
   }, [q]);
 
-  React.useEffect(() => {
-    load();
-  }, [load]);
+  React.useEffect(() => { load(); }, [load]);
 
   return (
-    <div className="space-y-4">
-      <Card title="Gods & figures">
-        <p className="text-zinc-300">
-          Browse deities and beings referenced across lore and correspondences.
-        </p>
-      </Card>
+    <div className="flex flex-col gap-5">
+      <div className="flex flex-wrap items-center gap-3">
+        <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search names, groups, domains" className="input min-w-[240px] flex-1" />
+        <span className="text-[13px] text-neutral-700">{loading ? "Loading…" : `${items.length} named`}</span>
+      </div>
 
-      <Card>
-        <div className="flex flex-wrap gap-2">
-          <input
-            value={q}
-            onChange={(e) => setQ(e.target.value)}
-            placeholder="Search gods, groups, domains..."
-            className="w-full flex-1 rounded-xl border border-zinc-700 bg-zinc-950 px-3 py-2 md:w-auto"
-          />
-          <button
-            onClick={load}
-            className="rounded-xl border border-zinc-700 bg-zinc-900 px-4 py-2 hover:bg-zinc-800"
-          >
-            {loading ? "Loading..." : "Refresh"}
-          </button>
-        </div>
-      </Card>
+      {status ? <div className="card text-neutral-700">{status}</div> : <GodClusters items={items} />}
 
-      {status ? (
-        <Card title="Notice">
-          <div className="text-zinc-300">{status}</div>
-        </Card>
-      ) : null}
-
-      <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-4" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))" }}>
         {items.map((god) => (
-          <Card key={god.key} title={god.name}>
-            <div className="text-sm text-zinc-400">{god.group || "Other"}</div>
-
-            {god.summary ? (
-              <div className="mt-2 text-zinc-300">{god.summary}</div>
-            ) : null}
-
+          <article key={god.key} className="card flex flex-col gap-2.5">
+            <div className="flex items-center justify-between gap-2.5">
+              <h3 className="m-0 text-2xl">{god.name}</h3>
+              <span className="tag tag-neutral">{god.group || "Other"}</span>
+            </div>
+            {god.summary ? <p className="m-0 leading-normal text-neutral-700" style={{ textWrap: "pretty" }}>{god.summary}</p> : null}
             {Array.isArray(god.functions) && god.functions.length ? (
-              <div className="mt-3 text-sm text-zinc-300">
-                Functions:{" "}
-                <span className="text-zinc-100">
-                  {god.functions.join(", ")}
-                </span>
-              </div>
+              <div className="text-[13.5px] text-neutral-700">Functions · {god.functions.join(", ")}</div>
             ) : null}
-
             {Array.isArray(god.domains) && god.domains.length ? (
-              <div className="mt-1 text-sm text-zinc-300">
-                Domains:{" "}
-                <span className="text-zinc-200">{god.domains.join(", ")}</span>
-              </div>
+              <div className="text-[13.5px] text-neutral-700">Domains · {god.domains.join(", ")}</div>
             ) : null}
-          </Card>
+          </article>
         ))}
       </div>
     </div>

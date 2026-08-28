@@ -1,9 +1,9 @@
 import React from "react";
-import { Card } from "../../ui/components/Card.jsx";
-import { Button } from "../../ui/components/Button.jsx";
 import { ELDER_FUTHARK } from "../../lib/elderFuthark.js";
 import { choice } from "../../lib/math.js";
 import { recognizeRuneFromStroke } from "../../lib/drawing/recognizeRuneFromStroke.js";
+import { Button } from "../../ui/components/Button.jsx";
+import { StrokeOrder } from "../../ui/components/RuneFigure.jsx";
 
 const SENSITIVITY = {
   easy: { threshold: 0.42, nearTopMargin: 0.1, label: "Easy" },
@@ -11,14 +11,38 @@ const SENSITIVITY = {
   strict: { threshold: 0.54, nearTopMargin: 0.04, label: "Strict" },
 };
 const MIN_POINTS = 18;
+const INKS = ["#8c491a", "#2e2b25", "#56633f", "#b2622d"];
+const CANVAS_BG = "#f9f4ed";
 
-function useCanvasDraw() {
+export function Draw() {
   const ref = React.useRef(null);
-  const strokesRef = React.useRef([]);
-  const activeStrokeRef = React.useRef(null);
-  const [revision, setRevision] = React.useState(0);
+  const strokes = React.useRef([]);
+  const active = React.useRef(null);
+  const [target, setTarget] = React.useState(() => choice(ELDER_FUTHARK));
+  const [sensitivity, setSensitivity] = React.useState("normal");
   const [brush, setBrush] = React.useState(8);
-  const [ink, setInk] = React.useState("#ffffff");
+  const [ink, setInk] = React.useState(INKS[0]);
+  const [counts, setCounts] = React.useState({ strokes: 0, points: 0 });
+  const [match, setMatch] = React.useState(null);
+
+  /** Repaint the ground plus the faint target guide. */
+  const paintGuide = React.useCallback(() => {
+    const canvas = ref.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    const w = canvas.clientWidth;
+    const h = canvas.clientHeight;
+    ctx.clearRect(0, 0, w, h);
+    ctx.fillStyle = CANVAS_BG;
+    ctx.fillRect(0, 0, w, h);
+    ctx.save();
+    ctx.font = `${Math.round(h * 0.6)}px serif`;
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.fillStyle = "rgba(100,92,80,0.13)";
+    ctx.fillText(target.glyph, w / 2, h / 2);
+    ctx.restore();
+  }, [target]);
 
   React.useEffect(() => {
     const canvas = ref.current;
@@ -26,39 +50,23 @@ function useCanvasDraw() {
     const ctx = canvas.getContext("2d");
 
     const resize = () => {
-      const parent = canvas.parentElement;
-      const w = Math.min(parent.clientWidth, 900);
-      const h = 420;
-      canvas.width = Math.floor(w * window.devicePixelRatio);
-      canvas.height = Math.floor(h * window.devicePixelRatio);
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      const w = Math.min(canvas.parentElement.clientWidth - 4, 760);
+      const h = 400;
+      canvas.width = w * dpr;
+      canvas.height = h * dpr;
       canvas.style.width = `${w}px`;
       canvas.style.height = `${h}px`;
-      ctx.setTransform(
-        window.devicePixelRatio,
-        0,
-        0,
-        window.devicePixelRatio,
-        0,
-        0,
-      );
-      ctx.fillStyle = "#0a0a0a";
-      ctx.fillRect(0, 0, w, h);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       ctx.lineCap = "round";
       ctx.lineJoin = "round";
+      paintGuide();
     };
 
     resize();
     window.addEventListener("resize", resize);
     return () => window.removeEventListener("resize", resize);
-  }, []);
-
-  React.useEffect(() => {
-    const canvas = ref.current;
-    if (!canvas) return;
-    const ctx = canvas.getContext("2d");
-    ctx.strokeStyle = ink;
-    ctx.lineWidth = brush;
-  }, [brush, ink]);
+  }, [paintGuide]);
 
   React.useEffect(() => {
     const canvas = ref.current;
@@ -68,273 +76,153 @@ function useCanvasDraw() {
 
     const pos = (e) => {
       const r = canvas.getBoundingClientRect();
-      const x = e.clientX - r.left;
-      const y = e.clientY - r.top;
-      return { x, y };
+      return { x: e.clientX - r.left, y: e.clientY - r.top };
     };
 
-    const appendPoint = (stroke, point) => {
-      const lastPoint = stroke[stroke.length - 1];
-      if (!lastPoint) {
-        stroke.push(point);
-        return;
-      }
-      const dx = point.x - lastPoint.x;
-      const dy = point.y - lastPoint.y;
-      if (dx * dx + dy * dy >= 4) stroke.push(point);
-    };
-
-    const down = (e) => {
-      drawing = true;
-      const start = pos(e);
-      activeStrokeRef.current = [start];
-      canvas.setPointerCapture(e.pointerId);
-    };
-
+    const down = (e) => { drawing = true; active.current = [pos(e)]; canvas.setPointerCapture(e.pointerId); };
     const move = (e) => {
-      if (!drawing) return;
-      const stroke = activeStrokeRef.current;
-      if (!stroke) return;
-
+      if (!drawing || !active.current) return;
       const p = pos(e);
-      const last = stroke[stroke.length - 1];
+      const last = active.current[active.current.length - 1];
+      ctx.strokeStyle = ink;
+      ctx.lineWidth = brush;
       ctx.beginPath();
       ctx.moveTo(last.x, last.y);
       ctx.lineTo(p.x, p.y);
       ctx.stroke();
-      appendPoint(stroke, p);
+      const dx = p.x - last.x, dy = p.y - last.y;
+      if (dx * dx + dy * dy >= 4) active.current.push(p);
     };
-
-    const up = (e) => {
+    const up = () => {
       if (!drawing) return;
       drawing = false;
-      const stroke = activeStrokeRef.current;
-      activeStrokeRef.current = null;
-
-      if (stroke && stroke.length > 1) {
-        strokesRef.current.push(stroke);
-        setRevision((v) => v + 1);
-      }
-
-      if (e?.pointerId != null && canvas.hasPointerCapture(e.pointerId)) {
-        canvas.releasePointerCapture(e.pointerId);
-      }
+      if (active.current && active.current.length > 1) strokes.current.push(active.current);
+      active.current = null;
+      setCounts({ strokes: strokes.current.length, points: strokes.current.reduce((n, s) => n + s.length, 0) });
     };
 
     canvas.addEventListener("pointerdown", down);
     canvas.addEventListener("pointermove", move);
     canvas.addEventListener("pointerup", up);
     canvas.addEventListener("pointercancel", up);
-
     return () => {
       canvas.removeEventListener("pointerdown", down);
       canvas.removeEventListener("pointermove", move);
       canvas.removeEventListener("pointerup", up);
       canvas.removeEventListener("pointercancel", up);
     };
-  }, []);
+  }, [brush, ink]);
 
-  const clear = React.useCallback(() => {
-    const canvas = ref.current;
-    if (!canvas) return;
-    const ctx = canvas.getContext("2d");
-    const w = canvas.clientWidth;
-    const h = canvas.clientHeight;
-    ctx.fillStyle = "#0a0a0a";
-    ctx.fillRect(0, 0, w, h);
-    strokesRef.current = [];
-    activeStrokeRef.current = null;
-    setRevision((v) => v + 1);
-  }, []);
-
-  const getPoints = React.useCallback(() => {
-    return strokesRef.current.flatMap((stroke) =>
-      stroke.map((point) => ({ x: point.x, y: point.y })),
-    );
-  }, []);
-
-  const strokeCount = strokesRef.current.length;
-  const pointCount = React.useMemo(
-    () => strokesRef.current.reduce((sum, stroke) => sum + stroke.length, 0),
-    [revision],
-  );
-
-  return {
-    ref,
-    brush,
-    setBrush,
-    ink,
-    setInk,
-    clear,
-    getPoints,
-    strokeCount,
-    pointCount,
-    hasInk: pointCount > 0,
+  const clear = () => {
+    strokes.current = [];
+    active.current = null;
+    paintGuide();
+    setCounts({ strokes: 0, points: 0 });
+    setMatch(null);
   };
-}
 
-export function Draw() {
-  const [target, setTarget] = React.useState(() => choice(ELDER_FUTHARK));
-  const [sensitivity, setSensitivity] = React.useState("normal");
-  const [matchResult, setMatchResult] = React.useState(null);
-  const {
-    ref,
-    brush,
-    setBrush,
-    ink,
-    setInk,
-    clear,
-    getPoints,
-    strokeCount,
-    pointCount,
-    hasInk,
-  } = useCanvasDraw();
-
-  const pickNewTarget = React.useCallback(() => {
-    clear();
-    setMatchResult(null);
+  const newTarget = () => {
+    strokes.current = [];
+    setCounts({ strokes: 0, points: 0 });
+    setMatch(null);
     setTarget(choice(ELDER_FUTHARK));
-  }, [clear]);
+  };
 
-  const handleClear = React.useCallback(() => {
-    clear();
-    setMatchResult(null);
-  }, [clear]);
-
-  const checkMatch = React.useCallback(() => {
-    const points = getPoints();
+  const checkMatch = () => {
+    const points = strokes.current.flatMap((s) => s.map((p) => ({ x: p.x, y: p.y })));
     const profile = SENSITIVITY[sensitivity] || SENSITIVITY.normal;
-
     if (points.length < MIN_POINTS) {
-      setMatchResult({
-        pass: false,
-        reason: "Draw a little more before checking.",
-        targetScore: 0,
-        top: null,
-      });
+      setMatch({ pass: false, reason: "Draw a little more before checking.", targetScore: 0, top: null });
       return;
     }
-
     const ranked = recognizeRuneFromStroke(points);
     const top = ranked[0] || null;
-    const targetHit = ranked.find((item) => item.key === target.key);
-    const targetScore = targetHit?.score ?? 0;
-    const isTopTarget = top?.key === target.key;
-    const isCloseToTop = Boolean(
-      top && targetScore >= top.score - profile.nearTopMargin,
-    );
-    const pass = Boolean(
-      top && targetScore >= profile.threshold && (isTopTarget || isCloseToTop),
-    );
+    const hit = ranked.find((x) => x.key === target.key);
+    const targetScore = hit?.score ?? 0;
+    const closeToTop = Boolean(top && targetScore >= top.score - profile.nearTopMargin);
+    const pass = Boolean(top && targetScore >= profile.threshold && (top.key === target.key || closeToTop));
+    setMatch({ pass, reason: pass ? "Solid match." : "Not quite yet.", targetScore, top });
+  };
 
-    setMatchResult({
-      pass,
-      reason: pass ? "Solid match." : "Not quite yet.",
-      targetScore,
-      top,
-      ranked: ranked.slice(0, 3),
-    });
-  }, [getPoints, sensitivity, target.key]);
+  React.useEffect(() => { paintGuide(); }, [paintGuide]);
 
   return (
-    <div className="space-y-4">
-      <Card title="Rune drawing lab">
-        <div className="flex flex-wrap items-center gap-2">
-          <Button onClick={pickNewTarget}>New target</Button>
-          <div className="text-sm text-zinc-300">
-            Target: <span className="text-zinc-100">{target.name}</span>{" "}
-            <span className="text-zinc-500">({target.glyph})</span>
+    <div className="grid items-start gap-6 min-[900px]:grid-cols-[minmax(0,1fr)_268px]">
+      <div className="card flex flex-col gap-4">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <div className="flex items-center gap-3">
+            <span className="grid h-[54px] w-[54px] place-items-center rounded-full text-[30px]"
+              style={{ background: "var(--pt)", color: "var(--pd)" }}>{target.glyph}</span>
+            <span>
+              <span className="block text-[10.5px] uppercase tracking-[0.14em] text-neutral-700">Target</span>
+              <span className="block font-heading text-[21px]">{target.name}</span>
+            </span>
           </div>
-          <div className="ml-auto text-xs text-zinc-400">
-            {strokeCount} stroke{strokeCount === 1 ? "" : "s"} · {pointCount}{" "}
-            points
+          <span className="text-[12.5px] text-neutral-700">
+            {counts.strokes} stroke{counts.strokes === 1 ? "" : "s"} · {counts.points} points
+          </span>
+        </div>
+
+        <div className="flex flex-wrap items-center gap-4 rounded-lg px-5 py-4" style={{ background: "var(--pt)" }}>
+          <StrokeOrder runeKey={target.key} color="var(--pd)" className="h-[92px] w-[92px] flex-none overflow-visible" />
+          <div className="min-w-[180px] flex-1">
+            <div className="text-[10.5px] uppercase tracking-[0.14em] text-neutral-700">Stroke order</div>
+            <div className="max-w-[42ch] text-sm leading-normal text-neutral-700">Draw the strokes in this order and the score climbs.</div>
           </div>
         </div>
-      </Card>
 
-      <Card title="Canvas">
-        <div className="flex flex-wrap items-center gap-3">
-          <label className="text-sm text-zinc-300">
-            Brush{" "}
-            <input
-              type="range"
-              min="2"
-              max="22"
-              value={brush}
-              onChange={(e) => setBrush(Number(e.target.value))}
-              className="ml-2 align-middle"
-            />
-            <span className="ml-2 text-zinc-400">{brush}</span>
-          </label>
-
-          <label className="text-sm text-zinc-300">
-            Ink{" "}
-            <input
-              type="color"
-              value={ink}
-              onChange={(e) => setInk(e.target.value)}
-              className="ml-2 h-8 w-10 align-middle"
-            />
-          </label>
-
-          <label className="text-sm text-zinc-300">
-            Sensitivity{" "}
-            <select
-              value={sensitivity}
-              onChange={(e) => setSensitivity(e.target.value)}
-              className="ml-2 rounded-lg border border-zinc-700 bg-zinc-950 px-2 py-1 text-sm"
-            >
-              {Object.entries(SENSITIVITY).map(([key, value]) => (
-                <option key={key} value={key}>
-                  {value.label}
-                </option>
-              ))}
-            </select>
-          </label>
-
-          <Button onClick={handleClear}>Clear</Button>
-          <Button onClick={checkMatch} disabled={!hasInk}>
-            Check rune
-          </Button>
+        <div className="flex justify-center rounded-lg bg-neutral-200 p-4">
+          <canvas ref={ref} className="max-w-full rounded-md shadow-sm" style={{ background: CANVAS_BG, touchAction: "none", cursor: "crosshair" }} />
         </div>
 
-        <div className="mt-4 flex items-center justify-center">
-          <canvas
-            ref={ref}
-            className="rounded-2xl border border-zinc-800"
-          ></canvas>
-        </div>
-
-        {matchResult ? (
-          <div className="mt-4 rounded-xl border border-zinc-800 bg-zinc-950/40 p-3 text-sm">
-            <div
-              className={
-                matchResult.pass ? "text-emerald-300" : "text-amber-300"
-              }
-            >
-              {matchResult.pass ? "Matched target." : "Try again."}{" "}
-              {matchResult.reason}
+        {match ? (
+          <div className="rounded-md border p-4"
+            style={{ background: match.pass ? "#f0fae1" : "#fff2eb", borderColor: "var(--color-divider)" }}>
+            <div className="font-semibold" style={{ color: match.pass ? "#3d472b" : "#643312" }}>
+              {match.pass ? "Matched the target." : "Try again."} {match.reason}
             </div>
-            <div className="mt-1 text-zinc-300">
-              Target confidence:{" "}
-              <span className="text-zinc-100">
-                {Math.round((matchResult.targetScore || 0) * 100)}%
-              </span>
+            <div className="text-sm text-neutral-700">
+              Target confidence {Math.round((match.targetScore || 0) * 100)}% · closest {match.top ? `${match.top.name} ${match.top.glyph}` : "—"}
             </div>
-            {matchResult.top ? (
-              <div className="text-zinc-400">
-                Closest match:{" "}
-                <span className="text-zinc-200">{matchResult.top.name}</span>{" "}
-                <span>({matchResult.top.glyph})</span>
-              </div>
-            ) : null}
           </div>
         ) : (
-          <div className="mt-3 text-sm text-zinc-400">
-            Tip: trace the target rune slowly, then use Check rune.
-          </div>
+          <div className="text-[13.5px] text-neutral-700">Trace the target slowly, then check it.</div>
         )}
-      </Card>
+      </div>
+
+      <aside className="card flex flex-col gap-4" style={{ background: "#eee7db" }}>
+        <label className="flex flex-col gap-1.5 text-[13px] uppercase tracking-[0.1em] text-neutral-700">
+          Brush {brush}
+          <input type="range" min="2" max="22" value={brush} onChange={(e) => setBrush(Number(e.target.value))} style={{ accentColor: "var(--pa)" }} />
+        </label>
+
+        <div className="flex flex-col gap-1.5">
+          <span className="text-[13px] uppercase tracking-[0.1em] text-neutral-700">Ink</span>
+          <div className="flex gap-2">
+            {INKS.map((value) => (
+              <button key={value} onClick={() => setInk(value)} aria-label={`ink ${value}`}
+                className="h-[34px] w-[34px] rounded-full border-2"
+                style={{ background: value, borderColor: ink === value ? "#2e2b25" : "transparent" }} />
+            ))}
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-1.5">
+          <span className="text-[13px] uppercase tracking-[0.1em] text-neutral-700">Sensitivity</span>
+          <div className="flex gap-1 rounded-full bg-neutral-100 p-1">
+            {Object.entries(SENSITIVITY).map(([key, value]) => (
+              <button key={key} onClick={() => setSensitivity(key)}
+                className={`flex-1 rounded-full px-1 py-1.5 text-[13px] ${sensitivity === key ? "bg-neutral-800 text-neutral-100" : "text-neutral-700"}`}>
+                {value.label}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <Button variant="primary" block onClick={checkMatch} disabled={!counts.points}>Check rune</Button>
+        <Button block onClick={clear}>Clear</Button>
+        <Button variant="ghost" block onClick={newTarget}>New target</Button>
+      </aside>
     </div>
   );
 }

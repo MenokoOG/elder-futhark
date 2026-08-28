@@ -1,7 +1,7 @@
 import React from "react";
-import { Card } from "../../ui/components/Card.jsx";
-import { Button } from "../../ui/components/Button.jsx";
 import { latinToRunes, runesToLatin } from "../../lib/transliteration";
+import { Button } from "../../ui/components/Button.jsx";
+import { MappingRibbon } from "../../ui/components/graphics.jsx";
 
 export function Transliterate() {
   const [latin, setLatin] = React.useState("great application");
@@ -11,38 +11,27 @@ export function Transliterate() {
   const toLatin = () => setLatin(runesToLatin(runes));
 
   return (
-    <div className="space-y-4">
-      <Card title="Transliteration lab">
-        <p className="text-sm text-zinc-400">
-          This is a learning tool, not a historical reconstruction. It keeps punctuation and spaces.
-        </p>
-      </Card>
+    <div className="flex flex-col gap-5">
+      <div className="grid items-start gap-4" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))" }}>
+        <section className="card flex flex-col gap-3">
+          <div className="text-[10.5px] uppercase tracking-[0.14em] text-neutral-700">Latin in</div>
+          <textarea value={latin} onChange={(e) => setLatin(e.target.value)} rows={9} className="input resize-y leading-relaxed" />
+          <Button variant="primary" onClick={toRunes}>To runes</Button>
+        </section>
 
-      <div className="grid gap-4 md:grid-cols-2">
-        <Card title="Latin input">
-          <textarea
-            value={latin}
-            onChange={(e) => setLatin(e.target.value)}
-            rows={10}
-            className="w-full rounded-xl border border-zinc-700 bg-zinc-950 p-3"
-          />
-          <div className="mt-3 flex gap-2">
-            <Button onClick={toRunes}>→ To runes</Button>
-          </div>
-        </Card>
-
-        <Card title="Rune output">
-          <textarea
-            value={runes}
-            onChange={(e) => setRunes(e.target.value)}
-            rows={10}
-            className="w-full rounded-xl border border-zinc-700 bg-zinc-950 p-3 text-2xl"
-          />
-          <div className="mt-3 flex gap-2">
-            <Button onClick={toLatin}>→ To latin</Button>
-          </div>
-        </Card>
+        <section className="card flex flex-col gap-3" style={{ background: "var(--pt)" }}>
+          <div className="text-[10.5px] uppercase tracking-[0.14em]" style={{ color: "var(--pd)" }}>Runes out</div>
+          <textarea value={runes} onChange={(e) => setRunes(e.target.value)} rows={9}
+            className="input resize-y text-[26px] leading-relaxed tracking-wide" />
+          <Button onClick={toLatin}>To latin</Button>
+        </section>
       </div>
+
+      <MappingRibbon map={latinToRunes(latin).map} />
+
+      <p className="m-0 max-w-[62ch] text-[13.5px] leading-relaxed text-neutral-700">
+        A learning tool, not a historical reconstruction. Digraphs TH, NG and EI map to single runes; punctuation and spacing pass through untouched.
+      </p>
     </div>
   );
 }
