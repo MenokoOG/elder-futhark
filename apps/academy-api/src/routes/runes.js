@@ -1,7 +1,17 @@
 import express from "express";
+import { AETTS, aettByNumber } from "@efa/futhark-aetts";
 import { ELDER_FUTHARK } from "../data/elderFuthark.js";
 
 export const runesRouter = express.Router();
+
+// Static path first: a future "/:key" route would otherwise swallow it.
+runesRouter.get("/aetts", (_req, res) => res.json({ items: AETTS }));
+
+runesRouter.get("/aetts/:number", (req, res) => {
+  const aett = aettByNumber(req.params.number);
+  if (!aett) return res.status(404).json({ error: "Unknown aett" });
+  return res.json(aett);
+});
 
 runesRouter.get("/", (req, res) => {
   const q = String(req.query.q || "").trim().toLowerCase();

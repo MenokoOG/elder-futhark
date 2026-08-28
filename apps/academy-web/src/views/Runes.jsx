@@ -1,6 +1,7 @@
 import React from "react";
 import { Card } from "../ui/components/Card.jsx";
 import { api } from "../lib/api";
+import { AETTS, aettByNumber } from "@efa/futhark-aetts";
 import { ELDER_FUTHARK } from "../lib/elderFuthark";
 
 export function Runes() {
@@ -61,14 +62,25 @@ export function Runes() {
             className="rounded-xl border border-zinc-700 bg-zinc-950 px-3 py-2"
           >
             <option value="">All aetts</option>
-            <option value="1">Aett 1</option>
-            <option value="2">Aett 2</option>
-            <option value="3">Aett 3</option>
+            {AETTS.map((a) => (
+              <option key={a.key} value={a.number}>
+                {a.name} — {a.theme}
+              </option>
+            ))}
           </select>
           <button onClick={load} className="rounded-xl border border-zinc-700 bg-zinc-900 px-4 py-2 hover:bg-zinc-800">
             {loading ? "Loading..." : "Refresh"}
           </button>
         </div>
+
+        {aett ? (
+          <p className="mt-3 text-sm text-zinc-400">
+            {aettByNumber(aett)?.focus}{" "}
+            <span className="text-zinc-500">
+              Thematic reading is a modern teaching frame, not attested historical fact.
+            </span>
+          </p>
+        ) : null}
       </Card>
 
       <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
@@ -76,7 +88,9 @@ export function Runes() {
           <Card key={r.key} className="p-4">
             <div className="flex items-start justify-between">
               <div>
-                <div className="text-sm text-zinc-400">Aett {r.aett}</div>
+                <div className="text-sm text-zinc-400">
+                  {aettByNumber(r.aett)?.name ?? `Aett ${r.aett}`}
+                </div>
                 <div className="text-lg font-semibold">{r.name}</div>
                 <div className="text-sm text-zinc-300">{r.key} · {r.phonetic}</div>
               </div>
