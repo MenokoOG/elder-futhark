@@ -14,9 +14,10 @@ export const LESSONS = [
     title: "The Aetts (Three Groups)",
     summary: "A simple organizational map: three sets of eight runes.",
     sections: [
-      { h: "Aett 1", p: "Often associated with beginnings, movement, exchange, early forces." },
-      { h: "Aett 2", p: "Constraints, necessity, cycles, protection, sharpening." },
-      { h: "Aett 3", p: "Identity, growth, human experience, inheritance, completion." },
+      { h: "Freyr's Aett — Creation and Wealth", p: "Physical life, primal energy, growth, and material or personal wealth. Fehu, Uruz, Thurisaz, Ansuz, Raidho, Kenaz, Gebo, Wunjo. Also called Freyja's Aett." },
+      { h: "Hagal's Aett — Change and Trial", p: "Forces outside our control, tests, trials, and deep personal transformation. Hagalaz, Nauthiz, Isa, Jera, Eihwaz, Perthro, Algiz, Sowilo. Also named for Heimdall." },
+      { h: "Tyr's Aett — Order and Spirit", p: "Human nature, society, justice, breakthrough, the divine, and achievements of the mind. Tiwaz, Berkano, Ehwaz, Mannaz, Laguz, Ingwaz, Dagaz, Othala." },
+      { h: "A note on the themes", p: "The three groupings and their names are traditional. The themes above are a modern teaching frame, not an attested historical claim about what the aettir meant to their users." },
     ],
   },
   {

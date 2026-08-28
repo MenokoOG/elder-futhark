@@ -1,0 +1,14 @@
+{
+  "name": "@efa/futhark-aetts",
+  "private": true,
+  "version": "0.1.0",
+  "description": "The three aettir of the Elder Futhark — names, themes and rune groupings.",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src"
+  ]
+}
