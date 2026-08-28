@@ -1,12 +1,13 @@
 import React from "react";
-import { Card } from "../ui/components/Card.jsx";
 import { Link } from "react-router-dom";
 
 export function NotFound() {
   return (
-    <Card title="Not found">
-      <p className="text-zinc-300">That page doesn’t exist.</p>
-      <Link to="/" className="mt-3 inline-block text-sm text-zinc-200 underline underline-offset-4">Back home</Link>
-    </Card>
+    <div className="card flex flex-col items-start gap-3 py-11">
+      <span className="text-[44px] text-neutral-700">ᚺ</span>
+      <div className="font-heading text-[27px]">Nothing here</div>
+      <p className="m-0 leading-relaxed text-neutral-700">That page doesn't exist.</p>
+      <Link to="/" className="btn btn-primary">Back home</Link>
+    </div>
   );
 }
