@@ -13,7 +13,9 @@ secrets/
 
 # =========================
 # Agent operating files (core-context.md Context File Policy)
-# core-context.md itself IS tracked — it is the standards mirror.
+# core-context.md is NOT tracked here. The library's policy says to track it,
+# but it carries personal and internal business context that does not belong
+# in this repo. Read it from the Prompt & Agent Library instead.
 # Root-anchored on purpose: the ETL subtree tracks folder-level AGENTS.md
 # guardrails by design, and those stay. Only the repo-root operating files
 # are ignored here.
@@ -21,6 +23,7 @@ secrets/
 /CLASSHUMAN.md
 /CLAUDE.md
 /AGENTS.md
+/core-context.md
 .claude/
 .remember/
 ai-code-reviews/
